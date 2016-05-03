@@ -1,4 +1,4 @@
-# EmberCamp London Site
+# RustConf Site
 
 Site is hosted via GitHub pages, and is built with middleman.
 
