@@ -2115,3 +2115,26 @@ select {
 /* line 1904, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .accordion .accordion-navigation .content.active {
   display: block; }
+
+/* line 1909, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+table.sponsor-page img {
+  max-width: 190px;
+  max-height: 75px;
+  margin-right: 25px; }
+
+/* line 1915, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+table.sponsor-page p {
+  line-height: 20px;
+  font-size: 14px;
+  text-align: left;
+  margin: 25px 0px; }
+
+/* line 1922, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+table.sponsor-page tr {
+  margin-bottom: 10px;
+  border-bottom: .5px solid #e3e3e3; }
+
+/* line 1927, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+table.sponsor-page tr:last-child {
+  margin-bottom: none;
+  border-bottom: none; }
