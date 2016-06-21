@@ -136,17 +136,16 @@ hr {
   margin-bottom: 10px;
 }
 
-.spkHead {
-  width: 200px;
-  margin: 10px;
-}
-
 .y2016 {
   border: 1px solid black;
 }
 
 .center {
   text-align: center;
+}
+
+td {
+  margin-bottom: 200px;
 }
 
 .mainButton {
@@ -176,6 +175,7 @@ hr {
   background-color: #CCC;
   margin: auto;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 /*Sponsors Section*/
@@ -203,9 +203,13 @@ ul .premier li {
     padding-top: 20px;
 }
 
+ul.menu {
+  font-size: 16px;
+}
+
 ul.menu li {
   display: inline;
-  margin: 0 10px 0 10px;
+  margin: 0 8px 0 8px;
 }
 
 .premier img {
@@ -249,9 +253,23 @@ footer li:nth-child(even) {
 
 /*Speaker Page*/
 
-.spkPic {
+.spkPic1 {
   height: 250px;
   padding: 10px 10px;
+  margin-top: 30px;
+}
+
+.spkPic2 {
+
+}
+
+.spkHead {
+  width: 200px;
+  margin: 10px;
+}
+
+.spkName {
+  height: 25px;
 }
 
 #schedule {
