@@ -1,0 +1,96 @@
+- name: Aaron Turon
+  id: 1
+  type: conference, training
+  image: aaron.jpg
+  twitter:
+  bio:
+  title:
+  abstract:
+- name: Niko Matsakis
+  id: 2
+  type: conference, training
+  image: niko.jpg
+  twitter:
+  bio:
+  title:
+  abstract:
+- name:
+  id: 3
+  type: conference
+  image: julia.jpeg
+  twitter:
+  bio:
+  title:
+  abstract:
+- name:
+  id: 4
+  type: conference
+  image:
+  twitter:
+  bio:
+  title:
+  abstract:
+- name:
+  id: 5
+  type: conference
+  image:
+  twitter:
+  bio:
+  title:
+  abstract:
+- name:
+  id: 6
+  type: conference
+  image:
+  twitter:
+  bio:
+  title:
+  abstract:
+- name:
+  id: 7
+  type: conference
+  image:
+  twitter:
+  bio:
+  title:
+  abstract:
+- name:
+  id: 8
+  type: conference
+  image:
+  twitter:
+  bio:
+  title:
+  abstract:
+- name:
+  id: 9
+  type: conference
+  image:
+  twitter:
+  bio:
+  title:
+  abstract:
+- name:
+  id: 10
+  type: conference
+  image:
+  twitter:
+  bio:
+  title:
+  abstract:
+- name:
+  id: 11
+  type: conference
+  image:
+  twitter:
+  bio:
+  title:
+  abstract:
+- name: Steve Klabnik
+  id: 12
+  type: training
+  image:
+  twitter:
+  bio:
+  title:
+  abstract:

@@ -7,57 +7,27 @@ title: RustConf Program
 	<h1>Speakers</h1>
 
 	<table class="center">
-		<tr>
-			<td><img class="spkPic1" src="/images/speakers/aaron.jpg"></td>
-			<td><img class="spkPic1" src="/images/speakers/niko.jpg"></td>
-			<td><img class="spkPic1" src="/images/speakers/julia.jpeg"></td>
-		</tr>
-		<tr class="spkName">
-			<td><a href="https://twitter.com/aaron_turon">Aaron Turon</a></td>
-			<td><a href="https://twitter.com/nikomatsakis">Niko Matsakis</a></td>
-			<td><a href="https://twitter.com/b0rk">Julia Evans</a></td>
-		</tr>
-		<tr class="spkPic2">
-			<td><img class="spkPic1" src="/images/speakers/geoffroy.png"></td>
-			<td><img class="spkPic1" src="/images/speakers/alex.jpg"></td>
-			<td><img class="spkPic1" src="/images/speakers/suchin.jpeg"></td>
-		</tr>
-		<tr class="spkName">
-			<td><a href="https://twitter.com/gcouprie">Geoffroy Couprie</a></td>
-			<td><a href="https://twitter.com/alex_crichton">Alex Crichton</a></td>
-			<td><a href="https://twitter.com/ssgrn">Suchin Gururangan</td>
-		</tr>
-		<tr class="spkPic2">
-			<td><img class="spkPic1" src="/images/speakers/josh.jpeg"></td>
-			<td><img class="spkPic1" src="/images/speakers/liz.jpg"></td>
-			<td><img class="spkPic1" src="/images/speakers/raph.jpg"></td>
-		</tr>
-		<tr  class="spkName">
-			<td><a href="https://twitter.com/josh_triplett">Josh Triplett</a></td>
-			<td><a href="https://twitter.com/infinite_math">Liz Baillie</a></td>
-			<td><a href="https://twitter.com/raphlinus">Raph Levien</a></td>
-		</tr>
-		<!-- <tr>
-			<td><img class="spkPic" src="/images/speakers/Alex.jpg"></td>
-			<td><img class="spkPic" src="/images/speakers/Aaron.jpg"></td>
-			<td><img class="spkPic" src="/images/speakers/Gavin.jpg"></td>
-		</tr>
-		<tr>
-			<td><a href="https://twitter.com/alexspeller">Alex Speller</a></td>
-			<td><a href="https://twitter.com/grandazz">Aaron Chambers</a></td>
-			<td><a href="https://twitter.com/gavinjoyce">Gavin Joyce</a></td>
-		</tr> -->
-
+		<% data.program.in_groups_of(3) do |speakers| %>
+			<tr>
+				<% speakers.each do |s| %>
+					<td>
+						<%= image_tag "speakers/#{s.image}", class: "spkPic1"%>
+					</td>
+				<% end %>
+			</tr>
+			<tr>
+				<% speakers.each do |s| %>
+					<td>
+						<%= link_to s.name, "http://www.twitter.com/#{s.twitter}", class: "spkName" %>
+					</td>
+				<% end %>
+			</tr>
+		<% end %>
 	</table>
 
 	<h4>...along with <em>Without Boats</em>, <em>Colin O'Brien</em> and our Lightning Talk speakers.</h4>
 
 	<h1>The Talks</h1>
 
-	<% data.program.each do |speaker| %>
-		<p>
-			<% speaker.name %>>
-		</p>
-	<%- end %>
 
 </div>
