@@ -1,15 +1,15 @@
 - name: Aaron Turon
   id: 1
   type: conference, training
-  image:
-  twitter: aturon
+  image: aaron.jpg
+  twitter:
   bio:
   title:
   abstract:
 - name: Niko Matsakis
   id: 2
   type: conference, training
-  image:
+  image: niko.jpg
   twitter:
   bio:
   title:
@@ -17,7 +17,7 @@
 - name:
   id: 3
   type: conference
-  image:
+  image: julia.jpeg
   twitter:
   bio:
   title:
