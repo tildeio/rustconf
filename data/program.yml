@@ -1,96 +1,96 @@
 - name: Aaron Turon
   id: 1
   type: conference, training
-  image:
+  image: aaron.jpg
   twitter: "aaron_turon"
-  bio:
+  bio: "Aaron Turon (aturon) is a member of the Rust Core Team and employed by Mozilla Research. His main focus in Rust is language design, libraries, and project management. Prior to joining Mozilla, Aaron received his PhD from Northeastern University, with a focus on language and library design around lock-free data structures and other low-level concurrency concerns. His work won the John C. Reynold's award for outstanding dissertation in programming languages. He also worked with Derek Dreyer on correctness proofs of lock-free data structures, developing an early technique for doing so on top of the C11 memory model."
   title: "Opening Keynote"
   abstract:
 - name: Niko Matsakis
   id: 2
   type: conference, training
-  image:
+  image: niko.jpg
   twitter: "nikomatsakis"
-  bio:
+  bio: "Nicholas Matsakis (nmatsakis) is a member of the Rust Core Team and employed by Mozilla Research. His main focus in Rust is language design and compiler implementation. At Mozilla, he has also worked on Parallel JavaScript and other parallelization efforts. Prior to joining Mozilla, Niko received his PhD from ETH Zurich, likewise focused on parallelism and language design."
   title: "Opening Keynote"
   abstract:
 - name: Julia Evans
   id: 3
   type: conference
-  image:
+  image: julia.jpeg
   twitter: "b0rk"
-  bio:
+  bio: "Coming soon!"
   title: "Closing Keynote"
-  abstract:
+  abstract: "Do you ever think "ok, I'm definitely not a beginner at programming anymore, but how do I get WAY BETTER?". I have. It turns out that there are a lot of amazing things you can learn about programming by learning a little bit of Rust and systems programming, and I'm going to talk about some of my favorites."
 - name: Geoffroy Couprie
   id: 4
   type: conference
-  image:
+  image: geoffroy.png
   twitter: "gcouprie"
   bio: "Geoffroy handles security and quality assurance at Clever Cloud, develops in Rust and researches on parser security at VideoLAN. He thinks a lot about cryptography, protocol design and data management."
   title: "Integrating Some Rust in VLC Media Player"
-  abstract: "Parsing is hard. It is the cause of hundreds of vulnerabilities, implementation mistakes and plain crashes in production, because formats are badly designed and C is error prone.<br>Rust came with promises of safe, low level data manipulation, with efficient memory usage. The Nom parser combinators library was designed to verify those expectations and build fast, zero copy parsers that can easily be integrated in C applications.<br>This talk will cover the architecture and design decisions of nom, and how usability affects parser development."
+  abstract: "VLC media player has a nice goal for users: handle almost any file or protocol you throw at it. Unfortunately, this results in a lot of parser vulnerabilities, because most of the parsing code is handwritten in C. By leveraging Rust and the nom parser combinators library, could we replace some security critical parts of VLC?"
 - name: Alex Crichton
   id: 5
   type: conference
-  image:
+  image: alex.jpg
   twitter: "alex_crichton"
   bio: "As a member of the Rust Core Team and leader of the Tooling and Infrastructure subteam I've been working at Mozilla Research for nearly 2 years now and have been contributing to Rust for nearly 3. I've primarily worked on areas such as the runtime, standard library, porting the compiler, Cargo, and crates.io, but I've also had my hands in areas such as compiler passes, compiler lints, and a number of crates.io libraries."
   title: "Back to the Futures"
-  abstract:
+  abstract: "One of the core building blocks of any library is the I/O abstraction it works with, but unfortunately they isn't always composable to plug libraries together. The concept of futures is tried and true in frameworks like Scala's Finagle, and provides an ergonomic solution to composing multiple I/O libraries together. This talk will explore the implementation of a cross-platform futures library in Rust backed by the full power of mio and leveraging many aspects of Rust to make futures programming even easier."
 - name: Suchin Gururangan
   id: 6
   type: conference
-  image:
+  image: suchin.jpg
   twitter: "ssgrn"
   bio: "Suchin Gururangan (pegasos1) is a data scientist at Rapid7 using machine learning to map and predict malicious activity across the Internet. He previously lead efforts around data-driven startup investing at Accomplice Ventures. Suchin is also a published researcher in computational neuroscience, and has investigated brain-machine interfaces and brain mapping. Suchin maintains an active blog in which he discusses Rust and data science, and he's really happy to be a part of the Rust community."
   title: "The PlayRust Classifier: Real World Rust Data Science"
-  abstract:
+  abstract: "Modern machine learning systems require scalable, real-time processing to analyze massive datasets. Rust is an attractive tool to help drive low-cost, high performance data science. But what's it like to use Rust to solve machine learning problems in practice? To evaluate Rust as a foundation for machine learning services, we built a classification system, entirely in Rust, that detects PlayRust posts mistakenly published on the Rust subreddit. We'll present Rust's strengths and weaknesses at each step of the process, inspiring discussion on its role in the future of data science pipelines."
 - name: Josh Triplett
   id: 7
   type: conference
-  image:
+  image: josh.jpeg
   twitter: "josh_triplett"
   bio: "Josh Triplett hacks on system software, including the Linux kernel, BITS, X, Git, Sparse, Debian, and Chrome OS. Josh enjoys using software for unconventional purposes, such as running Python in GRUB2 to test BIOS (https://biosbits.org). Josh has previously presented at Kernel Summit, linux.conf.au, Linux Plumbers Conference, PyCon, Open Source Bridge, and the USENIX Annual Technical Conference. Josh works for the Intel Open Source Technology Center (OTC). (Not speaking for Intel.)"
   title: "RFC: In Order to Form a More Perfect `union`"
-  abstract:
+  abstract: "Users of Rust for systems programming rely heavily on its exceptional support for FFI. Many systems APIs involve unions, and macros and transmute produced unmaintainable solutions. 16 months, 3 RFCs, and a half-dozen possible syntaxes later, RFC1444 added union to the Rust language, ready for implementation. <br> This talk will present unions as a case study of the Rust RFC process, show the kinds of iterative refinements that take place, review corner cases and interactions that arise when attempting to extend Rust, and discuss the next steps forward for union implementation."
 - name: Liz Baillie
   id: 8
   type: conference
-  image:
+  image: liz.jpg
   twitter: "infinite_math"
   bio: "Liz is currently wrangling the JavaScripts and herding the Rubies as an engineer at Tilde. Previously, she spent many years drawing comic books to a limited but enthusiastic audience. She is just getting started at contributing to open source projects and is already addicted. Please send help (don't actually send help)."
   title: "The Illustrated Adventure Survival Guide for New Rustaceans"
-  abstract:
+  abstract: "Programming is an adventure, often more harrowing than it has to be. If you're more used to higher-level languages like Ruby or JavaScript, learning Rust can feel like an impossible journey that leaves you wishing for a well-written and heavily illustrated field guide. <br> Good news! I have already gone down this road and am now prepared to share my adventure with you. Luckily, I was able to capture much of the flora and fauna of Rustlandia with my primitive pictorial devices (paper and pen)."
 - name: Raph Levien
   id: 9
   type: conference
-  image:
+  image: ralph.jpg
   twitter: "raphlinus"
   bio: "Raph Levien is a software engineer and tech lead of Android Text on the Android UI Toolkit team at Google. He has a lifelong interest in digital typography, including a PhD in spiral-based tools for interactive font design, as well as being the designer of Inconsolata, a monospace font designed for beautiful code listings. Raph's previous work includes Google Fonts and the open source Ghostscript PostScript/PDF engine."
   title: "A Modern Editor Built in Rust"
-  abstract:
+  abstract: "This talk will present ???-editor, a new project to build a high-performance text editor primarily in Rust. In addition to a deep dive into technical details, the talk will touch on aspects of building polished GUI apps and running a community-focused open source project."
 - name: Without Boats
   id: 10
   type: conference
   image:
   twitter:
-  bio:
+  bio: "Coming soon!"
   title: "Using Generics Effectively"
-  abstract:
+  abstract: "Traits and type parameters are the core mechanism for abstraction in Rust. Other languages also have features like these, but few leverage them nearly as much as Rust does. This talk will describe the many powerful uses for Rust's generics system, how generics can be used as a replacement for tools like inheritance and duck typing, and how to leverage this system to write good, clean code."
 - name: Colin O'Brien
   id: 11
   type: conference
-  image:
-  twitter:
+  image: colin.jpg
+  twitter: "insanitybit"
   bio: "Colin O'Brien is a Software Developer at Rapid7, working on Incident Detection And Response to bring novel security detections to the platform. Colin has been interacting with the rust community under the pseudonyms 'insanitybit' and 'staticassert' for over a year, and has contributed multiple crates."
   title: "The PlayRust Classifier: Real World Rust Data Science"
-  abstract:
+  abstract: "Modern machine learning systems require scalable, real-time processing to analyze massive datasets. Rust is an attractive tool to help drive low-cost, high performance data science. But what's it like to use Rust to solve machine learning problems in practice? To evaluate Rust as a foundation for machine learning services, we built a classification system, entirely in Rust, that detects PlayRust posts mistakenly published on the Rust subreddit. We'll present Rust's strengths and weaknesses at each step of the process, inspiring discussion on its role in the future of data science pipelines."
 - name: Steve Klabnik
   id: 12
   type: training
-  image:
-  twitter:
-  bio:
+  image: steve.jpg
+  twitter: "steveklabnik"
+  bio: "Steve is a Rust core team member. He previously worked on Ruby and Ruby on Rails, and has authored 'The Rust Programming Language,'' 'Rails 4 in Action,' and 'Designing Hypermedia APIs.'
   title:
   abstract:
