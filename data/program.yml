@@ -79,7 +79,7 @@
   twitter: "raphlinus"
   bio: "Raph Levien is a software engineer and tech lead of Android Text on the Android UI Toolkit team at Google. He has a lifelong interest in digital typography, including a PhD in spiral-based tools for interactive font design, as well as being the designer of Inconsolata, a monospace font designed for beautiful code listings. Raph's previous work includes Google Fonts and the open source Ghostscript PostScript/PDF engine."
   title: "A Modern Editor Built in Rust"
-  abstract: "This talk will present ???-editor, a new project to build a high-performance text editor primarily in Rust. In addition to a deep dive into technical details, the talk will touch on aspects of building polished GUI apps and running a community-focused open source project."
+  abstract: "This talk will present XIeditor, a new project to build a high-performance text editor primarily in Rust. In addition to a deep dive into technical details, the talk will touch on aspects of building polished GUI apps and running a community-focused open source project."
 - name: Without Boats
   id: 10
   type: conference
