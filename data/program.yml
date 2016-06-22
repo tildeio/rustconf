@@ -17,6 +17,7 @@
     - title: "Opening Keynote"
       abstract: "Aaron and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
     - title: "Training: Intermediate Rust"
+      focus: "Traits and Threads"
       abstract: "Move up a level in Rust knowledge. This tutorial introduces the second key piece of Rust, its trait system. It shows how the trait system is the foundation for generic programming in Rust, allowing you to write one piece of code that can be reused in many contexts. It also covers how to write threaded programs in Rust, and shows how threaded programming in Rust builds on the trait system to guarantee data-race freedom.</p><p>This tutorial assumes basic understanding of ownership and borrowing; if you have been writing Rust for a while, or taken the morning tutorial, you should do fine."
 - name: Niko Matsakis
   id: 3
@@ -29,6 +30,7 @@
     - title: "Opening Keynote"
       abstract: "Aaron and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
     - title: "Training: Advanced Rust"
+      focus: "Advanced Ownership and Borrowing"
       abstract: "Start taking full advantage of the power of lifetimes. This tutorial will cover named lifetime parameters on functions and structs and show how you can write more advanced patterns of borrowing in Rust.</p><p>Prior experience with Rust is expected, and this training is <em>not</em> appropriate for pairing with the morning Beginner Rust training."
 - name: Geoffroy Couprie
   id: 4
@@ -101,5 +103,6 @@
   twitter: "steveklabnik"
   bio: "Steve is a Rust core team member. He previously worked on Ruby and Ruby on Rails, and has authored 'The Rust Programming Language','Rails 4 in Action', and 'Designing Hypermedia APIs'."
   title: "Training: Rust for Beginners"
+  focus: "Rust Fundamentals: Ownership and Borrowing"
   abstract: "Learn everything you need to get started writing Rust programs. The tutorial puts a focus on Ownership and Borrowing, which are the key techniques that Rust uses to achieve both safety and low-level performance.</p><p>This class assumes no prior knowledge of Rust, though programming experience in some other language would be helpful."
   timeslot: morning

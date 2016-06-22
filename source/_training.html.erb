@@ -8,7 +8,7 @@
         <%= talk.title %>
       </h4>
       <h5>
-        By <%= link_to speaker.name, "http://www.twitter.com/#{speaker.twitter}" %>
+        <%= talk.focus %>, By <%= link_to speaker.name, "http://www.twitter.com/#{speaker.twitter}" %>
       </h5>
       <p>
         <%= talk.abstract %>
