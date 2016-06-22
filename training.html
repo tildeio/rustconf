@@ -11,7 +11,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>RustConf Schedule</title>
+    <title>RustConf Trainings</title>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
@@ -21,7 +21,7 @@
 
   </head>
 
-  <body class="center schedule">
+  <body class="center training">
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
@@ -66,96 +66,89 @@
         </div>
       </nav>
 
-      <h1>Schedule</h1>
+      <div class="container">
 
-<div>
+  <h1>Our Trainings</h1>
 
-<p>
-  Our schedule will be available shortly.<br />We'll follow the same format as <a href="http://rustcamp.com/schedule.html">RustCamp 2015</a>.
-</p>
+  <p>
+    We'll be offering <em>three</em> Rust training sessions, targeting different skill levels: <strong>Beginner</strong>, <strong>Intermediate</strong> and <strong>Advanced</strong>. You <em>may</em> take the morning Beginner session followed by the afternoon Intermediate session, but it is <em>not</em> appropriate to pair the Beginner and Advanced sessions.
+  </p>
 
-  <!-- <table id="schedule">
-    <thead>
-      <tr>
-        <th width="140">TIME</th>
-        <th width="400">CONTENT</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="special">
-        <td>8:30&ndash;9:45am</td>
-        <td>
-          <span class="session">Registration</span>
-        </td>
-      </tr>
-      <tr class="first">
-        <td>9:45&ndash;10:00am</td>
-        <td><span class="session">Welcome &amp; Announcements</span></td>
-      </tr>
-      <tr class="second">
-        <td>10:00&ndash;10:30am</td>
-        <td>
-          <span class="speaker">Yehuda Katz (<a href="https://speakerdeck.com/wycats/embercamp-london-keynote-building-production-grade-web-apps-fast">Slides</a>)</span>
-        </td>
-      </tr>
-      <tr class="first">
-        <td>10:45&ndash;11:15am</td>
-        <td>
-          <span class="speaker">Miguel Camba (<a href="http://slides.com/miguelcamba/composable-components#/">Slides</a>)</span>
-        </td>
-      </tr>
-      <tr class="second">
-        <td>11:30&ndash;12:00pm</td>
-        <td>
-          <span class="speaker">Hannah Wolfe (<a href="https://speakerdeck.com/erisds/ghost-and-ember">Slides</a>)</span>
-        </td>
-      </tr>
-      <tr class="special">
-        <td>12:00&ndash;1:30pm</td>
-        <td><span class="session">Lunch</span></td>
-      </tr>
-      <tr class="first">
-        <td>1:30&ndash;2:00pm</td>
-        <td>
-          <span class="speaker">Matthew Beale (<a href="http://www.slideshare.net/mixonic/the-hidden-power-of-htmlbars-or-scope-in-emberjs-templates">Slides</a>)</span>
-        </td>
-      </tr>
-      <tr class="second">
-        <td>2:15&ndash;2:45pm</td>
-        <td>
-          <span class="speaker">Katie Gengler (<a href="https://speakerdeck.com/katiegengler/observing-ember-addons-embercamp-london-2015">Slides</a>)</span>
-        </td>
-      </tr>
-      <tr class="first">
-        <td>3:00&ndash;3:30pm</td>
-        <td>
-          <span class="speaker">Alex Speller (<a href="http://alexspeller.com/assets/Routing.key">Slides</a>)</span>
-        </td>
-      </tr>
-      <tr class="special">
-        <td>3:30&ndash;4:00pm</td>
-        <td><span class="session">Stretch Your Legs!</span></td>
-      </tr>
-      <tr class="first">
-        <td>4:00&ndash;4:30pm</td>
-        <td>
-          <span class="speaker">Gavin Joyce (<a href=" https://speakerdeck.com/gavinjoyce/scaling-ember-at-intercom-embercamp-london">Slides</a>)</span>
-        </td>
-      </tr>
-      <tr class="second">
-        <td>4:45&ndash;5:15pm</td>
-        <td>
-          <span class="speaker">Aaron Chambers and Luke Melia</span>
-        </td>
-      </tr>
-      <tr class="first">
-        <td>5:30&ndash;6:00pm</td>
-        <td>
-          <span class="speaker">Sebastian McKenzie</span>
-        </td>
-      </tr>
-    </tbody>
-  </table> -->
+	<div id="program">
+    <h3>Morning (9am-12pm)</h3>
+    <table>
+        <tr>
+  <td>
+    <img class="spkPic2" src="images/speakers/steve.jpg" />
+  </td>
+  <td class="abstract">
+      <h4>
+        Training: Rust for Beginners
+      </h4>
+      <h5>
+        By <a href="http://www.twitter.com/steveklabnik">Steve Klabnik</a>
+      </h5>
+      <p>
+        Learn everything you need to get started writing Rust programs. The tutorial puts a focus on Ownership and Borrowing, which are the key techniques that Rust uses to achieve both safety and low-level performance.</p><p>This class assumes no prior knowledge of Rust, though programming experience in some other language would be helpful.
+      </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <hr />
+  </td>
+</tr>
+
+    </table>
+
+    <h3>Afternoon (1pm-4pm)</h3>
+    <table>
+        <tr>
+  <td>
+    <img class="spkPic2" src="images/speakers/aaron.jpg" />
+  </td>
+  <td class="abstract">
+      <h4>
+        Training: Intermediate Rust
+      </h4>
+      <h5>
+        By <a href="http://www.twitter.com/aaron_turon">Aaron Turon</a>
+      </h5>
+      <p>
+        Move up a level in Rust knowledge. This tutorial introduces the second key piece of Rust, its trait system. It shows how the trait system is the foundation for generic programming in Rust, allowing you to write one piece of code that can be reused in many contexts. It also covers how to write threaded programs in Rust, and shows how threaded programming in Rust builds on the trait system to guarantee data-race freedom.</p><p>This tutorial assumes basic understanding of ownership and borrowing; if you have been writing Rust for a while, or taken the morning tutorial, you should do fine.
+      </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <hr />
+  </td>
+</tr>
+
+        <tr>
+  <td>
+    <img class="spkPic2" src="images/speakers/niko.jpg" />
+  </td>
+  <td class="abstract">
+      <h4>
+        Training: Advanced Rust
+      </h4>
+      <h5>
+        By <a href="http://www.twitter.com/nikomatsakis">Niko Matsakis</a>
+      </h5>
+      <p>
+        Start taking full advantage of the power of lifetimes. This tutorial will cover named lifetime parameters on functions and structs and show how you can write more advanced patterns of borrowing in Rust.</p><p>Prior experience with Rust is expected, and this training is <em>not</em> appropriate for pairing with the morning Beginner Rust training.
+      </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <hr />
+  </td>
+</tr>
+
+    </table>
+  </div>
 </div>
 
     </main>

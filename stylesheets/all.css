@@ -121,19 +121,18 @@ hr {
   margin-bottom: 10px; }
 
 /* line 140, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
-.spkHead {
-  width: 200px;
-  margin: 10px; }
-
-/* line 145, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .y2016 {
   border: 1px solid black; }
 
-/* line 149, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 144, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .center {
   text-align: center; }
 
-/* line 153, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 148, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+td.center {
+  margin-bottom: 200px; }
+
+/* line 152, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .mainButton {
   display: inline-block;
   text-transform: uppercase;
@@ -148,18 +147,19 @@ hr {
   font-weight: 900;
   font-style: normal; }
 
-/* line 168, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 167, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .mainButton:hover {
   color: #ffce00; }
 
 /*Map Section*/
-/* line 174, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 173, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 #map-canvas {
   width: 800px;
   height: 300px;
   background-color: #CCC;
   margin: auto;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  margin-top: 20px; }
 
 /*Sponsors Section*/
 /* line 187, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
@@ -183,73 +183,135 @@ ul .premier li {
   padding-top: 20px; }
 
 /* line 207, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+ul.menu {
+  font-size: 16px; }
+
+/* line 211, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 ul.menu li {
   display: inline;
-  margin: 0 10px 0 10px; }
+  margin: 0 8px 0 8px; }
 
-/* line 212, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 216, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .premier img {
   height: 50px;
   margin: 10px 15px; }
 
-/* line 217, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 221, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .supporting img {
   height: 30px;
   margin: 10px 15px; }
 
-/* line 222, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 226, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .friends img {
   height: 20px;
   margin: 10px 15px; }
 
-/* line 227, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 231, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .old img {
   height: 28px;
   margin: 10px 15px; }
 
 /*Footer Stuff*/
-/* line 234, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 238, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 footer li {
   text-transform: uppercase;
   font-size: 16px; }
 
-/* line 239, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 243, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 footer ul {
   margin-bottom: 30px; }
 
-/* line 243, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 247, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 footer li {
   display: inline; }
 
-/* line 247, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 251, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 footer li:nth-child(even) {
   padding: 0 10px; }
 
-/*Speaker Page*/
-/* line 253, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
-.spkPic {
+/*Program Page*/
+/* line 257, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+.spkPic1 {
   height: 250px;
-  padding: 10px 10px; }
+  width: 250px;
+  padding: 10px 10px;
+  margin-top: 30px; }
 
-/* line 258, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 264, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+.spkPic2 {
+  height: 200px;
+  width: 200px;
+  padding: 0px 10px 5px 0px;
+  float: left; }
+
+/* line 271, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+.spkHead {
+  width: 200px;
+  margin: 10px; }
+
+/* line 276, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+.spkName {
+  height: 25px; }
+
+/* line 281, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+#program > table > tbody > tr:last-child {
+  display: none; }
+/* line 285, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+#program > table > tbody > tr td:first-child {
+  vertical-align: top;
+  width: 220px; }
+/* line 290, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+#program > table > tbody > tr .byline {
+  margin-top: 0;
+  padding-top: 0;
+  font-style: italic;
+  font-size: 0.8rem; }
+/* line 297, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+#program > table > tbody > tr td.abstract {
+  vertical-align: top; }
+  /* line 300, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  #program > table > tbody > tr td.abstract h4 {
+    margin-top: 0; }
+  /* line 304, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  #program > table > tbody > tr td.abstract h5 {
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 0.3rem;
+    margin-bottom: 0; }
+
+/* line 315, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+.abstract > p {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left; }
+
+/* line 321, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+.abstract > h4 {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 0px; }
+
+/* line 327, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 #schedule {
   margin: 0 auto; }
 
-/* line 262, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 331, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 #schedule thead {
   background-color: black;
   color: white; }
 
-/* line 267, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 336, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 #schedule tr {
   line-height: 30px; }
 
-/* line 271, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 340, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 #schedule tr:nth-child(even) {
   background-color: #C8C8C8; }
 
 /*About Page*/
-/* line 277, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 346, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .hotel {
   float: left;
   width: 180px;
@@ -257,20 +319,46 @@ footer li:nth-child(even) {
   padding-bottom: 10px;
   clear: both; }
 
-/* line 285, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 354, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .hname {
   clear: both; }
 
-/* line 289, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 358, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .hp {
   text-align: left; }
 
+/* line 362, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+.coc {
+  background-color: #e6e6e6;
+  padding: 20px;
+  font-size: 16px; }
+  /* line 367, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  .coc p {
+    text-align: left; }
+
+/* line 372, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+h1 + .coc {
+  margin-bottom: 35px; }
+
+/*  Register Page */
+/* line 379, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+.coc ul {
+  text-align: left; }
+/* line 382, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+.coc li {
+  line-height: 22px;
+  margin: 0 15px 10px 15px;
+  list-style: disc; }
+  /* line 387, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  .coc li ul {
+    margin-top: 10px; }
+
 /* Main Menu Ribbon */
-/* line 295, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 395, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 * {
   box-sizing: border-box; }
 
-/* line 299, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 399, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 nav {
   width: 80%;
   max-width: 1000px;
@@ -278,11 +366,11 @@ nav {
   margin: 40px auto;
   position: relative; }
 
-/* line 307, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 407, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .one > div {
   height: 65px; }
 
-/* line 311, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 411, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .main2 {
   background: #ffce00;
   position: relative;
@@ -294,28 +382,28 @@ nav {
   margin-left: -45%;
   z-index: 10; }
 
-/* line 323, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 423, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .main2 > div {
   border: 1px dashed #fff;
   border-color: rgba(255, 255, 255, 0.5);
   height: 54px; }
 
-/* line 329, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 429, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .bk {
   background: #CCA500;
   position: absolute;
   width: 8%;
   top: 10px; }
 
-/* line 336, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 436, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .bk.l {
   left: 0; }
 
-/* line 340, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 440, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .bk.r {
   right: 0; }
 
-/* line 344, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 444, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .skew {
   position: absolute;
   background: #7F6E26;
@@ -323,25 +411,25 @@ nav {
   top: 6px;
   z-index: 5; }
 
-/* line 352, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 452, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .skew.l {
   left: 5%;
   transform: skew(0deg, 20deg); }
 
-/* line 357, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 457, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .skew.r {
   right: 5%;
   transform: skew(0deg, -20deg); }
 
-/* line 362, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 462, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .bk.l > div {
   left: -30px; }
 
-/* line 366, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 466, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .bk.r > div {
   right: -30px; }
 
-/* line 370, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 470, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .arrow {
   height: 25px !important;
   position: absolute;
@@ -349,28 +437,28 @@ nav {
   width: 0;
   height: 0; }
 
-/* line 378, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 478, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .arrow.top {
   top: 0px;
   border-top: 0px solid transparent;
   border-bottom: 40px solid transparent;
   border-right: 30px solid #CCA500; }
 
-/* line 385, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 485, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .arrow.bottom {
   top: 25px;
   border-top: 40px solid transparent;
   border-bottom: 0px solid transparent;
   border-right: 30px solid #CCA500; }
 
-/* line 392, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 492, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .r .bottom {
   border-top: 40px solid transparent;
   border-bottom: 0px solid transparent;
   border-left: 30px solid #CCA500;
   border-right: none; }
 
-/* line 399, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 499, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .r .top {
   border-bottom: 40px solid transparent;
   border-top: 0px solid transparent;
@@ -378,37 +466,37 @@ nav {
   border-right: none; }
 
 @media all and (max-width: 1020px) {
-  /* line 407, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 507, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .skew.l {
     left: 5%;
     transform: skew(0deg, 25deg); }
 
-  /* line 412, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 512, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .skew.r {
     right: 5%;
     transform: skew(0deg, -25deg); } }
 @media all and (max-width: 680px) {
-  /* line 419, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 519, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .skew.l {
     left: 5%;
     transform: skew(0deg, 30deg); }
 
-  /* line 424, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 524, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .skew.r {
     right: 5%;
     transform: skew(0deg, -30deg); } }
 @media all and (max-width: 460px) {
-  /* line 431, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 531, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .skew.l {
     left: 5%;
     transform: skew(0deg, 40deg); }
 
-  /* line 435, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 535, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .skew.r {
     right: 5%;
     transform: skew(0deg, -40deg); } }
 /* Sponsor Mini Ribbons */
-/* line 446, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 546, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 #footer-ribbon {
   width: 160px;
   margin: 25px auto;
@@ -416,31 +504,31 @@ nav {
   font-weight: bold;
   text-transform: uppercase; }
 
-/* line 454, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 554, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .aside {
   margin: 20px 0;
   line-height: 34px;
   position: relative;
   user-select: none; }
-  /* line 459, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 559, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .aside.ribbon {
     background-color: #ffce00; }
-    /* line 462, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+    /* line 562, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
     .aside.ribbon:before, .aside.ribbon:after {
       top: 5px;
       z-index: -10; }
-    /* line 467, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+    /* line 567, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
     .aside.ribbon:before {
       border-color: #cca500 #cca500 #cca500 transparent;
       left: -25px;
       border-width: 17px; }
-    /* line 472, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+    /* line 572, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
     .aside.ribbon:after {
       border-color: #cca500 transparent #cca500 #cca500;
       right: -25px;
       border-width: 17px; }
 
-/* line 480, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 580, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .aside:before,
 .aside:after {
   content: '';
@@ -450,11 +538,11 @@ nav {
   border-style: solid;
   border-width: 0; }
 
-/* line 492, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 592, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .save-the-date header {
   padding: 0; }
 
-/* line 495, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 595, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .save-the-date header .logo {
   margin: 0 auto;
   width: 9.1875em;
@@ -472,7 +560,7 @@ nav {
   -webkit-animation: grandEntrance 300ms 400ms forwards;
   animation: grandEntrance 300ms 400ms forwards; }
   @media screen and (min-width: 40.0625em) {
-    /* line 495, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+    /* line 595, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
     .save-the-date header .logo {
       width: 12.25em;
       /* 196px */
@@ -481,7 +569,7 @@ nav {
       top: 2.5em;
       /* 40px */ } }
 
-/* line 513, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 613, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .save-the-date div.text {
   position: relative;
   top: 48%;
@@ -490,35 +578,35 @@ nav {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%); }
 
-/* line 519, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 619, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .save-the-date header h1 {
   color: white;
   text-align: center; }
 
-/* line 523, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 623, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .save-the-date h1 span {
   opacity: 0;
   display: block; }
 
-/* line 527, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 627, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .save-the-date h1 span:nth-child(1) {
   -moz-animation: lineOne 400ms 400ms forwards;
   -webkit-animation: lineOne 400ms 400ms forwards;
   animation: lineOne 400ms 400ms forwards; }
 
-/* line 530, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 630, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .save-the-date h1 span:nth-child(2) {
   -moz-animation: lineTwo 400ms 400ms forwards;
   -webkit-animation: lineTwo 400ms 400ms forwards;
   animation: lineTwo 400ms 400ms forwards; }
 
-/* line 533, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 633, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .save-the-date h1 span:nth-child(3) {
   -moz-animation: lineThree 400ms 400ms forwards;
   -webkit-animation: lineThree 400ms 400ms forwards;
   animation: lineThree 400ms 400ms forwards; }
 
-/* line 536, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 636, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .save-the-date .text p.date {
   font-weight: 700;
   text-align: center;
@@ -531,11 +619,11 @@ nav {
   -webkit-animation: lineFour 400ms 400ms forwards;
   animation: lineFour 400ms 400ms forwards; }
   @media screen and (min-width: 40.0625em) {
-    /* line 536, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+    /* line 636, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
     .save-the-date .text p.date {
       font-size: 1.75em; } }
 
-/* line 548, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 648, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .save-the-date div.hands {
   display: block;
   width: 10.3125em;
@@ -560,55 +648,55 @@ nav {
   animation: handsUp 250ms 650ms forwards;
   overflow: hidden; }
   @media screen and (min-width: 40.0625em) {
-    /* line 548, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+    /* line 648, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
     .save-the-date div.hands {
       -moz-transform: scale(1);
       -ms-transform: scale(1);
       -webkit-transform: scale(1);
       transform: scale(1); } }
 
-/* line 571, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 671, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .save-the-date div.hands-count img {
   -moz-animation: handsCount 300ms steps(3) forwards;
   -webkit-animation: handsCount 300ms steps(3) forwards;
   animation: handsCount 300ms steps(3) forwards; }
 
-/* line 574, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 674, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .save-the-date .pre-registration-signup {
   text-align: center;
   padding-top: 2.5em; }
   @media screen and (min-width: 40.0625em) {
-    /* line 574, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+    /* line 674, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
     .save-the-date .pre-registration-signup {
       padding-top: 4.5em; } }
 
-/* line 581, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 681, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .save-the-date div.mc-field-group {
   display: block;
   margin-top: 1em; }
   @media screen and (min-width: 40.0625em) {
-    /* line 581, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+    /* line 681, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
     .save-the-date div.mc-field-group {
       margin-top: 2em; } }
 
-/* line 588, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 688, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .save-the-date header {
   width: 100%;
   height: 28em;
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0); }
   @media screen and (min-width: 23.75em) {
-    /* line 588, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+    /* line 688, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
     .save-the-date header {
       height: 34.375em;
       /* 550px */ } }
   @media screen and (min-width: 40.0625em) {
-    /* line 588, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+    /* line 688, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
     .save-the-date header {
       height: 42.5em;
       /* 680px */ } }
 
-/* line 600, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 700, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .save-the-date header .inner {
   width: 100%;
   position: relative;
@@ -619,7 +707,7 @@ nav {
   box-sizing: border-box;
   overflow: hidden; }
 
-/* line 610, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 710, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .save-the-date header .lighting {
   height: 100%;
   width: 100%;
@@ -632,88 +720,88 @@ nav {
   -webkit-animation: backgroundFadeOut 600ms forwards;
   animation: backgroundFadeOut 600ms forwards; }
 
-/* line 620, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 720, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 #mc_embed_signup .columns {
   padding: 0 0; }
 
-/* line 623, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 723, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 #mc_embed_signup .row {
   padding: 0 0; }
 
-/* line 629, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 729, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .email {
   width: 360px;
   height: 46px;
   margin-top: 10px; }
 
-/* line 635, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 735, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .mcButton {
   width: 160px;
   height: 46px;
   margin-top: 10px; }
 
-/* line 739, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 839, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 meta.foundation-version {
   font-family: "/5.5.2/"; }
 
-/* line 742, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 842, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 meta.foundation-mq-small {
   font-family: "/only screen/";
   width: 0; }
 
-/* line 746, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 846, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 meta.foundation-mq-small-only {
   font-family: "/only screen and (max-width: 40em)/";
   width: 0; }
 
-/* line 750, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 850, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 meta.foundation-mq-medium {
   font-family: "/only screen and (min-width:40.0625em)/";
   width: 40.0625em; }
 
-/* line 754, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 854, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 meta.foundation-mq-medium-only {
   font-family: "/only screen and (min-width:40.0625em) and (max-width:64em)/";
   width: 40.0625em; }
 
-/* line 758, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 858, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 meta.foundation-mq-large {
   font-family: "/only screen and (min-width:64.0625em)/";
   width: 64.0625em; }
 
-/* line 762, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 862, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 meta.foundation-mq-large-only {
   font-family: "/only screen and (min-width:64.0625em) and (max-width:90em)/";
   width: 64.0625em; }
 
-/* line 766, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 866, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 meta.foundation-mq-xlarge {
   font-family: "/only screen and (min-width:90.0625em)/";
   width: 90.0625em; }
 
-/* line 770, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 870, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 meta.foundation-mq-xlarge-only {
   font-family: "/only screen and (min-width:90.0625em) and (max-width:120em)/";
   width: 90.0625em; }
 
-/* line 774, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 874, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 meta.foundation-mq-xxlarge {
   font-family: "/only screen and (min-width:120.0625em)/";
   width: 120.0625em; }
 
-/* line 778, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 878, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 meta.foundation-data-attribute-namespace {
   font-family: false; }
 
-/* line 781, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 881, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 html, body {
   height: 100%; }
 
-/* line 784, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 884, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 html {
   box-sizing: border-box; }
 
-/* line 787, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 887, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 *,
 *:before,
 *:after {
@@ -721,31 +809,31 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
-/* line 794, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 894, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 html,
 body {
-  font-size: 22px; }
+  font-size: 18px; }
 
-/* line 798, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 898, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 body {
   margin: 0;
   padding: 0;
   position: relative; }
 
-/* line 804, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 904, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 a:hover {
   cursor: pointer; }
 
-/* line 807, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 907, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 811, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 911, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 img {
   -ms-interpolation-mode: bicubic; }
 
-/* line 814, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 914, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 #map_canvas img,
 #map_canvas embed,
 #map_canvas object,
@@ -757,51 +845,51 @@ img {
 .mqa-display object {
   max-width: none !important; }
 
-/* line 825, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 925, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .left {
   float: left !important; }
 
-/* line 828, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 928, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .right {
   float: right !important; }
 
-/* line 831, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 931, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
 
-/* line 834, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 934, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .clearfix:after {
   clear: both; }
 
-/* line 837, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 937, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .hide {
   display: none; }
 
-/* line 840, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 940, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .invisible {
   visibility: hidden; }
 
-/* line 843, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 943, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 847, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 947, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 img {
   display: inline-block;
   vertical-align: middle; }
 
-/* line 851, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 951, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 textarea {
   height: auto;
   min-height: 50px; }
 
-/* line 855, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 955, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 select {
   width: 100%; }
 
-/* line 858, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 958, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .row {
   margin: 0 auto;
   max-width: 60em;
@@ -809,61 +897,61 @@ select {
   padding-left: .5em;
   padding-right: .5em; }
   @media screen and (min-width: 40.0625em) {
-    /* line 858, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+    /* line 958, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
     .row {
       padding-left: 1em;
       padding-right: 1em; } }
   @media screen and (min-width: 64.0625em) {
-    /* line 858, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+    /* line 958, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
     .row {
       padding-left: 0;
       padding-right: 0; } }
 
-/* line 873, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 973, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .row:before, .row:after {
   content: " ";
   display: table; }
 
-/* line 876, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 976, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .row:after {
   clear: both; }
 
-/* line 878, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 978, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .row.collapse > .column,
 .row.collapse > .columns {
   padding-left: 0;
   padding-right: 0; }
 
-/* line 882, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 982, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .row.collapse .row {
   margin-left: 0;
   margin-right: 0; }
 
-/* line 885, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 985, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .row .row:before, .row .row:after {
   content: " ";
   display: table; }
 
-/* line 888, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 988, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .row .row:after {
   clear: both; }
 
-/* line 890, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 990, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .row .row.collapse {
   margin: 0;
   max-width: none;
   width: auto; }
 
-/* line 894, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 994, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .row .row.collapse:before, .row .row.collapse:after {
   content: " ";
   display: table; }
 
-/* line 897, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 997, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .row .row.collapse:after {
   clear: both; }
 
-/* line 900, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 1000, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .column,
 .columns {
   padding-left: 0.9375em;
@@ -871,7 +959,7 @@ select {
   width: 100%;
   float: left; }
 
-/* line 907, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 1007, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .column + .column:last-child,
 .columns + .column:last-child, .column +
 .columns:last-child,
@@ -879,7 +967,7 @@ select {
 .columns:last-child {
   float: right; }
 
-/* line 913, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 1013, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .column + .column.end,
 .columns + .column.end, .column +
 .columns.end,
@@ -888,151 +976,151 @@ select {
   float: left; }
 
 @media only screen {
-  /* line 921, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1021, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-push-0 {
     position: relative;
     left: 0;
     right: auto; }
 
-  /* line 926, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1026, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-pull-0 {
     position: relative;
     right: 0;
     left: auto; }
 
-  /* line 931, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1031, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-push-1 {
     position: relative;
     left: 8.33333%;
     right: auto; }
 
-  /* line 936, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1036, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-pull-1 {
     position: relative;
     right: 8.33333%;
     left: auto; }
 
-  /* line 941, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1041, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-push-2 {
     position: relative;
     left: 16.66667%;
     right: auto; }
 
-  /* line 946, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1046, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-pull-2 {
     position: relative;
     right: 16.66667%;
     left: auto; }
 
-  /* line 951, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1051, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-push-3 {
     position: relative;
     left: 25%;
     right: auto; }
 
-  /* line 956, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1056, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-pull-3 {
     position: relative;
     right: 25%;
     left: auto; }
 
-  /* line 961, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1061, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-push-4 {
     position: relative;
     left: 33.33333%;
     right: auto; }
 
-  /* line 966, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1066, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-pull-4 {
     position: relative;
     right: 33.33333%;
     left: auto; }
 
-  /* line 971, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1071, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-push-5 {
     position: relative;
     left: 41.66667%;
     right: auto; }
 
-  /* line 976, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1076, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-pull-5 {
     position: relative;
     right: 41.66667%;
     left: auto; }
 
-  /* line 981, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1081, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-push-6 {
     position: relative;
     left: 50%;
     right: auto; }
 
-  /* line 986, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1086, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-pull-6 {
     position: relative;
     right: 50%;
     left: auto; }
 
-  /* line 991, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1091, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-push-7 {
     position: relative;
     left: 58.33333%;
     right: auto; }
 
-  /* line 996, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1096, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-pull-7 {
     position: relative;
     right: 58.33333%;
     left: auto; }
 
-  /* line 1001, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1101, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-push-8 {
     position: relative;
     left: 66.66667%;
     right: auto; }
 
-  /* line 1006, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1106, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-pull-8 {
     position: relative;
     right: 66.66667%;
     left: auto; }
 
-  /* line 1011, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1111, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-push-9 {
     position: relative;
     left: 75%;
     right: auto; }
 
-  /* line 1016, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1116, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-pull-9 {
     position: relative;
     right: 75%;
     left: auto; }
 
-  /* line 1021, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1121, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-push-10 {
     position: relative;
     left: 83.33333%;
     right: auto; }
 
-  /* line 1026, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1126, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-pull-10 {
     position: relative;
     right: 83.33333%;
     left: auto; }
 
-  /* line 1031, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1131, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-push-11 {
     position: relative;
     left: 91.66667%;
     right: auto; }
 
-  /* line 1036, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1136, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-pull-11 {
     position: relative;
     right: 91.66667%;
     left: auto; }
 
-  /* line 1041, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1141, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column,
   .columns {
     position: relative;
@@ -1040,103 +1128,103 @@ select {
     padding-right: 0.9375em;
     float: left; }
 
-  /* line 1048, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1148, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-1 {
     width: 8.33333%; }
 
-  /* line 1051, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1151, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-2 {
     width: 16.66667%; }
 
-  /* line 1054, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1154, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-3 {
     width: 25%; }
 
-  /* line 1057, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1157, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-4 {
     width: 33.33333%; }
 
-  /* line 1060, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1160, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-5 {
     width: 41.66667%; }
 
-  /* line 1063, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1163, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-6 {
     width: 50%; }
 
-  /* line 1066, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1166, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-7 {
     width: 58.33333%; }
 
-  /* line 1069, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1169, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-8 {
     width: 66.66667%; }
 
-  /* line 1072, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1172, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-9 {
     width: 75%; }
 
-  /* line 1075, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1175, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-10 {
     width: 83.33333%; }
 
-  /* line 1078, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1178, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-11 {
     width: 91.66667%; }
 
-  /* line 1081, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1181, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-12 {
     width: 100%; }
 
-  /* line 1084, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1184, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-offset-0 {
     margin-left: 0 !important; }
 
-  /* line 1087, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1187, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-offset-1 {
     margin-left: 8.33333% !important; }
 
-  /* line 1090, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1190, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-offset-2 {
     margin-left: 16.66667% !important; }
 
-  /* line 1093, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1193, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-offset-3 {
     margin-left: 25% !important; }
 
-  /* line 1096, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1196, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-offset-4 {
     margin-left: 33.33333% !important; }
 
-  /* line 1099, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1199, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-offset-5 {
     margin-left: 41.66667% !important; }
 
-  /* line 1102, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1202, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-offset-6 {
     margin-left: 50% !important; }
 
-  /* line 1105, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1205, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-offset-7 {
     margin-left: 58.33333% !important; }
 
-  /* line 1108, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1208, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-offset-8 {
     margin-left: 66.66667% !important; }
 
-  /* line 1111, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1211, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-offset-9 {
     margin-left: 75% !important; }
 
-  /* line 1114, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1214, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-offset-10 {
     margin-left: 83.33333% !important; }
 
-  /* line 1117, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1217, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-offset-11 {
     margin-left: 91.66667% !important; }
 
-  /* line 1120, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1220, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .small-reset-order {
     float: left;
     left: auto;
@@ -1144,198 +1232,198 @@ select {
     margin-right: 0;
     right: auto; }
 
-  /* line 1127, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1227, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column.small-centered,
   .columns.small-centered {
     margin-left: auto;
     margin-right: auto;
     float: none; }
 
-  /* line 1133, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1233, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column.small-uncentered,
   .columns.small-uncentered {
     float: left;
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 1139, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1239, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column.small-centered:last-child,
   .columns.small-centered:last-child {
     float: none; }
 
-  /* line 1143, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1243, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column.small-uncentered:last-child,
   .columns.small-uncentered:last-child {
     float: left; }
 
-  /* line 1147, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1247, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column.small-uncentered.opposite,
   .columns.small-uncentered.opposite {
     float: right; }
 
-  /* line 1151, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1251, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .row.small-collapse > .column,
   .row.small-collapse > .columns {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 1155, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1255, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .row.small-collapse .row {
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 1158, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1258, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .row.small-uncollapse > .column,
   .row.small-uncollapse > .columns {
     padding-left: 0.9375em;
     padding-right: 0.9375em;
     float: left; } }
 @media only screen and (min-width: 40.0625em) {
-  /* line 1164, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1264, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-push-0 {
     position: relative;
     left: 0;
     right: auto; }
 
-  /* line 1169, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1269, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-pull-0 {
     position: relative;
     right: 0;
     left: auto; }
 
-  /* line 1174, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1274, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-push-1 {
     position: relative;
     left: 8.33333%;
     right: auto; }
 
-  /* line 1179, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1279, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-pull-1 {
     position: relative;
     right: 8.33333%;
     left: auto; }
 
-  /* line 1184, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1284, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-push-2 {
     position: relative;
     left: 16.66667%;
     right: auto; }
 
-  /* line 1189, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1289, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-pull-2 {
     position: relative;
     right: 16.66667%;
     left: auto; }
 
-  /* line 1194, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1294, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-push-3 {
     position: relative;
     left: 25%;
     right: auto; }
 
-  /* line 1199, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1299, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-pull-3 {
     position: relative;
     right: 25%;
     left: auto; }
 
-  /* line 1204, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1304, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-push-4 {
     position: relative;
     left: 33.33333%;
     right: auto; }
 
-  /* line 1209, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1309, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-pull-4 {
     position: relative;
     right: 33.33333%;
     left: auto; }
 
-  /* line 1214, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1314, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-push-5 {
     position: relative;
     left: 41.66667%;
     right: auto; }
 
-  /* line 1219, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1319, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-pull-5 {
     position: relative;
     right: 41.66667%;
     left: auto; }
 
-  /* line 1224, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1324, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-push-6 {
     position: relative;
     left: 50%;
     right: auto; }
 
-  /* line 1229, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1329, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-pull-6 {
     position: relative;
     right: 50%;
     left: auto; }
 
-  /* line 1234, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1334, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-push-7 {
     position: relative;
     left: 58.33333%;
     right: auto; }
 
-  /* line 1239, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1339, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-pull-7 {
     position: relative;
     right: 58.33333%;
     left: auto; }
 
-  /* line 1244, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1344, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-push-8 {
     position: relative;
     left: 66.66667%;
     right: auto; }
 
-  /* line 1249, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1349, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-pull-8 {
     position: relative;
     right: 66.66667%;
     left: auto; }
 
-  /* line 1254, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1354, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-push-9 {
     position: relative;
     left: 75%;
     right: auto; }
 
-  /* line 1259, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1359, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-pull-9 {
     position: relative;
     right: 75%;
     left: auto; }
 
-  /* line 1264, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1364, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-push-10 {
     position: relative;
     left: 83.33333%;
     right: auto; }
 
-  /* line 1269, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1369, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-pull-10 {
     position: relative;
     right: 83.33333%;
     left: auto; }
 
-  /* line 1274, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1374, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-push-11 {
     position: relative;
     left: 91.66667%;
     right: auto; }
 
-  /* line 1279, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1379, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-pull-11 {
     position: relative;
     right: 91.66667%;
     left: auto; }
 
-  /* line 1284, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1384, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column,
   .columns {
     position: relative;
@@ -1343,103 +1431,103 @@ select {
     padding-right: 0.9375em;
     float: left; }
 
-  /* line 1291, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1391, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-1 {
     width: 8.33333%; }
 
-  /* line 1294, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1394, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-2 {
     width: 16.66667%; }
 
-  /* line 1297, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1397, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-3 {
     width: 25%; }
 
-  /* line 1300, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1400, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-4 {
     width: 33.33333%; }
 
-  /* line 1303, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1403, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-5 {
     width: 41.66667%; }
 
-  /* line 1306, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1406, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-6 {
     width: 50%; }
 
-  /* line 1309, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1409, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-7 {
     width: 58.33333%; }
 
-  /* line 1312, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1412, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-8 {
     width: 66.66667%; }
 
-  /* line 1315, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1415, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-9 {
     width: 75%; }
 
-  /* line 1318, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1418, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-10 {
     width: 83.33333%; }
 
-  /* line 1321, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1421, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-11 {
     width: 91.66667%; }
 
-  /* line 1324, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1424, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-12 {
     width: 100%; }
 
-  /* line 1327, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1427, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-offset-0 {
     margin-left: 0 !important; }
 
-  /* line 1330, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1430, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-offset-1 {
     margin-left: 8.33333% !important; }
 
-  /* line 1333, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1433, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-offset-2 {
     margin-left: 16.66667% !important; }
 
-  /* line 1336, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1436, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-offset-3 {
     margin-left: 25% !important; }
 
-  /* line 1339, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1439, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-offset-4 {
     margin-left: 33.33333% !important; }
 
-  /* line 1342, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1442, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-offset-5 {
     margin-left: 41.66667% !important; }
 
-  /* line 1345, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1445, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-offset-6 {
     margin-left: 50% !important; }
 
-  /* line 1348, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1448, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-offset-7 {
     margin-left: 58.33333% !important; }
 
-  /* line 1351, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1451, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-offset-8 {
     margin-left: 66.66667% !important; }
 
-  /* line 1354, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1454, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-offset-9 {
     margin-left: 75% !important; }
 
-  /* line 1357, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1457, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-offset-10 {
     margin-left: 83.33333% !important; }
 
-  /* line 1360, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1460, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-offset-11 {
     margin-left: 91.66667% !important; }
 
-  /* line 1363, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1463, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .medium-reset-order {
     float: left;
     left: auto;
@@ -1447,342 +1535,342 @@ select {
     margin-right: 0;
     right: auto; }
 
-  /* line 1370, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1470, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column.medium-centered,
   .columns.medium-centered {
     margin-left: auto;
     margin-right: auto;
     float: none; }
 
-  /* line 1376, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1476, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column.medium-uncentered,
   .columns.medium-uncentered {
     float: left;
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 1382, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1482, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column.medium-centered:last-child,
   .columns.medium-centered:last-child {
     float: none; }
 
-  /* line 1386, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1486, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column.medium-uncentered:last-child,
   .columns.medium-uncentered:last-child {
     float: left; }
 
-  /* line 1390, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1490, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column.medium-uncentered.opposite,
   .columns.medium-uncentered.opposite {
     float: right; }
 
-  /* line 1394, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1494, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .row.medium-collapse > .column,
   .row.medium-collapse > .columns {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 1398, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1498, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .row.medium-collapse .row {
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 1401, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1501, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .row.medium-uncollapse > .column,
   .row.medium-uncollapse > .columns {
     padding-left: 0.9375em;
     padding-right: 0.9375em;
     float: left; }
 
-  /* line 1407, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1507, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-0 {
     position: relative;
     left: 0;
     right: auto; }
 
-  /* line 1412, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1512, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-0 {
     position: relative;
     right: 0;
     left: auto; }
 
-  /* line 1417, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1517, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-1 {
     position: relative;
     left: 8.33333%;
     right: auto; }
 
-  /* line 1422, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1522, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-1 {
     position: relative;
     right: 8.33333%;
     left: auto; }
 
-  /* line 1427, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1527, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-2 {
     position: relative;
     left: 16.66667%;
     right: auto; }
 
-  /* line 1432, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1532, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-2 {
     position: relative;
     right: 16.66667%;
     left: auto; }
 
-  /* line 1437, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1537, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-3 {
     position: relative;
     left: 25%;
     right: auto; }
 
-  /* line 1442, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1542, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-3 {
     position: relative;
     right: 25%;
     left: auto; }
 
-  /* line 1447, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1547, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-4 {
     position: relative;
     left: 33.33333%;
     right: auto; }
 
-  /* line 1452, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1552, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-4 {
     position: relative;
     right: 33.33333%;
     left: auto; }
 
-  /* line 1457, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1557, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-5 {
     position: relative;
     left: 41.66667%;
     right: auto; }
 
-  /* line 1462, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1562, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-5 {
     position: relative;
     right: 41.66667%;
     left: auto; }
 
-  /* line 1467, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1567, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-6 {
     position: relative;
     left: 50%;
     right: auto; }
 
-  /* line 1472, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1572, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-6 {
     position: relative;
     right: 50%;
     left: auto; }
 
-  /* line 1477, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1577, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-7 {
     position: relative;
     left: 58.33333%;
     right: auto; }
 
-  /* line 1482, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1582, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-7 {
     position: relative;
     right: 58.33333%;
     left: auto; }
 
-  /* line 1487, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1587, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-8 {
     position: relative;
     left: 66.66667%;
     right: auto; }
 
-  /* line 1492, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1592, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-8 {
     position: relative;
     right: 66.66667%;
     left: auto; }
 
-  /* line 1497, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1597, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-9 {
     position: relative;
     left: 75%;
     right: auto; }
 
-  /* line 1502, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1602, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-9 {
     position: relative;
     right: 75%;
     left: auto; }
 
-  /* line 1507, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1607, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-10 {
     position: relative;
     left: 83.33333%;
     right: auto; }
 
-  /* line 1512, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1612, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-10 {
     position: relative;
     right: 83.33333%;
     left: auto; }
 
-  /* line 1517, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1617, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-11 {
     position: relative;
     left: 91.66667%;
     right: auto; }
 
-  /* line 1522, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1622, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-11 {
     position: relative;
     right: 91.66667%;
     left: auto; } }
 @media only screen and (min-width: 64.0625em) {
-  /* line 1527, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1627, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-push-0 {
     position: relative;
     left: 0;
     right: auto; }
 
-  /* line 1532, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1632, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-pull-0 {
     position: relative;
     right: 0;
     left: auto; }
 
-  /* line 1537, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1637, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-push-1 {
     position: relative;
     left: 8.33333%;
     right: auto; }
 
-  /* line 1542, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1642, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-pull-1 {
     position: relative;
     right: 8.33333%;
     left: auto; }
 
-  /* line 1547, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1647, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-push-2 {
     position: relative;
     left: 16.66667%;
     right: auto; }
 
-  /* line 1552, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1652, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-pull-2 {
     position: relative;
     right: 16.66667%;
     left: auto; }
 
-  /* line 1557, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1657, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-push-3 {
     position: relative;
     left: 25%;
     right: auto; }
 
-  /* line 1562, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1662, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-pull-3 {
     position: relative;
     right: 25%;
     left: auto; }
 
-  /* line 1567, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1667, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-push-4 {
     position: relative;
     left: 33.33333%;
     right: auto; }
 
-  /* line 1572, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1672, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-pull-4 {
     position: relative;
     right: 33.33333%;
     left: auto; }
 
-  /* line 1577, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1677, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-push-5 {
     position: relative;
     left: 41.66667%;
     right: auto; }
 
-  /* line 1582, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1682, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-pull-5 {
     position: relative;
     right: 41.66667%;
     left: auto; }
 
-  /* line 1587, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1687, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-push-6 {
     position: relative;
     left: 50%;
     right: auto; }
 
-  /* line 1592, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1692, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-pull-6 {
     position: relative;
     right: 50%;
     left: auto; }
 
-  /* line 1597, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1697, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-push-7 {
     position: relative;
     left: 58.33333%;
     right: auto; }
 
-  /* line 1602, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1702, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-pull-7 {
     position: relative;
     right: 58.33333%;
     left: auto; }
 
-  /* line 1607, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1707, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-push-8 {
     position: relative;
     left: 66.66667%;
     right: auto; }
 
-  /* line 1612, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1712, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-pull-8 {
     position: relative;
     right: 66.66667%;
     left: auto; }
 
-  /* line 1617, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1717, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-push-9 {
     position: relative;
     left: 75%;
     right: auto; }
 
-  /* line 1622, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1722, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-pull-9 {
     position: relative;
     right: 75%;
     left: auto; }
 
-  /* line 1627, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1727, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-push-10 {
     position: relative;
     left: 83.33333%;
     right: auto; }
 
-  /* line 1632, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1732, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-pull-10 {
     position: relative;
     right: 83.33333%;
     left: auto; }
 
-  /* line 1637, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1737, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-push-11 {
     position: relative;
     left: 91.66667%;
     right: auto; }
 
-  /* line 1642, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1742, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-pull-11 {
     position: relative;
     right: 91.66667%;
     left: auto; }
 
-  /* line 1647, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1747, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column,
   .columns {
     position: relative;
@@ -1790,103 +1878,103 @@ select {
     padding-right: 0.9375em;
     float: left; }
 
-  /* line 1654, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1754, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-1 {
     width: 8.33333%; }
 
-  /* line 1657, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1757, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-2 {
     width: 16.66667%; }
 
-  /* line 1660, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1760, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-3 {
     width: 25%; }
 
-  /* line 1663, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1763, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-4 {
     width: 33.33333%; }
 
-  /* line 1666, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1766, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-5 {
     width: 41.66667%; }
 
-  /* line 1669, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1769, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-6 {
     width: 50%; }
 
-  /* line 1672, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1772, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-7 {
     width: 58.33333%; }
 
-  /* line 1675, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1775, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-8 {
     width: 66.66667%; }
 
-  /* line 1678, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1778, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-9 {
     width: 75%; }
 
-  /* line 1681, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1781, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-10 {
     width: 83.33333%; }
 
-  /* line 1684, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1784, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-11 {
     width: 91.66667%; }
 
-  /* line 1687, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1787, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-12 {
     width: 100%; }
 
-  /* line 1690, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1790, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-offset-0 {
     margin-left: 0 !important; }
 
-  /* line 1693, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1793, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-offset-1 {
     margin-left: 8.33333% !important; }
 
-  /* line 1696, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1796, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-offset-2 {
     margin-left: 16.66667% !important; }
 
-  /* line 1699, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1799, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-offset-3 {
     margin-left: 25% !important; }
 
-  /* line 1702, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1802, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-offset-4 {
     margin-left: 33.33333% !important; }
 
-  /* line 1705, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1805, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-offset-5 {
     margin-left: 41.66667% !important; }
 
-  /* line 1708, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1808, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-offset-6 {
     margin-left: 50% !important; }
 
-  /* line 1711, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1811, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-offset-7 {
     margin-left: 58.33333% !important; }
 
-  /* line 1714, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1814, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-offset-8 {
     margin-left: 66.66667% !important; }
 
-  /* line 1717, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1817, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-offset-9 {
     margin-left: 75% !important; }
 
-  /* line 1720, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1820, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-offset-10 {
     margin-left: 83.33333% !important; }
 
-  /* line 1723, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1823, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-offset-11 {
     margin-left: 91.66667% !important; }
 
-  /* line 1726, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1826, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .large-reset-order {
     float: left;
     left: auto;
@@ -1894,246 +1982,246 @@ select {
     margin-right: 0;
     right: auto; }
 
-  /* line 1733, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1833, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column.large-centered,
   .columns.large-centered {
     margin-left: auto;
     margin-right: auto;
     float: none; }
 
-  /* line 1739, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1839, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column.large-uncentered,
   .columns.large-uncentered {
     float: left;
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 1745, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1845, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column.large-centered:last-child,
   .columns.large-centered:last-child {
     float: none; }
 
-  /* line 1749, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1849, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column.large-uncentered:last-child,
   .columns.large-uncentered:last-child {
     float: left; }
 
-  /* line 1753, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1853, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .column.large-uncentered.opposite,
   .columns.large-uncentered.opposite {
     float: right; }
 
-  /* line 1757, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1857, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .row.large-collapse > .column,
   .row.large-collapse > .columns {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 1761, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1861, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .row.large-collapse .row {
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 1764, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1864, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .row.large-uncollapse > .column,
   .row.large-uncollapse > .columns {
     padding-left: 0.9375em;
     padding-right: 0.9375em;
     float: left; }
 
-  /* line 1770, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1870, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-0 {
     position: relative;
     left: 0;
     right: auto; }
 
-  /* line 1775, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1875, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-0 {
     position: relative;
     right: 0;
     left: auto; }
 
-  /* line 1780, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1880, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-1 {
     position: relative;
     left: 8.33333%;
     right: auto; }
 
-  /* line 1785, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1885, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-1 {
     position: relative;
     right: 8.33333%;
     left: auto; }
 
-  /* line 1790, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1890, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-2 {
     position: relative;
     left: 16.66667%;
     right: auto; }
 
-  /* line 1795, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1895, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-2 {
     position: relative;
     right: 16.66667%;
     left: auto; }
 
-  /* line 1800, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1900, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-3 {
     position: relative;
     left: 25%;
     right: auto; }
 
-  /* line 1805, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1905, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-3 {
     position: relative;
     right: 25%;
     left: auto; }
 
-  /* line 1810, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1910, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-4 {
     position: relative;
     left: 33.33333%;
     right: auto; }
 
-  /* line 1815, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1915, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-4 {
     position: relative;
     right: 33.33333%;
     left: auto; }
 
-  /* line 1820, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1920, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-5 {
     position: relative;
     left: 41.66667%;
     right: auto; }
 
-  /* line 1825, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1925, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-5 {
     position: relative;
     right: 41.66667%;
     left: auto; }
 
-  /* line 1830, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1930, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-6 {
     position: relative;
     left: 50%;
     right: auto; }
 
-  /* line 1835, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1935, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-6 {
     position: relative;
     right: 50%;
     left: auto; }
 
-  /* line 1840, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1940, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-7 {
     position: relative;
     left: 58.33333%;
     right: auto; }
 
-  /* line 1845, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1945, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-7 {
     position: relative;
     right: 58.33333%;
     left: auto; }
 
-  /* line 1850, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1950, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-8 {
     position: relative;
     left: 66.66667%;
     right: auto; }
 
-  /* line 1855, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1955, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-8 {
     position: relative;
     right: 66.66667%;
     left: auto; }
 
-  /* line 1860, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1960, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-9 {
     position: relative;
     left: 75%;
     right: auto; }
 
-  /* line 1865, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1965, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-9 {
     position: relative;
     right: 75%;
     left: auto; }
 
-  /* line 1870, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1970, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-10 {
     position: relative;
     left: 83.33333%;
     right: auto; }
 
-  /* line 1875, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1975, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-10 {
     position: relative;
     right: 83.33333%;
     left: auto; }
 
-  /* line 1880, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1980, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .push-11 {
     position: relative;
     left: 91.66667%;
     right: auto; }
 
-  /* line 1885, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+  /* line 1985, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
   .pull-11 {
     position: relative;
     right: 91.66667%;
     left: auto; } }
-/* line 1889, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 1989, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .accordion {
   margin-bottom: 0;
   color: #695E5C; }
 
-/* line 1892, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 1992, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .accordion:before, .accordion:after {
   content: " ";
   display: table; }
 
-/* line 1895, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 1995, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .accordion:after {
   clear: both; }
 
-/* line 1897, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 1997, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .accordion .accordion-navigation {
   display: block;
   margin-bottom: 0 !important; }
 
-/* line 1900, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 2000, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .accordion .accordion-navigation > a {
   display: block; }
 
-/* line 1902, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 2002, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .accordion .accordion-navigation .content {
   display: none; }
 
-/* line 1904, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 2004, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 .accordion .accordion-navigation .content.active {
   display: block; }
 
-/* line 1909, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 2009, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 table.sponsor-page img {
   max-width: 190px;
   max-height: 75px;
   margin-right: 25px; }
 
-/* line 1915, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 2015, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 table.sponsor-page p {
   line-height: 20px;
   font-size: 14px;
   text-align: left;
   margin: 25px 0px; }
 
-/* line 1922, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 2022, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 table.sponsor-page tr {
   margin-bottom: 10px;
   border-bottom: .5px solid #e3e3e3; }
 
-/* line 1927, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
+/* line 2027, /Users/leahsilber/GitHub/rustconf/source/stylesheets/all.scss */
 table.sponsor-page tr:last-child {
   margin-bottom: none;
   border-bottom: none; }
