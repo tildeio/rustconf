@@ -1,0 +1,60 @@
+---
+title: RustConf Trainings
+---
+
+<div class="container">
+
+  <h1>Our Trainings</h1>
+
+  <p>
+    Rust expertise is a prized skill, and the demand is only increasing. As more and more companies recognize the powers and benefits of adding Rust to their stacks, adoption grows and grows. Learn Rust from the people <em>creating</em> Rust to be sure you're ahead of the game!
+  </p>
+
+  <h3>The Sessions</h3>
+
+  <p>
+    We'll be offering <em>three</em> Rust training sessions, for different skill levels: <strong>Beginner</strong>, <strong>Intermediate</strong> and <strong>Advanced</strong>. You <em>may</em> take the morning Beginner session followed by the afternoon Intermediate session, but <em>not</em> the Beinnger session will followed by the Advanced class.
+  </p>
+  
+	<div id="program">
+    <table>
+      <% data.program.each do |speaker| %>
+        <tr>
+          <td>
+            <%= image_tag "speakers/#{speaker.image}", class: "spkPic2"%>
+          </td>
+          <td class="abstract">
+            <% if speaker[:talks] %>
+              <p class="byline">
+                <%= speaker[:talks].size %> sessions by <%= link_to speaker.name, "http://www.twitter.com/#{speaker.twitter}" %>:
+              </p>
+              <% speaker[:talks].each do |talk| %>
+                <h4>
+                  <%= talk.title %>
+                </h4>
+                <p>
+                  <%= talk.abstract %>
+                </p>
+              <% end %>
+            <% else %>
+              <h4>
+                <%= speaker.title %>
+              </h4>
+              <h5>
+                By <%= link_to speaker.name, "http://www.twitter.com/#{speaker.twitter}" %>
+              </h5>
+              <p>
+                <%= speaker.abstract %>
+              </p>
+            <% end %>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <hr />
+          </td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

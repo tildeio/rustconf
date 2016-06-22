@@ -4,30 +4,52 @@ title: RustConf Program
 
 <div class="container">
 
-	<h1>Speakers</h1>
+	<h1>Our Program</h1>
 
-	<table class="center">
-		<% data.program.in_groups_of(3) do |speakers| %>
-			<tr>
-				<% speakers.each do |s| %>
+	<p class="coc">
+	  The schedule will be available shortly. We'll follow the same format as <a href="http://rustcamp.com/schedule.html">RustCamp 2015</a>.
+	</p>
+
+	<div id="program">
+		<table>
+			<% data.program.each do |speaker| %>
+				<tr>
 					<td>
-						<%= image_tag "speakers/#{s.image}", class: "spkPic1"%>
+						<%= image_tag "speakers/#{speaker.image}", class: "spkPic2"%>
 					</td>
-				<% end %>
-			</tr>
-			<tr>
-				<% speakers.each do |s| %>
-					<td>
-						<%= link_to s.name, "http://www.twitter.com/#{s.twitter}", class: "spkName" %>
+					<td class="abstract">
+						<% if speaker[:talks] %>
+							<p class="byline">
+								<%= speaker[:talks].size %> sessions by <%= link_to speaker.name, "http://www.twitter.com/#{speaker.twitter}" %>:
+							</p>
+							<% speaker[:talks].each do |talk| %>
+								<h4>
+									<%= talk.title %>
+								</h4>
+								<p>
+									<%= talk.abstract %>
+								</p>
+							<% end %>
+						<% else %>
+							<h4>
+								<%= speaker.title %>
+							</h4>
+							<h5>
+								By <%= link_to speaker.name, "http://www.twitter.com/#{speaker.twitter}" %>
+							</h5>
+							<p>
+								<%= speaker.abstract %>
+							</p>
+						<% end %>
 					</td>
-				<% end %>
-			</tr>
-		<% end %>
-	</table>
-
-	<h4>...along with <em>Without Boats</em>, <em>Colin O'Brien</em> and our Lightning Talk speakers.</h4>
-
-	<h1>The Talks</h1>
-
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+			<% end %>
+		</table>
+	</div>
 
 </div>

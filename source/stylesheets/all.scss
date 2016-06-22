@@ -144,7 +144,7 @@ hr {
   text-align: center;
 }
 
-td {
+td.center {
   margin-bottom: 200px;
 }
 
@@ -251,7 +251,7 @@ footer li:nth-child(even) {
   padding: 0 10px;
 }
 
-/*Speaker Page*/
+/*Program Page*/
 
 .spkPic1 {
   height: 250px;
@@ -261,7 +261,10 @@ footer li:nth-child(even) {
 }
 
 .spkPic2 {
-
+  height: 200px;
+  width: 200px;
+  padding: 0px 10px 5px 0px;
+  float: left;
 }
 
 .spkHead {
@@ -271,6 +274,57 @@ footer li:nth-child(even) {
 
 .spkName {
   height: 25px;
+}
+
+#program > table > tbody > tr {
+  &:last-child {
+    display: none;
+  }
+
+  td:first-child {
+    vertical-align: top;
+    width: 220px;
+  }
+
+  .byline {
+    margin-top: 0;
+    padding-top: 0;
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+
+  td.abstract {
+    vertical-align: top;
+
+    h4 {
+      margin-top: 0;
+    }
+
+    h5 {
+      font-size: 0.8rem;
+      text-align: left;
+      font-weight: normal;
+      font-style: italic;
+      margin-top: 0.3rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.abstract > p {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+}
+
+.abstract > h4 {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.abstract > h4 + p {
+  font-style: italic;
 }
 
 #schedule {
@@ -306,6 +360,37 @@ footer li:nth-child(even) {
 
 .hp {
   text-align: left;
+}
+
+.coc {
+  background-color: #e6e6e6;
+  padding: 20px;
+  font-size: 16px;
+
+  p {
+    text-align: left;
+  }
+}
+
+h1 + .coc {
+  margin-bottom: 35px;
+}
+
+/*  Register Page */
+
+.coc {
+  ul {
+    text-align: left;
+  }
+  li {
+    line-height: 22px;
+    margin: 0 15px 10px 15px;
+    list-style: disc;
+
+    ul {
+      margin-top: 10px;
+    }
+  }
 }
 
 /* Main Menu Ribbon */
@@ -811,7 +896,7 @@ html {
 
 html,
 body {
-  font-size: 22px; }
+  font-size: 18px; }
 
 body {
   margin: 0;
