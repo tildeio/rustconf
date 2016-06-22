@@ -1,0 +1,363 @@
+@import url('//fonts.googleapis.com/css?family=Poppins:400,700');
+
+body {
+  background-color: #EEEBEB;
+  padding-top: 30px;
+}
+.invoice thead th, .invoice tbody th, .invoice tbody td, .invoice tfoot th, .invoice .total, .invoice tfoot .last th, .invoice tfoot .last td, .invoice tfoot th, .invoice tfoot td {
+  border-color: #d2cdcc;
+}
+form.wufoo {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.wufoo {
+  font-family: Poppins, sans-serif;
+}
+div#container {
+  width: 96%;
+  max-width: 860px;
+}
+.wufoo li {
+  width: 100%;
+}
+h1#logo {
+  margin: 0 auto;
+  width: 142px; /* 142px */
+  height: 87px; /* 87px */
+  display: block;
+  background-image: url('https://emberconf-2016.herokuapp.com/wufoo/emberconf-logo.png');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://emberconf-2016.herokuapp.com/wufoo/emberconf-logo.png', sizingMethod='scale');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  @media screen and (min-width: 767px) {
+		width: 173px;
+		height: 106px;
+	}
+}
+
+
+header#header.info h2,
+.confirm h2 {
+  font-weight: 700;
+  color: #30221F;
+  font-size: 26px;
+  line-height: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 8px 0 0;
+  @media screen and (min-width: 380px) {
+    font-size: 34px;
+    line-height: 38px;
+  }
+  @media screen and (min-width: 767px) {
+    font-size: 50px;
+    line-height: 56px;
+    letter-spacing: -1px;
+  }
+}
+header#header.info h2 {
+  text-align: left;
+}
+.confirm h2{
+  text-align: center;
+}
+header#header.info div,
+p.success-message {
+  font-weight: 400;
+  color: #695E5C;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 380px) {
+    font-size: 21px;
+    line-height: 30px;
+  }
+  @media screen and (min-width: 767px) {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+header#header.info div{
+  text-align: left;
+}
+p.success-message {
+  text-align: center;
+}
+p.success-message a,
+p.back-home a {
+  text-decoration: underline;
+  color: #9E928E;
+}
+p.back-home {
+  margin-top: 35px;
+  text-align: center;
+}
+p.back-home a {
+  font-size: 16px;
+  line-height: 22px;
+}
+p.success-message a:hover,
+p.back-home a:hover {
+  color: #695E5C;
+}
+form li {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+.wufoo .section h3,
+#payment .section h3  {
+  font-weight: 700;
+  font-size: 16px;
+  color: #30221F;
+  padding-top: 34px;
+  @media screen and (min-width: 380px) {
+    font-size: 21px;
+    line-height: 30px;
+  }
+  @media screen and (min-width: 767px) {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+.wufoo .section div {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #9E928E;
+  @media screen and (min-width: 767px) {
+    font-size: 16px;
+  }
+}
+.leftLabel .desc, .rightLabel .desc{
+  width: 100%;
+  @media screen and (min-width: 767px) {
+    width: 31%;
+  }
+}
+.leftLabel li div, .rightLabel li div {
+  width: 100%;
+  @media screen and (min-width: 767px) {
+    width: 65%;
+  }
+}
+form li.complex div span.left, form li.complex div span.right{
+  width: 100%;
+  @media screen and (min-width: 767px) {
+    width: 48%;
+  }
+}
+#errorMsgLbl {
+  color: #E34E32 !important;
+  font-size: 16px;
+  line-height: 21px;
+}
+#errorLi {
+  border: 1px solid #9E928E;
+  padding: 12px;
+}
+#errorMsg b {
+  color: #E34E32 !important;
+}
+#expMonth {
+  width: 134px;
+}
+#payment .desc:first-child{
+  margin-bottom: 20px;
+  @media screen and (min-width: 767px) {
+    margin-bottom: 0;
+  }
+}
+#ccSection img {
+  cursor: default;
+}
+form li.error {
+  background: #ECCCC6 !important;
+}
+form li.error .desc,
+#payment .error .desc strong,
+form span.req {
+  color: #E34E32 !important;
+}
+.wufoo label.choice {
+  font-weight: 400;
+  font-size: 16px;
+  color: #695E5C;
+}
+#errorMsg {
+  color: #584D4B !important;
+}
+li.total {
+  display: none;
+  @media screen and (min-width: 600px) {
+    display: list-item;
+  }
+}
+input#saveForm,
+.wufoo input.btTxt {
+  font-weight: 700;
+  padding: 8px 20px;
+  background-color: #4AA0B8;
+  font-family: Poppins, sans-serif;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+form li div label, form li span label {
+  padding-top: 5px;
+}
+.tier-1500 fieldset div span:last-child label::after,
+.tier-1000 fieldset div span:first-child label::after,
+.tier-1000 fieldset div span:nth-child(2) label::after,
+.tier-1000 fieldset div span:nth-child(3) label::after,
+.tier-1000 fieldset div span:last-child label::after {
+  font-size: 12px;
+  color: #9E928E;
+  position: relative;
+  display: block !important;
+  line-height: 16px;
+}
+.wufoo li div, .wufoo li span, .wufoo li div label, .wufoo li span label {
+  font-size: 12px;
+  color: #695E5C;
+}
+#payment .desc strong {
+  font-size: 12px;
+  color: #9E928E;
+}
+.tier-1500 fieldset div span:last-child label::after {
+  content: 'Sponsor provides bags; package sponsors only.'
+}
+.tier-1000 fieldset div span:first-child label::after {
+  content: 'Sponsor a single speaker.'
+}
+.tier-1000 fieldset div span:nth-child(2) label::after {
+  content: 'Sponsor a single session.'
+}
+.tier-1000 fieldset div span:nth-child(3) label::after {
+  content: 'Sponsor a single student.'
+}
+.tier-1000 fieldset div span:last-child label::after {
+  content: 'Sponsor provides lanyards; package sponsors only.'
+}
+
+#lola {
+  width: 33%;
+  display: none;
+  @media screen and (min-width: 767px) {
+    display: block;
+  }
+}
+#lola tbody span {
+  font-size: 26px;
+  font-weight: 700;
+  color: #30221F;
+}
+#lola tfoot th, #lola tfoot td {
+  font-size: 12px;
+  font-weight: 400;
+}
+em, b {
+  font-weight: 400;
+  font-style: normal;
+}
+.invoice tbody th,
+.invoice table,
+.invoice tbody th em {
+  font-size: 16px;
+  line-height: 21px;
+  color: #584D4B;
+  text-align: left !important;
+}
+.invoice table {
+  margin-top: 15px;
+}
+#ppSection span.first {
+  margin-top: -6px;
+}
+#ppSection label {
+  font-weight: 400;
+}
+form li.complex div span.left, form li.complex div span.right,
+form li.complex div span.full {
+  overflow: hidden;
+}
+.invoice thead th, .wufoo .checkNotice {
+  background: none;
+  font-size: 13px;
+  font-weight: 700;
+  color: #30221F;
+}
+tr.last th {
+  color: #30221F;
+}
+#payment .desc {
+  font-weight: 700;
+  font-size: 16px;
+  color: #30221F;
+}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo input.file {
+  font-size: 16px;
+  border: 0;
+  background-color: white;
+  background-image: none;
+  padding: 4px 6px;
+  color: #584D4B;
+  box-sizing: border-box;
+}
+#payment .section div,
+.invoice th, .invoice td {
+  font-size: 16px;
+  color: #584D4B;
+  line-height: 21px;
+}
+#ppSection {
+  margin-top: 20px;
+}
+#ppSection img {
+  cursor: default;
+}
+.wufoo #lola {
+  background: rgba(255,255,255,0.75);
+}
+#ccSection {
+  background: #E9E6E6;
+}
+.confirm h2:first-child {
+  display: none;
+}
+.noI .leftLabel .buttons, .noI .rightLabel .buttons {
+  padding-left: 0;
+  @media screen and (min-width: 767px){
+    padding-left: 31%;
+  }
+}
+.noI .leftLabel .buttons div, .noI .rightLabel .buttons div {
+  margin: 0 0 0 1%;
+  @media screen and (min-width: 767px){
+    margin: 0 0 0 17px;
+  }
+}
+
+#merchantMessageText {
+  font-size: 12px;
+  width: 80%;
+  margin: 40px auto 0;
+}
+#merchant .info::before {
+  content: '';
+  display: block;
+  margin: 10px auto 10px;
+  width: 48px;
+  height: 48px;
+  background-image: url('https://emberconf-2016.herokuapp.com/wufoo/emberconf-loader.gif');
+}
+
+// Delete when live
+
+.protected input.text {
+  width: 100%;
+  max-width: 380px;
+}
