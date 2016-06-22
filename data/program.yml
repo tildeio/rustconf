@@ -1,27 +1,33 @@
-- name: Aaron Turon
-  id: 1
-  type: conference, training
-  image: aaron.jpg
-  twitter: "aaron_turon"
-  bio: "Aaron Turon (aturon) is a member of the Rust Core Team and employed by Mozilla Research. His main focus in Rust is language design, libraries, and project management. Prior to joining Mozilla, Aaron received his PhD from Northeastern University, with a focus on language and library design around lock-free data structures and other low-level concurrency concerns. His work won the John C. Reynold's award for outstanding dissertation in programming languages. He also worked with Derek Dreyer on correctness proofs of lock-free data structures, developing an early technique for doing so on top of the C11 memory model."
-  title: "Opening Keynote"
-  abstract:
-- name: Niko Matsakis
-  id: 2
-  type: conference, training
-  image: niko.jpg
-  twitter: "nikomatsakis"
-  bio: "Nicholas Matsakis (nmatsakis) is a member of the Rust Core Team and employed by Mozilla Research. His main focus in Rust is language design and compiler implementation. At Mozilla, he has also worked on Parallel JavaScript and other parallelization efforts. Prior to joining Mozilla, Niko received his PhD from ETH Zurich, likewise focused on parallelism and language design."
-  title: "Opening Keynote"
-  abstract:
 - name: Julia Evans
-  id: 3
+  id: 1
   type: conference
   image: julia.jpeg
   twitter: "b0rk"
   bio: "Coming soon!"
   title: "Closing Keynote"
-  abstract: "Do you ever think "ok, I'm definitely not a beginner at programming anymore, but how do I get WAY BETTER?". I have. It turns out that there are a lot of amazing things you can learn about programming by learning a little bit of Rust and systems programming, and I'm going to talk about some of my favorites."
+  abstract: "Do you ever think &ldquo;Ok, I'm definitely not a beginner at programming anymore, but how do I get WAY BETTER?&rdquo; I have. It turns out that there are a lot of amazing things you can learn about programming by learning a little bit of Rust and systems programming, and I'm going to talk about some of my favorites."
+- name: Aaron Turon
+  id: 2
+  type: conference, training
+  image: aaron.jpg
+  twitter: "aaron_turon"
+  bio: "Aaron Turon (aturon) is a member of the Rust Core Team and employed by Mozilla Research. His main focus in Rust is language design, libraries, and project management. Prior to joining Mozilla, Aaron received his PhD from Northeastern University, with a focus on language and library design around lock-free data structures and other low-level concurrency concerns. His work won the John C. Reynold's award for outstanding dissertation in programming languages. He also worked with Derek Dreyer on correctness proofs of lock-free data structures, developing an early technique for doing so on top of the C11 memory model."
+  talks:
+    - title: "Opening Keynote"
+      abstract: "Aaron and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
+    - title: "Training: Intermediate Rust"
+      abstract: "Move up a level in Rust knowledge. This tutorial introduces the second key piece of Rust, its trait system. It shows how the trait system is the foundation for generic programming in Rust, allowing you to write one piece of code that can be reused in many contexts. It also covers how to write threaded programs in Rust, and shows how threaded programming in Rust builds on the trait system to guarantee data-race freedom. This tutorial assumes basic understanding of ownership and borrowing; if you have been writing Rust for a while, or taken the morning tutorial, you should do fine."
+- name: Niko Matsakis
+  id: 3
+  type: conference, training
+  image: niko.jpg
+  twitter: "nikomatsakis"
+  bio: "Nicholas Matsakis (nmatsakis) is a member of the Rust Core Team and employed by Mozilla Research. His main focus in Rust is language design and compiler implementation. At Mozilla, he has also worked on Parallel JavaScript and other parallelization efforts. Prior to joining Mozilla, Niko received his PhD from ETH Zurich, likewise focused on parallelism and language design."
+  talks:
+    - title: "Opening Keynote"
+      abstract: "Aaron and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
+    - title: "Training: Advanced Rust"
+      abstract: "Start taking full advantage of the power of lifetimes. This tutorial will cover named lifetime parameters on functions and structs and show how you can write more advanced patterns of borrowing in Rust. Prior experience with Rust is expected, and this training is <em>not</em> appropriate for pairing with the morning Beginner Rust training."
 - name: Geoffroy Couprie
   id: 4
   type: conference
@@ -53,7 +59,7 @@
   twitter: "josh_triplett"
   bio: "Josh Triplett hacks on system software, including the Linux kernel, BITS, X, Git, Sparse, Debian, and Chrome OS. Josh enjoys using software for unconventional purposes, such as running Python in GRUB2 to test BIOS (https://biosbits.org). Josh has previously presented at Kernel Summit, linux.conf.au, Linux Plumbers Conference, PyCon, Open Source Bridge, and the USENIX Annual Technical Conference. Josh works for the Intel Open Source Technology Center (OTC). (Not speaking for Intel.)"
   title: "RFC: In Order to Form a More Perfect `union`"
-  abstract: "Users of Rust for systems programming rely heavily on its exceptional support for FFI. Many systems APIs involve unions, and macros and transmute produced unmaintainable solutions. 16 months, 3 RFCs, and a half-dozen possible syntaxes later, RFC1444 added union to the Rust language, ready for implementation. <br> This talk will present unions as a case study of the Rust RFC process, show the kinds of iterative refinements that take place, review corner cases and interactions that arise when attempting to extend Rust, and discuss the next steps forward for union implementation."
+  abstract: "Users of Rust for systems programming rely heavily on its exceptional support for FFI. Many systems APIs involve unions, and macros and transmute produced unmaintainable solutions. 16 months, 3 RFCs, and a half-dozen possible syntaxes later, RFC1444 added union to the Rust language, ready for implementation.</p><p>This talk will present unions as a case study of the Rust RFC process, show the kinds of iterative refinements that take place, review corner cases and interactions that arise when attempting to extend Rust, and discuss the next steps forward for union implementation."
 - name: Liz Baillie
   id: 8
   type: conference
@@ -61,11 +67,11 @@
   twitter: "infinite_math"
   bio: "Liz is currently wrangling the JavaScripts and herding the Rubies as an engineer at Tilde. Previously, she spent many years drawing comic books to a limited but enthusiastic audience. She is just getting started at contributing to open source projects and is already addicted. Please send help (don't actually send help)."
   title: "The Illustrated Adventure Survival Guide for New Rustaceans"
-  abstract: "Programming is an adventure, often more harrowing than it has to be. If you're more used to higher-level languages like Ruby or JavaScript, learning Rust can feel like an impossible journey that leaves you wishing for a well-written and heavily illustrated field guide. <br> Good news! I have already gone down this road and am now prepared to share my adventure with you. Luckily, I was able to capture much of the flora and fauna of Rustlandia with my primitive pictorial devices (paper and pen)."
+  abstract: "Programming is an adventure, often more harrowing than it has to be. If you're more used to higher-level languages like Ruby or JavaScript, learning Rust can feel like an impossible journey that leaves you wishing for a well-written and heavily illustrated field guide.</p><p>Good news! I have already gone down this road and am now prepared to share my adventure with you. Luckily, I was able to capture much of the flora and fauna of Rustlandia with my primitive pictorial devices (paper and pen)."
 - name: Raph Levien
   id: 9
   type: conference
-  image: ralph.jpg
+  image: raph.jpg
   twitter: "raphlinus"
   bio: "Raph Levien is a software engineer and tech lead of Android Text on the Android UI Toolkit team at Google. He has a lifelong interest in digital typography, including a PhD in spiral-based tools for interactive font design, as well as being the designer of Inconsolata, a monospace font designed for beautiful code listings. Raph's previous work includes Google Fonts and the open source Ghostscript PostScript/PDF engine."
   title: "A Modern Editor Built in Rust"
@@ -73,8 +79,8 @@
 - name: Without Boats
   id: 10
   type: conference
-  image:
-  twitter:
+  image: gears.png
+  twitter: "test"
   bio: "Coming soon!"
   title: "Using Generics Effectively"
   abstract: "Traits and type parameters are the core mechanism for abstraction in Rust. Other languages also have features like these, but few leverage them nearly as much as Rust does. This talk will describe the many powerful uses for Rust's generics system, how generics can be used as a replacement for tools like inheritance and duck typing, and how to leverage this system to write good, clean code."
@@ -91,6 +97,6 @@
   type: training
   image: steve.jpg
   twitter: "steveklabnik"
-  bio: "Steve is a Rust core team member. He previously worked on Ruby and Ruby on Rails, and has authored 'The Rust Programming Language,'' 'Rails 4 in Action,' and 'Designing Hypermedia APIs.'
-  title:
-  abstract:
+  bio: "Steve is a Rust core team member. He previously worked on Ruby and Ruby on Rails, and has authored 'The Rust Programming Language','Rails 4 in Action', and 'Designing Hypermedia APIs'."
+  title: "Training: Rust for Beginners"
+  abstract: "Learn everything you need to get started writing Rust programs. The tutorial puts a focus on Ownership and Borrowing, which are the key techniques that Rust uses to achieve both safety and low-level performance. It assumes no prior knowledge of Rust, though programming experience in some other language would be helpful."
