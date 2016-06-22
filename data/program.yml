@@ -12,22 +12,24 @@
   image: aaron.jpg
   twitter: "aaron_turon"
   bio: "Aaron Turon (aturon) is a member of the Rust Core Team and employed by Mozilla Research. His main focus in Rust is language design, libraries, and project management. Prior to joining Mozilla, Aaron received his PhD from Northeastern University, with a focus on language and library design around lock-free data structures and other low-level concurrency concerns. His work won the John C. Reynold's award for outstanding dissertation in programming languages. He also worked with Derek Dreyer on correctness proofs of lock-free data structures, developing an early technique for doing so on top of the C11 memory model."
+  timeslot: afternoon
   talks:
     - title: "Opening Keynote"
       abstract: "Aaron and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
     - title: "Training: Intermediate Rust"
-      abstract: "Move up a level in Rust knowledge. This tutorial introduces the second key piece of Rust, its trait system. It shows how the trait system is the foundation for generic programming in Rust, allowing you to write one piece of code that can be reused in many contexts. It also covers how to write threaded programs in Rust, and shows how threaded programming in Rust builds on the trait system to guarantee data-race freedom. This tutorial assumes basic understanding of ownership and borrowing; if you have been writing Rust for a while, or taken the morning tutorial, you should do fine."
+      abstract: "Move up a level in Rust knowledge. This tutorial introduces the second key piece of Rust, its trait system. It shows how the trait system is the foundation for generic programming in Rust, allowing you to write one piece of code that can be reused in many contexts. It also covers how to write threaded programs in Rust, and shows how threaded programming in Rust builds on the trait system to guarantee data-race freedom.</p><p>This tutorial assumes basic understanding of ownership and borrowing; if you have been writing Rust for a while, or taken the morning tutorial, you should do fine."
 - name: Niko Matsakis
   id: 3
   type: conference, training
   image: niko.jpg
   twitter: "nikomatsakis"
   bio: "Nicholas Matsakis (nmatsakis) is a member of the Rust Core Team and employed by Mozilla Research. His main focus in Rust is language design and compiler implementation. At Mozilla, he has also worked on Parallel JavaScript and other parallelization efforts. Prior to joining Mozilla, Niko received his PhD from ETH Zurich, likewise focused on parallelism and language design."
+  timeslot: afternoon
   talks:
     - title: "Opening Keynote"
       abstract: "Aaron and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
     - title: "Training: Advanced Rust"
-      abstract: "Start taking full advantage of the power of lifetimes. This tutorial will cover named lifetime parameters on functions and structs and show how you can write more advanced patterns of borrowing in Rust. Prior experience with Rust is expected, and this training is <em>not</em> appropriate for pairing with the morning Beginner Rust training."
+      abstract: "Start taking full advantage of the power of lifetimes. This tutorial will cover named lifetime parameters on functions and structs and show how you can write more advanced patterns of borrowing in Rust.</p><p>Prior experience with Rust is expected, and this training is <em>not</em> appropriate for pairing with the morning Beginner Rust training."
 - name: Geoffroy Couprie
   id: 4
   type: conference
@@ -99,4 +101,5 @@
   twitter: "steveklabnik"
   bio: "Steve is a Rust core team member. He previously worked on Ruby and Ruby on Rails, and has authored 'The Rust Programming Language','Rails 4 in Action', and 'Designing Hypermedia APIs'."
   title: "Training: Rust for Beginners"
-  abstract: "Learn everything you need to get started writing Rust programs. The tutorial puts a focus on Ownership and Borrowing, which are the key techniques that Rust uses to achieve both safety and low-level performance. It assumes no prior knowledge of Rust, though programming experience in some other language would be helpful."
+  abstract: "Learn everything you need to get started writing Rust programs. The tutorial puts a focus on Ownership and Borrowing, which are the key techniques that Rust uses to achieve both safety and low-level performance.</p><p>This class assumes no prior knowledge of Rust, though programming experience in some other language would be helpful."
+  timeslot: morning
