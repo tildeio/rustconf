@@ -54,8 +54,8 @@
   image: suchin.jpg
   twitter: "ssgrn"
   bio: "Suchin Gururangan (pegasos1) is a data scientist at Rapid7 using machine learning to map and predict malicious activity across the Internet. He previously lead efforts around data-driven startup investing at Accomplice Ventures. Suchin is also a published researcher in computational neuroscience, and has investigated brain-machine interfaces and brain mapping. Suchin maintains an active blog in which he discusses Rust and data science, and he's really happy to be a part of the Rust community."
-  title: "The PlayRust Classifier: Real World Rust Data Science"
-  abstract: "Modern machine learning systems require scalable, real-time processing to analyze massive datasets. Rust is an attractive tool to help drive low-cost, high performance data science. But what's it like to use Rust to solve machine learning problems in practice?</p><p>To evaluate Rust as a foundation for machine learning services, we built a classification system, entirely in Rust, that detects PlayRust posts mistakenly published on the Rust subreddit. We'll present Rust's strengths and weaknesses at each step of the process, inspiring discussion on its role in the future of data science pipelines.</p><p>This is a two-speaker talk, also delivered by Colin  O'Brien."
+  title: "The /r/playrust Classifier: Real World Rust Data Science"
+  abstract: "Modern machine learning systems require scalable, real-time processing to analyze massive datasets. Rust is an attractive tool to help drive low-cost, high performance data science. But what's it like to use Rust to solve machine learning problems in practice?</p><p>To evaluate Rust as a foundation for machine learning services, we built a classification system, entirely in Rust, that detects /r/playrust posts mistakenly published on the Rust subreddit. We'll present Rust's strengths and weaknesses at each step of the process, inspiring discussion on its role in the future of data science pipelines.</p><p>This is a two-speaker talk, also delivered by Colin  O'Brien."
 - name: Josh Triplett
   id: 7
   type: conference
@@ -94,8 +94,8 @@
   image: colin.jpg
   twitter: "insanitybit"
   bio: "Colin O'Brien is a Software Developer at Rapid7, working on Incident Detection And Response to bring novel security detections to the platform. Colin has been interacting with the rust community under the pseudonyms 'insanitybit' and 'staticassert' for over a year, and has contributed multiple crates."
-  title: "The PlayRust Classifier: Real World Rust Data Science"
-  abstract: "Modern machine learning systems require scalable, real-time processing to analyze massive datasets. Rust is an attractive tool to help drive low-cost, high performance data science. But what's it like to use Rust to solve machine learning problems in practice?</p><p>To evaluate Rust as a foundation for machine learning services, we built a classification system, entirely in Rust, that detects PlayRust posts mistakenly published on the Rust subreddit. We'll present Rust's strengths and weaknesses at each step of the process, inspiring discussion on its role in the future of data science pipelines.</p><p>This is a two-speaker talk, also delivered by Suchin Gururangan."
+  title: "The /r/playrust Classifier: Real World Rust Data Science"
+  abstract: "Modern machine learning systems require scalable, real-time processing to analyze massive datasets. Rust is an attractive tool to help drive low-cost, high performance data science. But what's it like to use Rust to solve machine learning problems in practice?</p><p>To evaluate Rust as a foundation for machine learning services, we built a classification system, entirely in Rust, that detects /r/playrust posts mistakenly published on the Rust subreddit. We'll present Rust's strengths and weaknesses at each step of the process, inspiring discussion on its role in the future of data science pipelines.</p><p>This is a two-speaker talk, also delivered by Suchin Gururangan."
 - name: Steve Klabnik
   id: 12
   type: training
