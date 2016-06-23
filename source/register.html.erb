@@ -6,7 +6,7 @@ title: Register for RustConf
 
   <h1>Get Your Tickets</h1>
 
-  <div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com/tickets-external?eid=25658921525&ref=etckt" frameborder="0" height="470" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ></div></div>
+  <div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com/tickets-external?eid=25658921525&ref=etckt" frameborder="0" height="510" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ></div></div>
 
   <h3>Refunds and Transfers</h3>
 
@@ -41,6 +41,21 @@ title: Register for RustConf
           </li>
         </ul>
       </li>
+    </ul>
+  </div>
+
+  <h3>FAQs</h3>
+
+  <div class="coc">
+    <ul>
+      <% data.faq.each do |question| %>
+      <li class="question">
+        <%= question.q %>
+      </li>
+      <li class="answer">
+        <%= question.a %>
+      </li>
+      <% end %>
     </ul>
   </div>
 

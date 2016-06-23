@@ -378,14 +378,19 @@ h1 + .coc {
   ul {
     text-align: left;
   }
+  .question {
+    font-weight: bold;
+  }
   li {
     line-height: 22px;
     margin: 0 15px 10px 15px;
     list-style: disc;
-
     ul {
       margin-top: 10px;
     }
+  }
+  li.answer {
+    list-style: none;
   }
 }
 
