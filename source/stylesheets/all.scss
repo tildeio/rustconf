@@ -366,6 +366,11 @@ footer li:nth-child(even) {
   p {
     text-align: left;
   }
+
+  p.contribute {
+    text-align: center;
+    font-style: italic;
+  }
 }
 
 h1 + .coc {
