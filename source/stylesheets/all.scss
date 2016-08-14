@@ -101,10 +101,6 @@ a:hover {
   font-weight: bold;
 }
 
-a.menu:hover {
-
-}
-
 hr {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -204,7 +200,7 @@ ul .premier li {
 }
 
 ul.menu {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 ul.menu li {
@@ -286,13 +282,6 @@ footer li:nth-child(even) {
     width: 220px;
   }
 
-  .byline {
-    margin-top: 0;
-    padding-top: 0;
-    font-style: italic;
-    font-size: 0.8rem;
-  }
-
   td.abstract {
     vertical-align: top;
 
@@ -325,6 +314,27 @@ footer li:nth-child(even) {
 
 #schedule {
   margin: 0 auto;
+
+  td {
+    padding: 0.5rem 0;
+  }
+
+  p.byline {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: grey;
+    &:before {
+      content: "by ";
+    }
+  }
+
+  p.speaker {
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    line-height: 1rem;
+  }
 }
 
 #schedule thead {
