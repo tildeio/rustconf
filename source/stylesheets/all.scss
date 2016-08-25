@@ -211,6 +211,10 @@ ul.menu li {
 .premier img {
   height: 50px;
   margin: 10px 15px;
+
+  &.sp-vertical {
+    height: 70px;
+  }
 }
 
 .supporting img {
