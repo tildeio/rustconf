@@ -1,0 +1,55 @@
+---
+title: RustConf Program
+---
+
+<div class="container">
+
+	<h1>Our Program</h1>
+
+	<!-- <p class="coc">
+	  The schedule will be available shortly. We'll follow the same format as <a href="http://rustcamp.com/schedule.html">RustCamp 2015</a>.
+	</p> -->
+
+	<div id="program">
+		<table>
+			<% data.program2016.each do |speaker| %>
+				<tr>
+					<td>
+						<%= image_tag "speakers/#{speaker.image}", class: "spkPic2"%>
+					</td>
+					<td class="abstract">
+						<% if speaker[:talks] %>
+							<p class="byline">
+								<%= speaker[:talks].size %> sessions by <%= link_to speaker.name, "http://www.twitter.com/#{speaker.twitter}" %>:
+							</p>
+							<% speaker[:talks].each do |talk| %>
+								<h4>
+									<%= talk.title %>
+								</h4>
+								<p>
+									<%= talk.abstract %>
+								</p>
+							<% end %>
+						<% else %>
+							<h4>
+								<%= speaker.title %>
+							</h4>
+							<h5>
+								By <%= link_to speaker.name, "http://www.twitter.com/#{speaker.twitter}" %>
+							</h5>
+							<p>
+								<%= speaker.abstract %>
+							</p>
+						<% end %>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+			<% end %>
+		</table>
+	</div>
+
+</div>

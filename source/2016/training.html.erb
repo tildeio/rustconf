@@ -1,0 +1,28 @@
+---
+title: RustConf Trainings
+---
+
+<div class="container">
+
+  <h1>Our Trainings</h1>
+
+  <p>
+    We'll be offering <em>three</em> Rust training sessions, targeting different skill levels: <strong>Beginner</strong>, <strong>Intermediate</strong> and <strong>Advanced</strong>. You <em>may</em> take the morning Beginner session followed by the afternoon Intermediate session, but it is <em>not</em> appropriate to pair the Beginner and Advanced sessions.
+  </p>
+
+	<div id="program">
+    <h3>Morning (9am-12pm)</h3>
+    <table>
+      <% data.program2016.select { |s| s.timeslot == 'morning' && s.type =~ /training/ }.each do |speaker| %>
+        <%= partial "training", locals: { speaker: speaker } %>
+      <% end %>
+    </table>
+
+    <h3>Afternoon (1pm-4pm)</h3>
+    <table>
+      <% data.program2016.select { |s| s.timeslot == 'afternoon' && s.type =~ /training/ }.each do |speaker| %>
+        <%= partial "training", locals: { speaker: speaker } %>
+      <% end %>
+    </table>
+  </div>
+</div>
