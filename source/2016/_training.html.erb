@@ -1,0 +1,23 @@
+<tr>
+  <td>
+    <%= image_tag "speakers/#{speaker.image}", class: "spkPic2"%>
+  </td>
+  <td class="abstract">
+    <% (speaker[:talks] || [speaker]).select { |t| t.title =~ /^Training/ }.each do |talk| %>
+      <h4>
+        <%= talk.title %>
+      </h4>
+      <h5>
+        <%= talk.focus %>, By <%= link_to speaker.name, "http://www.twitter.com/#{speaker.twitter}" %>
+      </h5>
+      <p>
+        <%= talk.abstract %>
+      </p>
+    <% end %>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <hr />
+  </td>
+</tr>
