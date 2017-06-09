@@ -32,7 +32,7 @@
     </header>
 
     <main>
-      <!-- RIBBON 1
+      <% if current_page.path.include? "2016" %>
       <nav class="one">
 
         <div class="bk l">
@@ -65,14 +65,14 @@
           <div class="arrow bottom"></div>
         </div>
       </nav>
-      -->
+      <% end %>
 
       <%= yield %>
     </main>
 
   </body>
 
-  <!--
+<% if current_page.path.include? "2016" %>
 
   <footer class="center">
 
@@ -120,6 +120,5 @@
     </ul>
 
   </footer>
-
-  -->
+<% end %>
 </html>
