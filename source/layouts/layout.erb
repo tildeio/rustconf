@@ -72,13 +72,23 @@
 
   </body>
 
-<% if current_page.path.include? "2016" %>
+<% sponsors = data.sponsors
+path = ""
+year = "2017"
+prospectus = "/images/sponsors/17_RustConf_Prospectus.pdf"
+if current_page.path.include? "2016"
+  sponsors = data.sponsors2016
+  path = "/2016"
+  year = "2016"
+  prospectus = "/2016/images/sponsors/16_RustConf_Prospectus.pdf"
+end
+%>
 
   <footer class="center">
 
   <hr>
 
-  <h2>Thank You to Our Generous 2016 Sponsors</h2>
+  <h2>Thank You to Our Generous <%= year %> Sponsors</h2>
 
   <div id="footer-ribbon" class="aside ribbon">
     Gold
@@ -87,23 +97,33 @@
   <div id="sponsor-list" class="center">
 
     <ul class="premier">
-      <li><a href="http://www.skylight.io"><img src="/2016/images/sponsors/Logo-Skylight.png" alt="Skylight"></a></li>
-      <li><a href="http://www.mozilla.com"><img src="/2016/images/sponsors/Logo-Mozilla.png" alt="Mozilla"></a></li>
-      <br />
-      <li><a href="http://www.intel.com"><img src="/2016/images/sponsors/Logo-Intel.png" alt="Intel" class="sp-vertical"></a></li>
-      <li><a href="http://www.chef.io/"><img src="/2016/images/sponsors/Logo-Chef.png" alt="Chef" class="sp-vertical"></a></li>
+      <% sponsors.select {|sp| sp.type == "gold"}.each_with_index do |sponsor, idx| %>
+        <% if idx % 2 == 0 && idx != 0 %>
+          <br />
+        <% end %>
+        <li><a href="<%= sponsor.website %>"><img src="<%= path %>/images/sponsors/Logo-<%= sponsor.name %>.png" alt="<%= sponsor.name %>"></a></li>
+
+      <% end %>
     </ul>
 
+    <% if sponsors.select {|sp| sp.type == "silver"}.count > 0 %>
     <div id="footer-ribbon" class="aside ribbon">
       Silver
     </div>
 
     <ul class="supporting">
-      <li><a href="http://www.github.com"><img src="/2016/images/sponsors/Logo-GitHub.png" alt="GitHub"></a></li>
-      <li><a href="http://www.memcachier.com"><img src="/2016/images/sponsors/Logo-Memcachier.png" alt="MemCachier"></a></li>
+      <% sponsors.select {|sp| sp.type == "silver"}.each_with_index do |sponsor, idx| %>
+        <% if idx % 2 == 0 && idx != 0 %>
+          <br />
+        <% end %>
+        <li><a href="<%= sponsor.website %>"><img src="<%= path %>/images/sponsors/Logo-<%= sponsor.name %>.png" alt="<%= sponsor.name %>"></a></li>
+
+      <% end %>
     </ul>
 
-    <h4>Seeking exposure to top Rust Talent? <a href="/2016/images/sponsors/16_RustConf_Prospectus.pdf">Sponsor RustConf</a>!</h4>
+    <% end %>
+
+    <h4>Seeking exposure to top Rust Talent? <a href="<%= prospectus %>">Sponsor RustConf</a>!</h4>
 
   </div>
 
@@ -120,48 +140,5 @@
     </ul>
 
   </footer>
-<% else %>
 
-  <footer class="center">
-
-  <hr>
-
-  <h2>Thank You to Our Generous 2017 Sponsors</h2>
-
-  <div id="footer-ribbon" class="aside ribbon">
-    Gold
-  </div>
-
-  <div id="sponsor-list" class="center">
-
-    <ul class="premier">
-      <li><a href="http://www.skylight.io"><img src="/2016/images/sponsors/Logo-Skylight.png" alt="Skylight"></a></li>
-      <li><a href="http://www.mozilla.com"><img src="/2016/images/sponsors/Logo-Mozilla.png" alt="Mozilla"></a></li>
-    </ul>
-  <!--  
-    <div id="footer-ribbon" class="aside ribbon">
-      Silver
-    </div>
-
-   <ul class="supporting">
-    </ul> -->
-
-    <h4>Seeking exposure to top Rust Talent? <a href="/images/sponsors/17_RustConf_Prospectus.pdf">Sponsor RustConf</a>!</h4>
-
-  </div>
-
-  <hr />
-
-    <ul>
-      <li><a href="about.html#conduct">Code of Conduct</a></li>
-      <li>|</li>
-      <li><a href="mailto:events@tilde.io">Get in Touch</a></li>
-      <li>|</li>
-      <li><a href="sponsors.html">Sponsors</a></li>
-      <li>|</li>
-      <li><a href="http://www.tilde.io">&#169; Tilde Inc. 2016</a></li>
-    </ul>
-
-  </footer>
-<% end %>
 </html>

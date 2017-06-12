@@ -1,0 +1,6 @@
+- name: Mozilla
+  type: gold
+  website: http://www.mozilla.com
+- name: Skylight
+  type: gold
+  website: http://www.skylight.io
