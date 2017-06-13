@@ -32,7 +32,6 @@
     </header>
 
     <main>
-      <% if current_page.path.include? "2016" %>
       <nav class="one">
 
         <div class="bk l">
@@ -65,7 +64,6 @@
           <div class="arrow bottom"></div>
         </div>
       </nav>
-      <% end %>
 
       <%= yield %>
     </main>
@@ -86,8 +84,10 @@ end
 
   <footer class="center">
 
-  <hr>
 
+<div id="sponsor-footer-container">
+
+  <hr>
   <h2>Thank You to Our Generous <%= year %> Sponsors</h2>
 
   <div id="footer-ribbon" class="aside ribbon">
@@ -126,7 +126,7 @@ end
     <h4>Seeking exposure to top Rust Talent? <a href="<%= prospectus %>">Sponsor RustConf</a>!</h4>
 
   </div>
-
+</div>
   <hr />
 
     <ul>

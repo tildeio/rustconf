@@ -1,7 +1,12 @@
 ---
 title: About Our Sponsors
 ---
-
+<style type="text/css">
+  /* Don't show sponsors twice */
+  #sponsor-footer-container {
+    display:none;
+  }
+</style>
 <div class="container">
 
   <h1>Meet Our Sponsors</h1>
@@ -11,98 +16,63 @@ title: About Our Sponsors
   </div>
 
   <table class="sponsor-page">
-    <tr>
-      <td>
-        <a href="http://www.skylight.io"><img src="/images/sponsors/Logo-Skylight.png" alt="Skylight"></a>
-      </td>
-      <td>
-        <p>
-          Skylight﻿ is a smart profiler that lets you quickly diagnose and resolve performance issues with your Rails apps where it matters: in production. It's built by the fine folks at <a href="http://www.tilde.io/">Tilde Inc</a>, who have spent the last few years building open source projects like Ember, Handlebars and Rails itself. Visit <a href="http://www.skylight.io/">skylight.io</a> to start your free trial.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="http://www.mozilla.com"><img src="/images/sponsors/Logo-Mozilla.png" alt="Mozilla"></a>
-      </td>
-      <td>
-        <p>
-          Mozilla is a non-profit with a mission: to ensure the Internet is a global public resource, open and accessible to all. An Internet that truly puts people first, where individuals can shape their own experience and are empowered, safe and independent.
-        </p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <a href="http://www.intel.com"><img src="/images/sponsors/Logo-Intel.png" alt="Intel"></a>
-      </td>
-      <td>
-        <p>
-          We're excited about Rust for systems programming. Rust provides a unique combination of safety, performance, runtime-free operation, and C interoperability, excelling across datacenter and IoT alike. We also love Rust's welcoming and inclusive community. We're thrilled to sponsor RustConf, bringing the Rust community together here in Portland.
-        </p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <a href="http://www.chef.io"><img src="/images/sponsors/Logo-Chef.png" alt="Chef"></a>
-      </td>
-      <td>
-        <p>
-          We are Chef. We are IT automation for speed and awesomeness. We give you a model for automating IT infrastructure and applications that drive self- reliance across your development and operations teams. Learn how to get started with Chef at <a href="www.learnchef.com">www.learnchef.com</a>.
-        </p>
-      </td>
-    </tr>
-
+    <% data.sponsors.select {|sp| sp.type == "gold"}.each do |sponsor| %>
+      <tr>
+        <td>
+          <a href="<%= sponsor.website %>"><img src="/images/sponsors/Logo-<%= sponsor.name %>.png" alt="<%= sponsor.name %>"></a>
+        </td>
+        <td>
+          <p><%= sponsor.about %></p>
+        </td>
+      </tr>
+    <% end %>
   </table>
 
+<% if data.sponsors.select {|sp| sp.type == "silver"}.count > 0 %>
   <div id="footer-ribbon" class="aside ribbon">
     Silver
   </div>
 
   <table class="sponsor-page">
-    <tr>
-      <td>
-        <a href="http://www.memcachier.com"><img src="/images/sponsors/Logo-Memcachier.png" alt="Mozilla"></a>
-      </td>
-      <td>
-        <p>
-          MemCachier is an enterprise class Memcache-as-a-Service for Developers. You focus on building your app, and we manage, scale, and keep your memcache cluster up and running. Change capacity at any time without any service distruption. Tell us how much memory you need and get started for free instantly.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="http://www.github.io"><img src="/images/sponsors/Logo-GitHub.png" alt="GitHub"></a>
-      </td>
-      <td>
-        <p>
-          Coming Soon!
-        </p>
-      </td>
-    </tr>
+    <% data.sponsors.select {|sp| sp.type == "silver"}.each do |sponsor| %>
+      <tr>
+        <td>
+          <a href="<%= sponsor.website %>"><img src="/images/sponsors/Logo-<%= sponsor.name %>.png" alt="<%= sponsor.name %>"></a>
+        </td>
+        <td>
+          <p><%= sponsor.about %></p>
+        </td>
+      </tr>
+    <% end %>
   </table>
+<% end %>
 
+<h4>Seeking exposure to top Rust Talent? <a href="/images/sponsors/17_RustConf_Prospectus.pdf">Sponsor RustConf</a>!</h4>
+
+<!--
   <div id="footer-ribbon" class="aside ribbon">
     Scholarships
   </div>
+
 
   <p>
     The following individuals and companies generously contributed funds for our scholarship program:
   </p>
 <ul>
     <li>
-      Manish
+      Person1
     </li>
     <li>
-      Martin Pool
+      Person2
     </li>
     <li>
-      Josh Matthews
+      Person3
     </li>
     <li>
       ...and other anonymous donors.
     </li>
 </ul>
+-->
+
 
 </div>

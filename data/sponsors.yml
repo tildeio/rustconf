@@ -1,6 +1,8 @@
 - name: Mozilla
   type: gold
   website: http://www.mozilla.com
+  about: "Mozilla is a non-profit with a mission: to ensure the Internet is a global public resource, open and accessible to all. An Internet that truly puts people first, where individuals can shape their own experience and are empowered, safe and independent."
 - name: Skylight
   type: gold
   website: http://www.skylight.io
+  about: "Skylight﻿ is a smart profiler that lets you quickly diagnose and resolve performance issues with your Rails apps where it matters: in production. It's built by the fine folks at <a href=\"http://www.tilde.io/\">Tilde Inc</a>, who have spent the last few years building open source projects like Ember, Handlebars and Rails itself. Visit <a href=\"http://www.skylight.io/\">skylight.io</a> to start your free trial."

@@ -59,6 +59,11 @@ speakers:
     image: henry.jpg
     twitter: "hdevalence"
     bio: "TBD"
+  - name: Steve Klabnik
+    ident: stevek
+    image: steve.jpg
+    twitter: "steveklabnik"
+    bio: "pizza"
 talks:
   - title: "Opening Keynote"
     abstract: "Aaron, Carol, and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
@@ -66,6 +71,9 @@ talks:
   - title: "Closing Keynote: Safe Systems Software and the Future of Computing"
     abstract: "Someday in the future, all important systems software on the planet will be written in a safe programming language.  The questions are, when, and how do we get there?<br><br>In this talk, I will describe my experiences at Microsoft building a new operating system written entirely in a Rust-like safe systems language.  I will also talk about my subsequent efforts taking those experiences and applying them to the heart of Windows, and the associated technical and cultural challenges."
     speakers: joe
+  - title: "Training sessions"
+    abstract: "Join us on Friday for beginner, intermediate, and advanced training sessions! More details will be found <a href=\"training.html\">here</a> as we finalize the sessions. Please note that you need to buy a separate ticket for these; the Saturday conference ticket does not include training."
+    speakers: niko, stevek, aaron
   - title: "A tale of teaching Rust"
     abstract: "Rust has a reputation of having a very steep learning curve, but is this reputation justified? In this talk I share my experiences teaching Rust to a group of 26 undergraduates as part of a class on programming language theory. None of the students knew Rust going in. Most knew only one language. I walk through the key concepts from Rust that programmers in all languages can use, and that language designers may want to steal, and I talk about how this class of fledgling programmers handled and understood those concepts, what they think of Rust now, and what all of this might mean for teaching Rust effectively in the future."
     speakers: andrew
