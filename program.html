@@ -32,17 +32,290 @@
     </header>
 
     <main>
+      <nav class="one">
+
+        <div class="bk l">
+          <div class="arrow top"></div>
+          <div class="arrow bottom"></div>
+        </div>
+
+        <div class="skew l"></div>
+
+        <div class="main2">
+          <div>
+            <ul class="menu">
+              <li><a href="program.html">PROGRAM</a></li>
+              <li>|</li>
+              <li><a href="schedule.html">SCHEDULE</a></li>
+              <li>|</li>
+              <li><a href="training.html">TRAINING</a></li>
+              <li>|</li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li>|</li>
+              <li><a href="register.html">REGISTER</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skew r"></div>
+
+        <div class="bk r">
+          <div class="arrow top"></div>
+          <div class="arrow bottom"></div>
+        </div>
+      </nav>
 
       <div class="container">
 
 	<h1>Our Program</h1>
 
-	<p class="coc">
-	  The schedule will be available shortly. We'll follow the same format as <a href="http://rustconf.com/2016/program.html">RustConf 2016</a>.
-	</p>
-
 	<div id="program">
 		<table>
+				<tr>
+					<td>
+								<img class="spkPic_multiple" src="images/speakers/aaron.jpg" />
+								<img class="spkPic_multiple" src="images/speakers/carol.jpg" />
+								<img class="spkPic_multiple" src="images/speakers/niko.jpg" />
+					</td>
+					<td class="abstract">
+						<h4>
+							Opening Keynote
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/aaron_turon">Aaron Turon</a>
+								 , 
+									<a href="http://www.twitter.com/carols10cents">Carol Nichols</a>
+								 , 
+									<a href="http://www.twitter.com/nikomatsakis">Niko Matsakis</a>
+						</h5>
+						<p>
+							Aaron, Carol, and Niko will deliver an update on the state of all things Rust. You don't want to miss it!
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img class="spkPic2" src="images/speakers/joe.jpg" />
+					</td>
+					<td class="abstract">
+						<h4>
+							Closing Keynote: Safe Systems Software and the Future of Computing
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/xjoeduffyx">Joe Duffy</a>
+						</h5>
+						<p>
+							Someday in the future, all important systems software on the planet will be written in a safe programming language.  The questions are, when, and how do we get there?<br><br>In this talk, I will describe my experiences at Microsoft building a new operating system written entirely in a Rust-like safe systems language.  I will also talk about my subsequent efforts taking those experiences and applying them to the heart of Windows, and the associated technical and cultural challenges.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img class="spkPic_multiple" src="images/speakers/aaron.jpg" />
+								<img class="spkPic_multiple" src="images/speakers/niko.jpg" />
+								<img class="spkPic_multiple" src="images/speakers/steve.jpg" />
+					</td>
+					<td class="abstract">
+						<h4>
+							Training sessions
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/aaron_turon">Aaron Turon</a>
+								 , 
+									<a href="http://www.twitter.com/nikomatsakis">Niko Matsakis</a>
+								 , 
+									<a href="http://www.twitter.com/steveklabnik">Steve Klabnik</a>
+						</h5>
+						<p>
+							Join us on Friday for beginner, intermediate, and advanced training sessions! More details will be found <a href="training.html">here</a> as we finalize the sessions. Please note that you need to buy a separate ticket for these; the Saturday conference ticket does not include training.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img class="spkPic2" src="images/speakers/andrew.jpg" />
+					</td>
+					<td class="abstract">
+						<h4>
+							A tale of teaching Rust
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/andrewbrinker">Andrew Brinker</a>
+						</h5>
+						<p>
+							Rust has a reputation of having a very steep learning curve, but is this reputation justified? In this talk I share my experiences teaching Rust to a group of 26 undergraduates as part of a class on programming language theory. None of the students knew Rust going in. Most knew only one language. I walk through the key concepts from Rust that programmers in all languages can use, and that language designers may want to steal, and I talk about how this class of fledgling programmers handled and understood those concepts, what they think of Rust now, and what all of this might mean for teaching Rust effectively in the future.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img class="spkPic2" src="images/speakers/sergio.png" />
+					</td>
+					<td class="abstract">
+						<h4>
+							Building Rocket
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://github.com/SergioBenitez">Sergio Benitez</a>
+						</h5>
+						<p>
+							Rocket is a web framework for Rust that delivers simplicity, reliability, and performance -- a rare combination. Rocket's ability to deliver in all three areas is largely enabled by Rust's code generation facilities. Based on developer input, Rocket generates code that eliminates boilerplate and leads to more robust, secure, and predictable web applications.<br><br>This talk dissects Rocket and its code generation by describing how Rocket is built. Special attention is placed on elucidating Rocket's use of present and future code generation facilities in Rust.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img class="spkPic2" src="images/speakers/michael.jpg" />
+					</td>
+					<td class="abstract">
+						<h4>
+							Shipping a solid Rust Crate
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://github.com/mgattozzi">Michael Gattozzi</a>
+						</h5>
+						<p>
+							There's a lot more to releasing a quality crate than just the code. Automating the testing to make sure nothing breaks, checking for test coverage, making sure there are examples, providing documentation are important in making your crate solid and easy to use. Beyond that how do you get people to actually use your crate? You might not know how to increase the visibility of your crate or of small things that can be done to get interest in your crate. This talk covers all of these aspects to help improve the quality of ones crate beyond the code itself.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img class="spkPic2" src="images/speakers/naomi.jpg" />
+					</td>
+					<td class="abstract">
+						<h4>
+							Menhir and friends: the state of the art of parsing in Rust
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://github.com/LeoTestard">Naomi Testard</a>
+						</h5>
+						<p>
+							In this talk we present Menhir, a very powerful LR parsers generator, and how to use it to write Rust parsers (and lexers). We also show some details of the internals of Menhir’s backend for Rust, as well as a short comparative survey of other similar parsing tools and techniques for Rust out here.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img class="spkPic2" src="images/speakers/sean.jpg" />
+					</td>
+					<td class="abstract">
+						<h4>
+							Type System Tips for the Real World
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/sgrif">Sean Griffin</a>
+						</h5>
+						<p>
+							Have you ever looked at some of the more exotic capabilities of Rust's type system and wondered &ldquo;why&rdquo;? Why on earth would I ever want a zero sized type? How do I efficiently implement a deeply recursive type? Just what do monomorphization and type erasure actually mean?<br><br>In this talk we'll look at some real world examples from inside Diesel to answer these questions and more. You'll come away from this talk with a stronger understanding of how to use Rust's generics, traits, and exotically sized types.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img class="spkPic2" src="images/speakers/stevej.jpg" />
+					</td>
+					<td class="abstract">
+						<h4>
+							Improving Rust performance through profiling and benchmarking
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/stevej">Steve Jenson</a>
+						</h5>
+						<p>
+							This talk will compare and contrast common industry tool support for profiling and debugging Rust applications. We'll discuss our experiences finding and fixing performance problems in a production Rust application.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img class="spkPic_multiple" src="images/speakers/isis.jpg" />
+								<img class="spkPic_multiple" src="images/speakers/henry.jpg" />
+					</td>
+					<td class="abstract">
+						<h4>
+							Fast, safe, pure-Rust elliptic curve cryptography
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/isislovecruft">Isis Lovecruft</a>
+								 , 
+									<a href="http://www.twitter.com/hdevalence">Henry De Valence</a>
+						</h5>
+						<p>
+							This talk discusses the design and implementation of <code>curve25519-dalek</code>, a pure-Rust implementation of operations on the elliptic curve known as Curve25519. We will discuss the goals of the library and give a brief overview of the implementation strategy. We will also discuss features of the Rust language that allow us to achieve competitive performance without sacrificing safety or readability, and future features that could allow us to achieve more safety and more performance. Finally, we will discuss how <code>-dalek</code> makes it easy to implement complex cryptographic primitives, such as zero-knowledge proofs.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
 		</table>
 	</div>
 
@@ -55,8 +328,10 @@
 
   <footer class="center">
 
-  <hr>
 
+<div id="sponsor-footer-container">
+
+  <hr>
   <h2>Thank You to Our Generous 2017 Sponsors</h2>
 
   <div id="footer-ribbon" class="aside ribbon">
@@ -76,7 +351,7 @@
     <h4>Seeking exposure to top Rust Talent? <a href="/images/sponsors/17_RustConf_Prospectus.pdf">Sponsor RustConf</a>!</h4>
 
   </div>
-
+</div>
   <hr />
 
     <ul>
