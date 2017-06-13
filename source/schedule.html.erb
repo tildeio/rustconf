@@ -5,14 +5,48 @@ title: RustConf Schedule
 <h1>Schedule</h1>
 
 <p>
-  Trainings take place on Friday, August 18th, and the conference takes place on August 19th. <a href="../training.html">Training schedule details can be found here</a>.
+  Trainings take place on Friday, August 18th, and the conference takes place on August 19th.<br> <a href="../training.html">Training schedule details can be found here</a>.
 </p>
 
 <div>
+ <table id="schedule">
+    <thead>
+      <tr>
+        <th width="160">TIME</th>
+        <th width="600">CONTENT</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% data.program.schedule.each do |event| %>
+      <tr class="special">
+        <td><%= event.time.sub! "-", "&ndash;" %></td>
+        <td>
+          <% if event.talk %>
+            <% if event.multiple %>
+              <%
+                talk = data.program.talks.select {|talk| talk.ident == event.talk}[0]
+                speakers = data.program.speakers.select {|spk| talk.speakers.include? spk.ident}
+              %>
+              <p class="speaker"><a href="program.html#<%= talk.ident %>"><%= talk.title %></a></p>
+              <p class="byline">
+                <% speakers.each_with_index do |spk, idx| %><% if idx != 0 && speakers.length > 2 %>,<% end %> <% if idx == speakers.length - 1 %>and <% end %><%= spk.name %><% end %>
+              </p> 
+            <% else %>
+              <%
+                talk = data.program.talks.select {|talk| talk.speakers == event.talk}[0]
+                speaker = data.program.speakers.select {|spk| talk.speakers == spk.ident}[0]
+              %>
+              <p class="speaker"><a href="program.html#<%= speaker.ident %>"><%= talk.title %></a></p></p><p class="byline"><%= speaker.name %></p> 
+            <% end %>
+          <% else %>
+            <span class="session"><%= event.name %></span>
+          <% end %>
+        </td>
+      </tr>
 
-  <p class="coc">
-    The schedule will be available shortly.
-  </p>
+    <% end %>
+    </tbody>
+</table>
 
 <!--   <table id="schedule">
     <thead>

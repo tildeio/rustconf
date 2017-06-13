@@ -346,6 +346,9 @@ footer li:nth-child(even) {
     padding: 0;
     line-height: 1rem;
   }
+  p.speaker a {
+    text-decoration: none;
+  }
 }
 
 #schedule thead {

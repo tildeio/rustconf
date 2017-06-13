@@ -9,7 +9,13 @@ title: RustConf Program
 	<div id="program">
 		<table>
 			<% data.program.talks.each do |talk| %>
-				<% speakers = data.program.speakers.select {|spk| talk.speakers.include? spk.ident} %>
+				<%
+					speakers = data.program.speakers.select {|spk| talk.speakers.include? spk.ident}
+					id = speakers[0].ident
+					if speakers.length > 1
+						id = talk.ident
+					end
+				%>
 				<tr>
 					<td>
 						<% speakers.each do |speaker| %>
@@ -20,7 +26,7 @@ title: RustConf Program
 							<% end %>
 						<% end %>
 					</td>
-					<td class="abstract">
+					<td class="abstract" id="<%= id %>">
 						<h4>
 							<%= talk.title %>
 						</h4>

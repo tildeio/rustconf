@@ -68,6 +68,7 @@ talks:
   - title: "Opening Keynote"
     abstract: "Aaron, Carol, and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
     speakers: aaron, carol, niko
+    ident: keynote
   - title: "Closing Keynote: Safe Systems Software and the Future of Computing"
     abstract: "Someday in the future, all important systems software on the planet will be written in a safe programming language.  The questions are, when, and how do we get there?<br><br>In this talk, I will describe my experiences at Microsoft building a new operating system written entirely in a Rust-like safe systems language.  I will also talk about my subsequent efforts taking those experiences and applying them to the heart of Windows, and the associated technical and cultural challenges."
     speakers: joe
@@ -95,3 +96,31 @@ talks:
   - title: "Fast, Safe, Pure-Rust Elliptic Curve Cryptography"
     abstract: "This talk discusses the design and implementation of <code>curve25519-dalek</code>, a pure-Rust implementation of operations on the elliptic curve known as Curve25519. We will discuss the goals of the library and give a brief overview of the implementation strategy. We will also discuss features of the Rust language that allow us to achieve competitive performance without sacrificing safety or readability, and future features that could allow us to achieve more safety and more performance. Finally, we will discuss how <code>-dalek</code> makes it easy to implement complex cryptographic primitives, such as zero-knowledge proofs."
     speakers: isis, henry
+    ident: dalek
+schedule:
+  - name: "Registration"
+    time: "8:30 - 9:30am"
+  - talk: keynote
+    multiple: true
+    time: "9:30 - 10:30am"
+  - talk: andrew
+    time: "10:45 - 11:15am"
+  - talk: sergio
+    time: "11:30am - 12:00pm"
+  - name: "Lunch"
+    time: "12:00 - 1:30pm"
+  - talk: michael
+    time: "1:30 - 2:00pm"
+  - talk: naomi
+    time: "2:10 - 2:40pm"
+  - talk: sean
+    time: "2:50 - 3:20pm"
+  - name: "Snacks"
+    time: "3:20 - 3:50pm"
+  - talk: stevej
+    time: "3:50 - 4:20pm"
+  - talk: dalek
+    multiple: true
+    time: "4:30 - 5:00pm"
+  - talk: joe
+    time: "5:15 - 6:00pm"
