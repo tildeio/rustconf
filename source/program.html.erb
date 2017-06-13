@@ -6,42 +6,38 @@ title: RustConf Program
 
 	<h1>Our Program</h1>
 
-	<p class="coc">
-	  The schedule will be available shortly. We'll follow the same format as <a href="http://rustconf.com/2016/program.html">RustConf 2016</a>.
-	</p>
-
 	<div id="program">
 		<table>
-			<% if false %>
-			<% data.program.each do |speaker| %>
+			<% data.program.talks.each do |talk| %>
+				<% speakers = data.program.speakers.select {|spk| talk.speakers.include? spk.ident} %>
 				<tr>
 					<td>
-						<%= image_tag "speakers/#{speaker.image}", class: "spkPic2"%>
+						<% speakers.each do |speaker| %>
+							<% if speakers.length > 1 %>
+								<%= image_tag "speakers/#{speaker.image}", class: "spkPic_multiple" %>
+							<% else %>
+								<%= image_tag "speakers/#{speaker.image}", class: "spkPic2" %>
+							<% end %>
+						<% end %>
 					</td>
 					<td class="abstract">
-						<% if speaker[:talks] %>
-							<p class="byline">
-								<%= speaker[:talks].size %> sessions by <%= link_to speaker.name, "http://www.twitter.com/#{speaker.twitter}" %>:
-							</p>
-							<% speaker[:talks].each do |talk| %>
-								<h4>
-									<%= talk.title %>
-								</h4>
-								<p>
-									<%= talk.abstract %>
-								</p>
+						<h4>
+							<%= talk.title %>
+						</h4>
+						<h5>
+							By
+							<% speakers.each_with_index do |speaker, idx| %>
+								<% if idx != 0 %> , <% end %>
+								<% if speaker.twitter %>
+									<%= link_to speaker.name, "http://www.twitter.com/#{speaker.twitter}" %>
+								<% else %>
+									<%= link_to speaker.name, "http://github.com/#{speaker.github}" %>
+								<% end %>
 							<% end %>
-						<% else %>
-							<h4>
-								<%= speaker.title %>
-							</h4>
-							<h5>
-								By <%= link_to speaker.name, "http://www.twitter.com/#{speaker.twitter}" %>
-							</h5>
-							<p>
-								<%= speaker.abstract %>
-							</p>
-						<% end %>
+						</h5>
+						<p>
+							<%= talk.abstract %>
+						</p>
 					</td>
 				</tr>
 				<tr>
@@ -49,7 +45,6 @@ title: RustConf Program
 						<hr />
 					</td>
 				</tr>
-			<% end %>
 			<% end %>
 		</table>
 	</div>

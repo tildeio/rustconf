@@ -262,10 +262,17 @@ footer li:nth-child(even) {
 
 .spkPic2 {
   height: 200px;
-  width: 200px;
   padding: 0px 10px 5px 0px;
-  float: left;
+  display: inline-block;
 }
+
+.spkPic_multiple {
+  height: 130px;
+  width: 130px;
+  padding: 5px 10px 5px 0px;
+  display: inline-block;
+}
+
 
 .spkHead {
   width: 200px;
@@ -283,7 +290,7 @@ footer li:nth-child(even) {
 
   td:first-child {
     vertical-align: top;
-    width: 220px;
+    width: 300px;
   }
 
   td.abstract {
