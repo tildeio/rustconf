@@ -7,7 +7,11 @@ title: RustConf Trainings
   <h1>Our Trainings</h1>
 
   <p>
-    We'll be offering <em>three</em> Rust training sessions, and a RustBridge session, targeting different skill levels: <strong>Beginner</strong>, <strong>Intermediate</strong> and <strong>Advanced</strong>. You <em>may</em> take the morning Intermediate session followed by the afternoon Advanced session, but it is <em>not</em> appropriate to pair the Beginner and Intermediate sessions.
+    We'll be offering <em>three</em> half-day Rust training sessions targeting different skill levels: <strong>Beginner</strong>, <strong>Intermediate</strong> and <strong>Advanced</strong>. You <em>may</em> take the morning Intermediate session followed by the afternoon Advanced session, but it is <em>not</em> appropriate to pair the Beginner and Intermediate sessions.
+  </p>
+
+  <p>
+    We're also running an all-day RustBridge workshop for people in groups that are underrepresented in tech.
   </p>
 
   <div id="program">
@@ -21,6 +25,13 @@ title: RustConf Trainings
     <h3>Afternoon (1pm-4pm)</h3>
     <table>
       <% data.program.trainings.select { |s| s.timeslot == 'afternoon'}.each do |training| %>
+        <%= partial "training", locals: { training: training } %>
+      <% end %>
+    </table>
+
+    <h3>All day (9am-4pm, lunch from 12pm-1pm)</h3>
+    <table>
+      <% data.program.trainings.select { |s| s.timeslot == 'full'}.each do |training| %>
         <%= partial "training", locals: { training: training } %>
       <% end %>
     </table>

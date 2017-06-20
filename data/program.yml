@@ -142,6 +142,6 @@ trainings:
     abstract: "Start taking full advantage of the power of lifetimes. This tutorial will cover named lifetime parameters on functions and structs and show how you can write more advanced patterns of borrowing in Rust.</p><p>Prior experience with Rust is expected, and this training is <em>not</em> appropriate for pairing with the morning Beginner Rust training."
   - title: "RustBridge"
     speaker: carol
-    focus: "Hands on with Rust"
-    timeslot: afternoon
-    abstract: "This free workshop session will be about learning Rust through hacking on a small, practical project, in the style of RailsBridge. <br> This class assumes no prior knowledge of Rust."
+    focus: "Intro to Rust and Hands-on Workshop"
+    timeslot: full
+    abstract: "This free workshop is for people who are members of groups that are underrepresented in tech, in the style of RailsBridge. There will be a morning introduction to Rust concepts and an afternoon hands-on project. This class assumes no prior knowledge of Rust, but familiarity with any other programming language, the command line, and a text editor is recommended."
