@@ -64,6 +64,11 @@ speakers:
     image: steve.jpg
     twitter: "steveklabnik"
     bio: "pizza"
+  - name: Amit Levy
+    ident: alevy
+    image: alevy.jpg
+    twitter: "aalevy"
+    bio: "TBD"
 talks:
   - title: "Opening Keynote"
     abstract: "Aaron, Carol, and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
@@ -145,3 +150,8 @@ trainings:
     focus: "Intro to Rust and Hands-on Workshop"
     timeslot: full
     abstract: "This free workshop is for people who are members of groups that are underrepresented in tech, in the style of RailsBridge. There will be a morning introduction to Rust concepts and an afternoon hands-on project. This class assumes no prior knowledge of Rust, but familiarity with any other programming language, the command line, and a text editor is recommended."
+  - title: "Training: Tock Embedded OS"
+    speaker: alevy
+    focus: "Building embedded systems in Rust with Tock OS"
+    timeslot: afternoon
+    abstract: "Put Rust to practice in low-level embedded systems. This training will introduce cover programming for Tock, a secure embedded operating system for sensor networks and the Internet of Things, written in Rust. You will learn to write kernel extensions, the basics of porting Tock to a new platform, and how to write power- and memory-efficient applications. We will also give an overview of the system architecture."
