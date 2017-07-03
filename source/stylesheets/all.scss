@@ -5,6 +5,8 @@ $small: 23.75em;
 $medium: 40.0625em;
 $large: 64.0625em;
 
+$button_color: #A88074;
+
 
 /* Imported Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -93,7 +95,7 @@ a {
 }
 
 a:hover {
-  color: #0096a9;
+  color: $button_color;
 }
 
 .menu a {
@@ -151,8 +153,8 @@ td.center {
   margin: 30px;
   padding: 21px 34px;
   color: #fff;
-  background-color: #0096a9;
-  border-color: #0096a9;
+  background-color: $button_color;
+  border-color: $button_color;
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: 900;
