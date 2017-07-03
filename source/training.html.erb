@@ -22,7 +22,7 @@ title: RustConf Trainings
       <% end %>
     </table>
 
-    <h3>Afternoon (1pm-4pm)</h3>
+    <h3>Afternoon (1pm-4pm or 5pm)</h3>
     <table>
       <% data.program.trainings.select { |s| s.timeslot == 'afternoon'}.each do |training| %>
         <%= partial "training", locals: { training: training } %>
