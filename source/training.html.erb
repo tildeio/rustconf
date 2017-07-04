@@ -29,7 +29,7 @@ title: RustConf Trainings
       <% end %>
     </table>
 
-    <h3>All day (9am-4pm, lunch from 12pm-1pm)</h3>
+    <h3>All day (9am-4pm, break from 12pm-1pm)</h3>
     <table>
       <% data.program.trainings.select { |s| s.timeslot == 'full'}.each do |training| %>
         <%= partial "training", locals: { training: training } %>
