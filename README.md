@@ -1,7 +1,31 @@
 # RustConf Site
+> The website for RustConf
 
-Site is hosted via GitHub pages, and is built with middleman.
+## Prerequisites
 
-For depoyment, we used this off the shelf tool: https://github.com/edgecase/middleman-gh-pages
+This site is made with [Ruby] and the  static site framework, [Middleman].
+You'll need [Ruby] and [Bundler] nstalled to build and run the site locally.
+
+[Ruby]: https://www.ruby-lang.org/
+[Bundler]: http://bundler.io/
+[Middleman]: https://middlemanapp.com/
+
+## Up and Running
+
+To get the site running for local development:
+
+1. Fork and clone this repository
+2. `cd rustconf`
+3. `bundle install`
+4. `middleman`
+5. Visit [`http://192.168.0.7:4567/`] in your browser
+
+[`http://192.168.0.7:4567/`]: http://192.168.0.7:4567/
+
+## Deploy
+
+This site is hosted via GitHub pages, and is built with middleman.
+
+For deployment, we used this off the shelf tool: https://github.com/edgecase/middleman-gh-pages
 
 We also added a custom rake task, `rake deploy`, which builds and publishes together. You probably want `bundle exec rake deploy`.
