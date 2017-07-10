@@ -136,27 +136,27 @@ schedule:
     time: "5:15 - 6:00pm"
 trainings:
   - title: "Training: Rust for Beginners"
-    speaker: stevek
+    speakers: stevek
     timeslot: morning
     focus: "Rust Fundamentals: Ownership and Borrowing"
     abstract: "Learn everything you need to get started writing Rust programs. The tutorial puts a focus on Ownership and Borrowing, which are the key techniques that Rust uses to achieve both safety and low-level performance.</p><p>This class assumes no prior knowledge of Rust, though programming experience in some other language would be helpful."
   - title: "Training: Intermediate Rust"
-    speaker: aaron
+    speakers: aaron
     focus: "Traits and Threads"
     timeslot: morning
     abstract: "Move up a level in Rust knowledge. This tutorial introduces the second key piece of Rust, its trait system. It shows how the trait system is the foundation for generic programming in Rust, allowing you to write one piece of code that can be reused in many contexts. It also covers how to write threaded programs in Rust, and shows how threaded programming in Rust builds on the trait system to guarantee data-race freedom.</p><p>This tutorial assumes basic understanding of ownership and borrowing; if you have been writing Rust for a while, you should do fine."
   - title: "Training: Advanced Rust"
-    speaker: niko
+    speakers: niko
     focus: "Advanced Ownership and Borrowing"
     timeslot: afternoon
     abstract: "Start taking full advantage of the power of lifetimes. This tutorial will cover named lifetime parameters on functions and structs and show how you can write more advanced patterns of borrowing in Rust.</p><p>Prior experience with Rust is expected, and this training is <em>not</em> appropriate for pairing with the morning Beginner Rust training."
   - title: "RustBridge"
-    speaker: carol
+    speakers: carol, ashley
     focus: "Intro to Rust and Hands-on Workshop"
     timeslot: full
     abstract: "This free workshop is for people who are members of groups that are underrepresented in tech, in the style of RailsBridge. There will be a morning introduction to Rust concepts and an afternoon hands-on project. This class assumes no prior knowledge of Rust, but familiarity with any other programming language, the command line, and a text editor is recommended."
   - title: "Training: Tock Embedded OS"
-    speaker: alevy
+    speakers: alevy
     focus: "Building embedded systems in Rust with Tock OS"
     timeslot: afternoon
     abstract: "Put Rust to practice in low-level embedded systems. This training will introduce cover programming for Tock, a secure embedded operating system for sensor networks and the Internet of Things, written in Rust. You will learn to write kernel extensions, the basics of porting Tock to a new platform, and how to write power- and memory-efficient applications. We will also give an overview of the system architecture.</p><p>This tutorial assumes basic knowledge of Rust, including ownership, borrowing, traits and lifetimes. While not required, it is most appropriate for people who are familiar with the material covered in the Advanced Rust training, and attanding the morning Intermediate Rust training is highly encouraged."
