@@ -14,6 +14,11 @@ speakers:
     image: carol.jpg
     twitter: "carols10cents"
     bio: "Carol Nichols is a co-founder of Integer 32, the world's first Rust consultancy. She's a member of the Rust Core, Community, Cargo, and Infrastructure teams, and an organizer of the Rust Belt Rust conference. Carol is also a coauthor on The Rust Programming Language book, coming to print in October. Carol lives in Pittsburgh, PA with her husband Jake Goulding and her cat, Baby."
+  - name: Ashley Williams
+    ident: ashley
+    image: ashley.jpg
+    twitter: "ag_dubs"
+    bio: "Ashley is a Services Engineer at npm, Inc. She also represents the Individual Membership on the Node.js Foundation Board of Directors. In her spare time, she contributes to the Rust Programming Language and its package manager, Cargo. She is also a founding organizer of the NodeTogether and RustBridge educational initiatives for underrepresented persons in tech."
   - name: Niko Matsakis
     ident: niko
     image: niko.jpg
