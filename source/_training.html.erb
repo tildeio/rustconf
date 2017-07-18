@@ -9,9 +9,9 @@
     <% end %>
   <% end %>
   </td>
-  <td class="abstract">
+  <td class="abstract" id="<%= training.slug %>">
       <h4>
-        <%= training.title %>
+        <a href="#<%= training.slug %>" class=plainlink><%= training.title %></a>
       </h4>
       <h5><%= training.focus %>, By
         <% speakers.each_with_index do |speaker, idx| %>
