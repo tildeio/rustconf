@@ -64,12 +64,12 @@
   bio: "Josh Triplett hacks on system software, including the Linux kernel, BITS, X, Git, Sparse, Debian, and Chrome OS. Josh enjoys using software for unconventional purposes, such as running Python in GRUB2 to test BIOS (https://biosbits.org). Josh has previously presented at Kernel Summit, linux.conf.au, Linux Plumbers Conference, PyCon, Open Source Bridge, and the USENIX Annual Technical Conference. Josh works for the Intel Open Source Technology Center (OTC). (Not speaking for Intel.)"
   title: "RFC: In Order to Form a More Perfect `union`"
   abstract: "Users of Rust for systems programming rely heavily on its exceptional support for FFI. Many systems APIs involve unions, and macros and transmute produced unmaintainable solutions. 16 months, 3 RFCs, and a half-dozen possible syntaxes later, RFC1444 added union to the Rust language, ready for implementation.</p><p>This talk will present unions as a case study of the Rust RFC process, show the kinds of iterative refinements that take place, review corner cases and interactions that arise when attempting to extend Rust, and discuss the next steps forward for union implementation."
-- name: Liz Baillie
+- name: Lee Baillie
   id: 8
   type: conference
-  image: liz.jpg
+  image: lee.jpg
   twitter: "infinite_math"
-  bio: "Liz is currently wrangling the JavaScripts and herding the Rubies as an engineer at Tilde. Previously, she spent many years drawing comic books to a limited but enthusiastic audience. She is just getting started at contributing to open source projects and is already addicted. Please send help (don't actually send help)."
+  bio: "Lee is currently wrangling the JavaScripts and herding the Rubies as an engineer at Tilde. Previously, he spent many years drawing comic books to a limited but enthusiastic audience. She is just getting started at contributing to open source projects and is already addicted. Please send help (don't actually send help)."
   title: "The Illustrated Adventure Survival Guide for New Rustaceans"
   abstract: "Programming is an adventure, often more harrowing than it has to be. If you're more used to higher-level languages like Ruby or JavaScript, learning Rust can feel like an impossible journey that leaves you wishing for a well-written and heavily illustrated field guide.</p><p>Good news! I have already gone down this road and am now prepared to share my adventure with you. Luckily, I was able to capture much of the flora and fauna of Rustlandia with my primitive pictorial devices (paper and pen)."
 - name: Raph Levien
