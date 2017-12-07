@@ -1,0 +1,35 @@
+<tr>
+  <% speakers = data.program.speakers.select {|spk| training.speakers.include? spk.ident} %>
+  <td>
+  <% speakers.each do |speaker| %>
+    <% if speakers.length > 1 %>
+        <%= image_tag "speakers/#{speaker.image}", class: "spkPic_multiple" %>
+    <% else %>
+        <%= image_tag "speakers/#{speaker.image}", class: "spkPic2" %>
+    <% end %>
+  <% end %>
+  </td>
+  <td class="abstract" id="<%= training.slug %>">
+      <h4>
+        <a href="#<%= training.slug %>" class=plainlink><%= training.title %></a>
+      </h4>
+      <h5><%= training.focus %>, By
+        <% speakers.each_with_index do |speaker, idx| %>
+          <% if idx != 0 %> , <% end %>
+          <% if speaker.twitter %>
+            <%= link_to speaker.name, "http://www.twitter.com/#{speaker.twitter}" %>
+          <% else %>
+            <%= link_to speaker.name, "http://github.com/#{speaker.github}" %>
+          <% end %>
+        <% end %>
+      </h5>
+      <p>
+        <%= training.abstract %>
+      </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <hr />
+  </td>
+</tr>

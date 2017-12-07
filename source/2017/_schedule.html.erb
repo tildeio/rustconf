@@ -1,0 +1,60 @@
+<%
+programdata = data.program
+sponsordata = data.sponsors
+faqdata = data.faq
+
+if year == "2017"
+  programdata = data.program2017
+  sponsordata = data.sponsors2017
+  faqdata = data.faq2017
+end
+%>
+
+<h1>Schedule</h1>
+
+<% if year == "2017" %>
+<p>
+  Trainings take place on Friday, August 18th, and the conference takes place on August 19th.<br> <a href="../training.html">Training schedule details can be found here</a>.
+</p>
+<% end %>
+
+<div>
+ <table id="schedule">
+    <thead>
+      <tr>
+        <th width="160">TIME</th>
+        <th width="600">CONTENT</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% programdata.schedule.each do |event| %>
+      <tr class="special">
+        <td><%= event.time.sub! "-", "&ndash;" %></td>
+        <td>
+          <% if event.talk %>
+            <% if event.multiple %>
+              <%
+                talk = programdata.talks.select {|talk| talk.ident == event.talk}[0]
+                speakers = programdata.speakers.select {|spk| talk.speakers.include? spk.ident}
+              %>
+              <p class="speaker"><a href="program.html#<%= talk.ident %>"><%= talk.title %></a></p>
+              <p class="byline">
+                <% speakers.each_with_index do |spk, idx| %><% if idx != 0 && speakers.length > 2 %>,<% end %> <% if idx == speakers.length - 1 %>and <% end %><%= spk.name %><% end %>
+              </p> 
+            <% else %>
+              <%
+                talk = programdata.talks.select {|talk| talk.speakers == event.talk}[0]
+                speaker = programdata.speakers.select {|spk| talk.speakers == spk.ident}[0]
+              %>
+              <p class="speaker"><a href="program.html#<%= speaker.ident %>"><%= talk.title %></a></p></p><p class="byline"><%= speaker.name %></p> 
+            <% end %>
+          <% else %>
+            <span class="session"><%= event.name %></span>
+          <% end %>
+        </td>
+      </tr>
+
+    <% end %>
+    </tbody>
+</table>
+</div>

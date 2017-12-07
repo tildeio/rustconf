@@ -1,0 +1,58 @@
+---
+title: RustConf Program
+---
+
+<div class="container">
+
+	<h1>Our Program</h1>
+
+	<div id="program">
+		<table>
+			<% data.program.talks.each do |talk| %>
+				<%
+					speakers = data.program.speakers.select {|spk| talk.speakers.include? spk.ident}
+					id = speakers[0].ident
+					if speakers.length > 1
+						id = talk.ident
+					end
+				%>
+				<tr>
+					<td>
+						<% speakers.each do |speaker| %>
+							<% if speakers.length > 1 %>
+								<%= image_tag "speakers/#{speaker.image}", class: "spkPic_multiple" %>
+							<% else %>
+								<%= image_tag "speakers/#{speaker.image}", class: "spkPic2" %>
+							<% end %>
+						<% end %>
+					</td>
+					<td class="abstract" id="<%= id %>">
+						<h4>
+							<%= talk.title %>
+						</h4>
+						<h5>
+							By
+							<% speakers.each_with_index do |speaker, idx| %>
+								<% if idx != 0 %> , <% end %>
+								<% if speaker.twitter %>
+									<%= link_to speaker.name, "http://www.twitter.com/#{speaker.twitter}" %>
+								<% else %>
+									<%= link_to speaker.name, "http://github.com/#{speaker.github}" %>
+								<% end %>
+							<% end %>
+						</h5>
+						<p>
+							<%= talk.abstract %>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+			<% end %>
+		</table>
+	</div>
+
+</div>
