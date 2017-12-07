@@ -1,4 +1,22 @@
 <!doctype html>
+
+<% sponsors = data.sponsors
+path = ""
+year = "2018"
+prospectus = "/images/sponsors/18_RustConf_Prospectus.pdf"
+if current_page.path.include? "2016"
+  sponsors = data.sponsors2016
+  path = "/2016"
+  year = "2016"
+  prospectus = "/2016/images/sponsors/16_RustConf_Prospectus.pdf"
+elsif current_page.path.include? "2017"
+  sponsors = data.sponsors2016
+  path = "/2017"
+  year = "2017"
+  prospectus = "/2017/images/sponsors/17_RustConf_Prospectus.pdf"
+end
+%>
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -32,6 +50,8 @@
     </header>
 
     <main>
+
+<% if year != "2018" %>
       <nav class="one">
 
         <div class="bk l">
@@ -40,7 +60,6 @@
         </div>
 
         <div class="skew l"></div>
-
         <div class="main2">
           <div>
             <ul class="menu">
@@ -56,7 +75,6 @@
             </ul>
           </div>
         </div>
-
         <div class="skew r"></div>
 
         <div class="bk r">
@@ -64,27 +82,18 @@
           <div class="arrow bottom"></div>
         </div>
       </nav>
+  
+<% end %>
 
       <%= yield %>
     </main>
 
   </body>
 
-<% sponsors = data.sponsors
-path = ""
-year = "2017"
-prospectus = "/images/sponsors/17_RustConf_Prospectus.pdf"
-if current_page.path.include? "2016"
-  sponsors = data.sponsors2016
-  path = "/2016"
-  year = "2016"
-  prospectus = "/2016/images/sponsors/16_RustConf_Prospectus.pdf"
-end
-%>
 
   <footer class="center">
 
-
+<% if year != "2018" %>
 <div id="sponsor-footer-container">
 
   <hr>
@@ -127,6 +136,7 @@ end
 
   </div>
 </div>
+
   <hr />
 
     <ul>
@@ -138,7 +148,7 @@ end
       <li>|</li>
       <li><a href="http://www.tilde.io">&#169; Tilde Inc. 2017</a></li>
     </ul>
-
+<% end %>
   </footer>
 
 </html>
