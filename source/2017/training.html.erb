@@ -17,21 +17,21 @@ title: RustConf Trainings
   <div id="program">
     <h3>Morning (9am-12pm)</h3>
     <table>
-      <% data.program.trainings.select { |s| s.timeslot == 'morning'}.each do |training| %>
+      <% data.program2017.trainings.select { |s| s.timeslot == 'morning'}.each do |training| %>
         <%= partial "training", locals: { training: training } %>
       <% end %>
     </table>
 
     <h3>Afternoon (1pm-4pm or 5pm)</h3>
     <table>
-      <% data.program.trainings.select { |s| s.timeslot == 'afternoon'}.each do |training| %>
+      <% data.program2017.trainings.select { |s| s.timeslot == 'afternoon'}.each do |training| %>
         <%= partial "training", locals: { training: training } %>
       <% end %>
     </table>
 
     <h3>All day (9am-4pm, break from 12pm-1pm)</h3>
     <table>
-      <% data.program.trainings.select { |s| s.timeslot == 'full'}.each do |training| %>
+      <% data.program2017.trainings.select { |s| s.timeslot == 'full'}.each do |training| %>
         <%= partial "training", locals: { training: training } %>
       <% end %>
     </table>
