@@ -51,7 +51,6 @@ end
 
     <main>
 
-<% if year != "2018" %>
       <nav class="one">
 
         <div class="bk l">
@@ -83,7 +82,6 @@ end
         </div>
       </nav>
   
-<% end %>
 
       <%= yield %>
     </main>
@@ -137,6 +135,12 @@ end
   </div>
 </div>
 
+
+
+<% else %>
+    <h4>Seeking exposure to top Rust Talent? <a href="<%= prospectus %>">Sponsor RustConf</a>!</h4>
+
+<% end %>
   <hr />
 
     <ul>
@@ -153,11 +157,6 @@ end
       <li>|</li>
       <li><a href="/2016">RustConf 2016</a></li>
     </ul>
-
-<% else %>
-    <h4>Seeking exposure to top Rust Talent? <a href="<%= prospectus %>">Sponsor RustConf</a>!</h4>
-
-<% end %>
   </footer>
 
 </html>
