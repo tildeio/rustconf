@@ -84,7 +84,7 @@ a {
 
 /* line 98, /Users/manishearth/mozilla/confs/rustconf/rustconf/source/stylesheets/all.scss */
 a:hover {
-  color: #A88074; }
+  color: #69c7b9; }
 
 /* line 102, /Users/manishearth/mozilla/confs/rustconf/rustconf/source/stylesheets/all.scss */
 .menu a {
@@ -140,8 +140,8 @@ td.center {
   margin: 30px;
   padding: 21px 34px;
   color: #fff;
-  background-color: #A88074;
-  border-color: #A88074;
+  background-color: #69c7b9;
+  border-color: #69c7b9;
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: 900;
