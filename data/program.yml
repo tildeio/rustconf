@@ -53,7 +53,7 @@ trainings:
     focus: "Futures, Tokio, and async programming in Rust"
     timeslot: afternoon
     slug: advanced
-    abstract: "TBD"
+    abstract: "Get started with understanding Asynchronous code in Rust! Whether you've just started using Async or you've been using it from it's inception there is something for everyone here. It'll show how to use the new async/await syntax, pinning api, and how to effectively leverage Futures in your Rust code. This class assumes you already have an understanding of how Rust works for the most part."
   - title: "WebAssembly"
     speakers: steve
     focus: "WebAssembly"
