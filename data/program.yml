@@ -46,19 +46,19 @@ trainings:
     speakers: nrc
     focus: "Mental models and design patterns"
     timeslot: afternoon
-    slug: advanced
+    slug: think
     abstract: "Learning a new programming language is hard. Even after mastering the syntax and type system, learning the libraries and techniques can take years. If you've read or written Rust and want to improve, this talk will give you a turbo boost! This will be a very practical tutorial, aimed at taking your Rust programming to the next level. We'll teach some core Rust design principles by covering a few key topics in depth. This tutorial is aimed at those with some Rust experience, but if you're a total beginner, you'll still learn a lot about what Rust programming is like in practice.<br><br> The tutorial will start with programming 'in the small': we'll explore some key library types (Option, Result, and Iterator) and cover practical error handling. Putting these together we'll see how to structure your control flow to write clear, succinct programs. We'll then cover some larger-scale design issues - using ownership as a primary architectural principle, and abstraction using traits. <br><br> You'll learn how to be more productive in Rust by writing clean and idiomatic code. You'll learn to work with the language rather than fighting against it."
   - title: "Futures and Async Programming"
     speakers: mgattozzi
     focus: "Futures, Tokio, and async programming in Rust"
     timeslot: afternoon
-    slug: advanced
+    slug: futures
     abstract: "Get started with understanding Asynchronous code in Rust! Whether you've just started using Async or you've been using it from it's inception there is something for everyone here. It'll show how to use the new async/await syntax, pinning api, and how to effectively leverage Futures in your Rust code. This class assumes you already have an understanding of how Rust works for the most part."
   - title: "WebAssembly"
     speakers: steve
     focus: "WebAssembly"
     timeslot: afternoon
-    slug: advanced
+    slug: wasm
     abstract: "TBD"
   - title: "RustBridge"
     speakers: ashley
