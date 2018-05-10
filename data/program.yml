@@ -21,7 +21,7 @@ speakers:
     bio: "anime"
   - name: Steve Klabnik
     ident: steve
-    image: steve.jpg
+    image: steve2.png
     twitter: "steveklabnik"
     bio: "pizza"
 talks:
@@ -92,7 +92,7 @@ pc:
     image: nika.jpg
     twitter: "kneecaw"
   - name: Steve Klabnik
-    image: steve.jpg
+    image: steve2.png
     twitter: "steveklabnik"
 orga:
   - name: Leah Silber
