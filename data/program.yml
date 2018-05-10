@@ -86,7 +86,7 @@ pc:
     image: michael.jpg
     twitter: "mgattozzi"
   - name: Nicholas Cameron
-    image: nrc.jpg
+    image: nrc.png
     twitter: "nick_r_cameron"
   - name: Nika Layzell
     image: nika.jpg
@@ -94,3 +94,17 @@ pc:
   - name: Steve Klabnik
     image: steve.jpg
     twitter: "steveklabnik"
+orga:
+  - name: Leah Silber
+    image: about-leah.jpg
+    twitter: "wifelette"
+  - name: Manish Goregaokar
+    image: manish.png
+    twitter: "manishearth"
+  - name: Ashley Williams
+    image: ashley.jpg
+    twitter: "ag_dubs"
+  - name: Without Boats
+    image: boats.jpg
+    twitter: "withoutboats"
+
