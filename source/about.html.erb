@@ -13,10 +13,10 @@ title: About RustConf
 	<p>RustConf is organized by <a href="https://twitter.com/wifelette">Leah Silber</a>, <a href="https://twitter.com/ManishEarth">Manish Goregaokar</a>, <a href="https://twitter.com/ag_dubs">Ashley Williams</a>, and <a href="https://twitter.com/withoutboats">Without Boats</a>.
 
 <br>
-	<p>Our amazing program committee is <a href="https://twitter.com/arshia__">Arshia Mufti</a>, <a href="https://twitter.com/ag_dubs">Ashley Williams</a>,
-		<a href="https://twitter.com/chriskrycho">Chris Krycho</a>, <a href="https://twitter.com/japaricious">Jorge Aparicio</a>, <a href="https://twitter.com/b0rk">Julia Evans</a>,
-		<a href="https://twitter.com/mgattozzi">Michael Gattozzi</a>, <a href="https://twitter.com/nick_r_cameron">Nicholas Cameron</a>, <a href="https://twitter.com/kneecaw">Nika Layzell</a>,
-		and <a href="https://twitter.com/steveklabnik">Steve Klabnik</a>.
+	<p>Our amazing program committee is <br></p>
+    <% data.program.pc.each_with_index do |member, idx| %>
+        <a href="https://twitter.com/<%= member.twitter %>" style="display: inline-block; padding-bottom: 5px;"><figure><img src="images/speakers/<%= member.image %>" class="spkPic2" /> <figcaption><%= member.name%></figcaption></figure></a>
+    <% end %>
 	<h2 id="conduct">Code of Conduct</h2>
 
 	<div class="coc">

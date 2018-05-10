@@ -66,3 +66,31 @@ trainings:
     timeslot: full
     slug: rustbridge
     abstract: "This free workshop is for people who are members of groups that are underrepresented in tech, in the style of RailsBridge. There will be a morning introduction to Rust concepts and an afternoon hands-on project. This class assumes no prior knowledge of Rust, but familiarity with any other programming language, the command line, and a text editor is recommended."
+pc:
+  - name: Arshia Mufti
+    image: arshia.jpg
+    twitter: "arshia__"
+  - name: Ashley Williams
+    image: ashley.jpg
+    twitter: "ag_dubs"
+  - name: Chris Krycho
+    image: krycho.jpg
+    twitter: "chriskrycho"
+  - name: Jorge Aparicio
+    image: japaric.jpg
+    twitter: "japaricious"
+  - name: Julia Evans
+    image: julia.jpeg
+    twitter: "b0rk"
+  - name: Michael Gattozzi
+    image: michael.jpg
+    twitter: "mgattozzi"
+  - name: Nicholas Cameron
+    image: nrc.jpg
+    twitter: "nick_r_cameron"
+  - name: Nika Layzell
+    image: nika.jpg
+    twitter: "kneecaw"
+  - name: Steve Klabnik
+    image: steve.jpg
+    twitter: "steveklabnik"
