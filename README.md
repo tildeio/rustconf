@@ -29,3 +29,13 @@ This site is hosted via GitHub pages, and is built with middleman.
 For deployment, we used this off the shelf tool: https://github.com/edgecase/middleman-gh-pages
 
 We also added a custom rake task, `rake deploy`, which builds and publishes together. You probably want `bundle exec rake deploy`.
+
+
+## Troubleshooting
+
+If your deploy fails with this message:
+```error: src refspec gh-pages does not match any.
+error: failed to push some refs to 'git@github.com:tildeio/rustconf.git'```
+
+rerun your deploy with a custom build directory with this command:
+```bundle exec rake publish BUILD_DIR=/tmp/anything```
