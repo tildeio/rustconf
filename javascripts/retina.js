@@ -8,7 +8,6 @@
  * high-resolution images to devices with retina displays.
  */
 
-
 (function() {
     var root = (typeof exports === 'undefined' ? window : exports);
     var config = {
