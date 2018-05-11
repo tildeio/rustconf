@@ -35,7 +35,8 @@ We also added a custom rake task, `rake deploy`, which builds and publishes toge
 
 If your deploy fails with this message:
 ```error: src refspec gh-pages does not match any.
-error: failed to push some refs to 'git@github.com:tildeio/rustconf.git'```
+error: failed to push some refs to 'git@github.com:tildeio/rustconf.git'
+```   
 
-rerun your deploy with a custom build directory with this command:
+rerun your deploy with a custom build directory with this command:   
 ```bundle exec rake publish BUILD_DIR=/tmp/anything```
