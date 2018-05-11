@@ -1,3 +1,15 @@
+<%
+programdata = data.program
+sponsordata = data.sponsors
+faqdata = data.faq
+
+if year == "2017"
+  programdata = data.program2017
+  sponsordata = data.sponsors2017
+  faqdata = data.faq2017
+end
+%>
+
 <style type="text/css">
   /* Don't show sponsors twice */
   #sponsor-footer-container {
@@ -13,7 +25,7 @@
   </div>
 
   <table class="sponsor-page">
-    <% data.sponsors.select {|sp| sp.type == "gold"}.each do |sponsor| %>
+    <% sponsordata.select {|sp| sp.type == "gold"}.each do |sponsor| %>
       <tr>
         <td>
           <a href="<%= sponsor.website %>"><img src="/images/sponsors/Logo-<%= sponsor.name %>.png" alt="<%= sponsor.name %>"></a>
@@ -25,13 +37,13 @@
     <% end %>
   </table>
 
-<% if data.sponsors.select {|sp| sp.type == "silver"}.count > 0 %>
+<% if sponsordata.select {|sp| sp.type == "silver"}.count > 0 %>
   <div id="footer-ribbon" class="aside ribbon">
     Silver
   </div>
 
   <table class="sponsor-page">
-    <% data.sponsors.select {|sp| sp.type == "silver"}.each do |sponsor| %>
+    <% sponsordata.select {|sp| sp.type == "silver"}.each do |sponsor| %>
       <tr>
         <td>
           <a href="<%= sponsor.website %>"><img src="/images/sponsors/Logo-<%= sponsor.name %>.png" alt="<%= sponsor.name %>"></a>
@@ -44,24 +56,25 @@
   </table>
 <% end %>
 
+<% if year == "2017" %>
 <h4>Seeking exposure to top Rust Talent? <a href="/images/sponsors/17_RustConf_Prospectus.pdf">Sponsor RustConf</a>!</h4>
-
+<% else %>
+<h4>Seeking exposure to top Rust Talent? <a href="/images/sponsors/18_RustConf_Prospectus.pdf">Sponsor RustConf</a>!</h4>
+<% end %>
 
   <div id="footer-ribbon" class="aside ribbon">
     Scholarships
   </div>
 
-
+<% if year == "2017" %>
   <p>
     The following individuals and companies generously contributed funds for our scholarship program:
   </p>
 <ul>
-    <li>
-      Cliff Dyer
-<!--     <li>
-      ...and other anonymous donors.
-    </li> -->
+    <li> Cliff Dyer
 </ul>
+
+<% end %>
 
 
 
