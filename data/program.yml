@@ -21,7 +21,7 @@ speakers:
     bio: "anime"
   - name: Steve Klabnik
     ident: steve
-    image: steve.jpg
+    image: steve2.png
     twitter: "steveklabnik"
     bio: "pizza"
 talks:
@@ -86,13 +86,13 @@ pc:
     image: michael.jpg
     twitter: "mgattozzi"
   - name: Nicholas Cameron
-    image: nrc.jpg
+    image: nrc.png
     twitter: "nick_r_cameron"
   - name: Nika Layzell
     image: nika.jpg
     twitter: "kneecaw"
   - name: Steve Klabnik
-    image: steve.jpg
+    image: steve2.png
     twitter: "steveklabnik"
 orga:
   - name: Leah Silber
