@@ -22,7 +22,7 @@ At a glance, the schedule is: <br><br>
 <td <% if training.timeslot == "full" %> rowspan=2<% end %>> <a href="#<%= training.slug %>"><%= training.title %></a></td>
 <% end %>
 </tr>
-<tr><td>Afternoon (1pm-4pm or 5pm)</td>
+<tr><td>Afternoon (1pm-4pm)</td>
 <% data.program.trainings.select { |s| s.timeslot == 'afternoon' }.sort_by { |s| s.room }.each do |training| %>
 <td> <a href="#<%= training.slug %>"><%= training.title %></a></td>
 <% end %>
@@ -37,7 +37,7 @@ At a glance, the schedule is: <br><br>
       <% end %>
     </table>
 
-    <h3>Afternoon (1pm-4pm or 5pm)</h3>
+    <h3>Afternoon (1pm-4pm)</h3>
     <table>
       <% data.program.trainings.select { |s| s.timeslot == 'afternoon'}.each do |training| %>
         <%= partial "training", locals: { training: training } %>
