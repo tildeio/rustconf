@@ -15,7 +15,7 @@ speakers:
     twitter: "nikomatsakis"
     bio: "Nicholas Matsakis (nmatsakis) is a member of the Rust Core Team and employed by Mozilla Research. His main focus in Rust is language design and compiler implementation. At Mozilla, he has also worked on Parallel JavaScript and other parallelization efforts. Prior to joining Mozilla, Niko received his PhD from ETH Zurich, likewise focused on parallelism and language design."
   - name: Michael Gattozzi
-    ident: michael
+    ident: mgattozzi
     image: michael.jpg
     github: "mgattozzi"
     bio: "anime"
@@ -24,6 +24,22 @@ speakers:
     image: steve2.png
     twitter: "steveklabnik"
     bio: "pizza"
+  - name: Arshia Mufti
+    ident: arshia
+    image: arshia.jpg
+    twitter: "arshia__"
+  - name: Katharina
+    ident: katharina
+    image: katharina.jpg
+    twitter: "spacekookie"
+  - name: Sergio Benitez
+    ident: sergio
+    image: sergio.png
+    github: "SergioBenitez"
+  - name: Nicholas Cameron
+    ident: nrc
+    image: nrc.png
+    github: "nick_r_cameron"
 talks:
   - title: "Opening Keynote"
     abstract: "Aaron, Ashley, and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
@@ -34,38 +50,90 @@ trainings:
     speakers: steve
     timeslot: morning
     slug: beginner
+    room: 0
     focus: "Rust Fundamentals: Ownership and Borrowing"
-    abstract: "Learn everything you need to get started writing Rust programs. The tutorial puts a focus on Ownership and Borrowing, which are the key techniques that Rust uses to achieve both safety and low-level performance.</p><p>This class assumes no prior knowledge of Rust, though programming experience in some other language would be helpful."
+    abstract: |
+      <p>Learn everything you need to get started writing Rust programs. The tutorial puts a focus on Ownership and Borrowing, which are the key techniques that Rust uses to achieve both safety and low-level performance.
+
+      <p>This class assumes no prior knowledge of Rust, though programming experience in some other language would be helpful.
+
+      <p>Participants should bring their own laptops. Additional machine setup instructions will be sent ~1 week prior to the training.
   - title: "Traits and Threads"
     speakers: aaron
-    focus: "Traits and Threads"
     timeslot: morning
     slug: intermediate
-    abstract: "Move up a level in Rust knowledge. This tutorial introduces the second key piece of Rust, its trait system. It shows how the trait system is the foundation for generic programming in Rust, allowing you to write one piece of code that can be reused in many contexts. It also covers how to write threaded programs in Rust, and shows how threaded programming in Rust builds on the trait system to guarantee data-race freedom.</p><p>This tutorial assumes basic understanding of ownership and borrowing; if you have been writing Rust for a while, you should do fine."
+    room: 1
+    abstract: |
+      <p>Move your Rust knowledge up a level! This tutorial introduces the second key piece of Rust, its trait system.
+      You’ll learn how the trait system is the foundation for generic programming in Rust, allowing you to write one piece
+      of code that can be reused in many contexts. The session will also cover how to write threaded programs in Rust, and
+      demonstrate how threaded programming in Rust builds on the trait system to guarantee data-race freedom.
+      
+      <p>This tutorial assumes basic understanding of ownership and borrowing; if you have been writing Rust for a while, you should do fine.
+      
+      <p>Participants should bring their own laptops. Additional machine setup instructions will be sent ~1 week prior to the training.
   - title: "How to think in Rust"
     speakers: nrc
-    focus: "Mental models and design patterns"
     timeslot: afternoon
+    room: 0
     slug: think
-    abstract: "Learning a new programming language is hard. Even after mastering the syntax and type system, learning the libraries and techniques can take years. If you've read or written Rust and want to improve, this talk will give you a turbo boost! This will be a very practical tutorial, aimed at taking your Rust programming to the next level. We'll teach some core Rust design principles by covering a few key topics in depth. This tutorial is aimed at those with some Rust experience, but if you're a total beginner, you'll still learn a lot about what Rust programming is like in practice.<br><br> The tutorial will start with programming 'in the small': we'll explore some key library types (Option, Result, and Iterator) and cover practical error handling. Putting these together we'll see how to structure your control flow to write clear, succinct programs. We'll then cover some larger-scale design issues - using ownership as a primary architectural principle, and abstraction using traits. <br><br> You'll learn how to be more productive in Rust by writing clean and idiomatic code. You'll learn to work with the language rather than fighting against it."
+    abstract: |
+      <p>Learning a new programming language is hard. Even after mastering the syntax and type system, learning the libraries and techniques can take years.
+      If you've read or written Rust and want to improve, this talk will give you a turbo boost! This will be a very practical tutorial, aimed at taking your Rust programming to the next level.
+      We'll teach some core Rust design principles by covering a few key topics in depth. This tutorial is aimed at those with some Rust experience, but if you're a total beginner,
+      you'll still learn a lot about what Rust programming is like in practice.
+      
+      <p>The tutorial will start with programming 'in the small': we'll explore some key library types (Option, Result, and Iterator) and cover practical error handling.
+      Putting these together we'll see how to structure your control flow to write clear, succinct programs. We'll then cover some larger-scale design issues - using ownership
+      as a primary architectural principle, and abstraction using traits. 
+      
+      <p>You'll learn how to be more productive in Rust by writing clean and idiomatic code. You'll learn to work with the language rather than fighting against it.
+
+      <p>Participants should bring their own laptops. Additional machine setup instructions will be sent ~1 week prior to the training.
   - title: "Futures and Async Programming"
     speakers: mgattozzi
-    focus: "Futures, Tokio, and async programming in Rust"
     timeslot: afternoon
+    room: 1
     slug: futures
-    abstract: "Get started with understanding Asynchronous code in Rust! Whether you've just started using Async or you've been using it from it's inception there is something for everyone here. It'll show how to use the new async/await syntax, pinning api, and how to effectively leverage Futures in your Rust code. This class assumes you already have an understanding of how Rust works for the most part."
+    abstract: |
+      <p>Get started with understanding Asynchronous code in Rust! Whether you've just started using Async or you've been using
+      it from it's inception there is something for everyone here. It'll show how to use the new async/await syntax, pinning api,
+      and how to effectively leverage Futures in your Rust code. This class assumes you already have an understanding of how Rust works for the most part.
+
+      <p>Participants should bring their own laptops. Additional machine setup instructions will be sent ~1 week prior to the training.
   - title: "WebAssembly"
-    speakers: steve
-    focus: "WebAssembly"
+    speakers: steve, ashley
     timeslot: afternoon
+    room: 2
     slug: wasm
-    abstract: "TBD"
+    abstract: "Coming Soon!"
+  - title: "Secure Web Services in Rocket"
+    speakers: sergio
+    timeslot: morning
+    room: 2
+    slug: rocket
+    abstract: |
+      <p>Take the safety and reliability of Rust that you're used to into the world of web services with <a href="https://rocket.rs/">Rocket</a>!
+      You'll write a fully working, database-backed web application in Rocket to learn first-hand how Rocket
+      leverages Rust's type system and code generation facilities to prevent correctness and web security bugs at compile-time.
+      Discover why thousands of developers and companies are writing or rewriting their web services in Rocket.
+
+      <p>This workshop is intended for developers with experience writing software in Rust.
+      Working knowledge of HTTP and the web will be helpful but not required.
+
+      <p>Participants will need their own laptop. Before attending the workshop, participants
+      should ensure that they can compile and run the "Hello, world!" Rocket application. Full instructions are available in <a href="https://rocket.rs/guide/getting-started/">Rocket’s Getting Started guide</a>.
   - title: "RustBridge"
-    speakers: ashley
+    speakers: arshia, katharina
     focus: "Intro to Rust and Hands-on Workshop"
     timeslot: full
+    room: 3
     slug: rustbridge
-    abstract: "This free workshop is for people who are members of groups that are underrepresented in tech, in the style of RailsBridge. There will be a morning introduction to Rust concepts and an afternoon hands-on project. This class assumes no prior knowledge of Rust, but familiarity with any other programming language, the command line, and a text editor is recommended."
+    abstract: |
+      <p>This free workshop is for people who are members of groups that are underrepresented in tech, in the style of <a href="http://www.railsbridge.org/">RailsBridge</a>.
+      There will be a morning introduction to Rust concepts and an afternoon hands-on project. This class assumes no prior knowledge of Rust, but familiarity with any other programming language, the command line, and a text editor is recommended.
+  
+      <p>Participants should bring their own laptops. Additional machine setup instructions will be sent ~1 week prior to the training.
 pc:
   - name: Arshia Mufti
     image: arshia.jpg

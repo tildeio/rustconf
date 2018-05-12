@@ -13,7 +13,7 @@
       <h4>
         <a href="#<%= training.slug %>" class=plainlink><%= training.title %></a>
       </h4>
-      <h5><%= training.focus %>, By
+      <h5><% if training.focus %> <%= training.focus %>, <% end %>By
         <% speakers.each_with_index do |speaker, idx| %>
           <% if idx != 0 %> , <% end %>
           <% if speaker.twitter %>
