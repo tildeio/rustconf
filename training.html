@@ -67,7 +67,259 @@
       </nav>
   
 
-      (Coming soon)
+      <div class="container">
+
+  <h1>Our Trainings</h1>
+
+  <p>
+    We'll be offering <em>six</em> half-day Rust training sessions, targeting various levels of Rust experience.
+  </p>
+
+  <p>
+    We're also running an all-day RustBridge workshop for people in groups that are underrepresented in tech.
+  </p>
+
+At a glance, the schedule is: <br><br>
+
+<table border cellpadding=5>
+<tr><td>Morning (9am-12pm)</td>
+<td > <a href="#beginner">Rust for Beginners</a></td>
+<td > <a href="#intermediate">Traits and Threads</a></td>
+<td > <a href="#rocket">Secure Web Services in Rocket</a></td>
+<td  rowspan=2> <a href="#rustbridge">RustBridge</a></td>
+</tr>
+<tr><td>Afternoon (1pm-4pm or 5pm)</td>
+<td> <a href="#think">How to think in Rust</a></td>
+<td> <a href="#futures">Futures and Async Programming</a></td>
+<td> <a href="#wasm">WebAssembly</a></td>
+</tr>
+</table>
+  <div id="program">
+    <h3>Morning (9am-12pm)</h3>
+    <table>
+        <tr>
+  <td>
+        <img src="images/speakers/steve2.png" class="spkPic2" alt="Steve2" />
+  </td>
+  <td class="abstract" id="beginner">
+      <h4>
+        <a href="#beginner" class=plainlink>Rust for Beginners</a>
+      </h4>
+      <h5> Rust Fundamentals: Ownership and Borrowing, By
+          
+            <a href="http://www.twitter.com/steveklabnik">Steve Klabnik</a>
+      </h5>
+      <p>
+        <p>Learn everything you need to get started writing Rust programs. The tutorial puts a focus on Ownership and Borrowing, which are the key techniques that Rust uses to achieve both safety and low-level performance.
+
+<p>This class assumes no prior knowledge of Rust, though programming experience in some other language would be helpful.
+
+<p>Participants should bring their own laptops. Additional machine setup instructions will be sent ~1 week prior to the training.
+
+      </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <hr />
+  </td>
+</tr>
+
+        <tr>
+  <td>
+        <img src="images/speakers/aaron.jpg" class="spkPic2" alt="Aaron" />
+  </td>
+  <td class="abstract" id="intermediate">
+      <h4>
+        <a href="#intermediate" class=plainlink>Traits and Threads</a>
+      </h4>
+      <h5>By
+          
+            <a href="http://www.twitter.com/aaron_turon">Aaron Turon</a>
+      </h5>
+      <p>
+        <p>Move your Rust knowledge up a level! This tutorial introduces the second key piece of Rust, its trait system.
+You’ll learn how the trait system is the foundation for generic programming in Rust, allowing you to write one piece
+of code that can be reused in many contexts. The session will also cover how to write threaded programs in Rust, and
+demonstrate how threaded programming in Rust builds on the trait system to guarantee data-race freedom.
+
+<p>This tutorial assumes basic understanding of ownership and borrowing; if you have been writing Rust for a while, you should do fine.
+
+<p>Participants should bring their own laptops. Additional machine setup instructions will be sent ~1 week prior to the training.
+
+      </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <hr />
+  </td>
+</tr>
+
+        <tr>
+  <td>
+        <img src="images/speakers/sergio.png" class="spkPic2" alt="Sergio" />
+  </td>
+  <td class="abstract" id="rocket">
+      <h4>
+        <a href="#rocket" class=plainlink>Secure Web Services in Rocket</a>
+      </h4>
+      <h5>By
+          
+            <a href="http://github.com/SergioBenitez">Sergio Benitez</a>
+      </h5>
+      <p>
+        <p>Take the safety and reliability of Rust that you're used to into the world of web services with <a href="https://rocket.rs/">Rocket</a>!
+You'll write a fully working, database-backed web application in Rocket to learn first-hand how Rocket
+leverages Rust's type system and code generation facilities to prevent correctness and web security bugs at compile-time.
+Discover why thousands of developers and companies are writing or rewriting their web services in Rocket.
+
+<p>This workshop is intended for developers with experience writing software in Rust.
+Working knowledge of HTTP and the web will be helpful but not required.
+
+<p>Participants will need their own laptop. Before attending the workshop, participants
+should ensure that they can compile and run the "Hello, world!" Rocket application. Full instructions are available in <a href="https://rocket.rs/guide/getting-started/">Rocket’s Getting Started guide</a>.
+
+      </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <hr />
+  </td>
+</tr>
+
+    </table>
+
+    <h3>Afternoon (1pm-4pm or 5pm)</h3>
+    <table>
+        <tr>
+  <td>
+        <img src="images/speakers/nrc.png" class="spkPic2" alt="Nrc" />
+  </td>
+  <td class="abstract" id="think">
+      <h4>
+        <a href="#think" class=plainlink>How to think in Rust</a>
+      </h4>
+      <h5>By
+          
+            <a href="http://github.com/nick_r_cameron">Nicholas Cameron</a>
+      </h5>
+      <p>
+        <p>Learning a new programming language is hard. Even after mastering the syntax and type system, learning the libraries and techniques can take years.
+If you've read or written Rust and want to improve, this talk will give you a turbo boost! This will be a very practical tutorial, aimed at taking your Rust programming to the next level.
+We'll teach some core Rust design principles by covering a few key topics in depth. This tutorial is aimed at those with some Rust experience, but if you're a total beginner,
+you'll still learn a lot about what Rust programming is like in practice.
+
+<p>The tutorial will start with programming 'in the small': we'll explore some key library types (Option, Result, and Iterator) and cover practical error handling.
+Putting these together we'll see how to structure your control flow to write clear, succinct programs. We'll then cover some larger-scale design issues - using ownership
+as a primary architectural principle, and abstraction using traits. 
+
+<p>You'll learn how to be more productive in Rust by writing clean and idiomatic code. You'll learn to work with the language rather than fighting against it.
+
+<p>Participants should bring their own laptops. Additional machine setup instructions will be sent ~1 week prior to the training.
+
+      </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <hr />
+  </td>
+</tr>
+
+        <tr>
+  <td>
+        <img src="images/speakers/michael.jpg" class="spkPic2" alt="Michael" />
+  </td>
+  <td class="abstract" id="futures">
+      <h4>
+        <a href="#futures" class=plainlink>Futures and Async Programming</a>
+      </h4>
+      <h5>By
+          
+            <a href="http://github.com/mgattozzi">Michael Gattozzi</a>
+      </h5>
+      <p>
+        <p>Get started with understanding Asynchronous code in Rust! Whether you've just started using Async or you've been using
+it from it's inception there is something for everyone here. It'll show how to use the new async/await syntax, pinning api,
+and how to effectively leverage Futures in your Rust code. This class assumes you already have an understanding of how Rust works for the most part.
+
+<p>Participants should bring their own laptops. Additional machine setup instructions will be sent ~1 week prior to the training.
+
+      </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <hr />
+  </td>
+</tr>
+
+        <tr>
+  <td>
+        <img src="images/speakers/ashley.jpg" class="spkPic_multiple" alt="Ashley" />
+        <img src="images/speakers/steve2.png" class="spkPic_multiple" alt="Steve2" />
+  </td>
+  <td class="abstract" id="wasm">
+      <h4>
+        <a href="#wasm" class=plainlink>WebAssembly</a>
+      </h4>
+      <h5>By
+          
+            <a href="http://www.twitter.com/ag_dubs">Ashley Williams</a>
+           , 
+            <a href="http://www.twitter.com/steveklabnik">Steve Klabnik</a>
+      </h5>
+      <p>
+        Coming Soon!
+      </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <hr />
+  </td>
+</tr>
+
+    </table>
+
+    <h3>All day (9am-4pm, break from 12pm-1pm)</h3>
+    <table>
+        <tr>
+  <td>
+        <img src="images/speakers/arshia.jpg" class="spkPic_multiple" alt="Arshia" />
+        <img src="images/speakers/katharina.jpg" class="spkPic_multiple" alt="Katharina" />
+  </td>
+  <td class="abstract" id="rustbridge">
+      <h4>
+        <a href="#rustbridge" class=plainlink>RustBridge</a>
+      </h4>
+      <h5> Intro to Rust and Hands-on Workshop, By
+          
+            <a href="http://www.twitter.com/arshia__">Arshia Mufti</a>
+           , 
+            <a href="http://www.twitter.com/spacekookie">Katharina</a>
+      </h5>
+      <p>
+        <p>This free workshop is for people who are members of groups that are underrepresented in tech, in the style of <a href="http://www.railsbridge.org/">RailsBridge</a>.
+There will be a morning introduction to Rust concepts and an afternoon hands-on project. This class assumes no prior knowledge of Rust, but familiarity with any other programming language, the command line, and a text editor is recommended.
+
+<p>Participants should bring their own laptops. Additional machine setup instructions will be sent ~1 week prior to the training.
+
+      </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <hr />
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
     </main>
 
   </body>
