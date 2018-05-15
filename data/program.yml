@@ -55,6 +55,11 @@ speakers:
     image: ryanplauche.png
     twitter: "plauplauplau"
     bio: "TBD"
+  - name: Sunjay Varma
+    ident: sunjay
+    image: sunjay.jpg
+    twitter: "Sunjay03"
+    bio: "TBD"
 talks:
   - title: "Opening Keynote"
     abstract: "Aaron, Ashley, and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
@@ -73,6 +78,11 @@ talks:
       <p>This presentation will cover the finer points of why we settled on Rust, how we integrated Rust into our existing C environment, how Rust has affected our developer productivity, pictures of the (first?) spacecraft running Rust in low Earth orbit and thoughts on the future of Rust in Space.
     speakers: ryanplauche
     ident: spaace
+  - title: "Writing Crates for Complete Beginners - A Tour of Turtle"
+    abstract: |
+      <p>Turtle is a Rust graphics crate for creating animated drawings. It is designed to be used to teach programming to complete beginners using Rust. In this talk, you'll learn the inner workings of turtle. We'll show you how we managed to create a library that is both full of features and very easy to learn. We'll go deep into how turtle works and tell you the key aspects of creating a crate that is accessible for anyone of any skill level. You'll leave with new ideas for your own crates and a good understanding of what went into making turtle so beginner friendly.
+    speakers: sunjay
+    ident: turtle
 trainings:
   - title: "Rust for Beginners"
     speakers: steve
