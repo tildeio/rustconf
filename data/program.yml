@@ -60,6 +60,11 @@ speakers:
     image: sunjay.jpg
     twitter: "Sunjay03"
     bio: "TBD"
+  - name: James Munns
+    ident: jamesmunns
+    image: jamesmunns.jpg
+    twitter: bitshiftmask
+    bio: "TBD"
 talks:
   - title: "Opening Keynote"
     abstract: "Aaron, Ashley, and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
@@ -83,6 +88,12 @@ talks:
       <p>Turtle is a Rust graphics crate for creating animated drawings. It is designed to be used to teach programming to complete beginners using Rust. In this talk, you'll learn the inner workings of turtle. We'll show you how we managed to create a library that is both full of features and very easy to learn. We'll go deep into how turtle works and tell you the key aspects of creating a crate that is accessible for anyone of any skill level. You'll leave with new ideas for your own crates and a good understanding of what went into making turtle so beginner friendly.
     speakers: sunjay
     ident: turtle
+  - title: "Getting Something for Nothing"
+    abstract: |
+      <p>This talk explores how to use the Rust Type System and Borrow Checker to write safe abstractions of hardware, even when using direct control of memory mapped peripherals with <code>unsafe</code> blocks. Because these techniques move all (or most) of the checking to compile time, these techniques are perfect for systems where high performance or resource constraints are a requirement.
+      <p> This talk will explain and explore how these techniques are used on Microcontroller systems as a critical part of the <code>embedded-hal</code> ecosystem.
+    speakers: jamesmunns
+    ident: somethingfornothing
 trainings:
   - title: "Rust for Beginners"
     speakers: steve
