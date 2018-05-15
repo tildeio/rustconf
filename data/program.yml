@@ -65,6 +65,11 @@ speakers:
     image: jamesmunns.jpg
     twitter: bitshiftmask
     bio: "TBD"
+  - name: Douglas Campos
+    ident: douglascampos
+    image: douglascampos.jpg
+    twitter: qmx
+    bio: "TBD"
 talks:
   - title: "Opening Keynote"
     abstract: "Aaron, Ashley, and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
@@ -94,6 +99,15 @@ talks:
       <p> This talk will explain and explore how these techniques are used on Microcontroller systems as a critical part of the <code>embedded-hal</code> ecosystem.
     speakers: jamesmunns
     ident: somethingfornothing
+  - title: "How to (not) introduce Rust at your workplace - a tale"
+    abstract: |
+      <p>So I've tried to introduce Rust at my $DAYJOB, and failed miserably.
+
+      <p>Failure can be a great catalyst for reflection, and indeed, there was a lot of valuable lessons to be learned!
+
+      <p>At this brief talk, I'll not only share the pitfalls to avoid, but the insights I've gained while trying to make Rust work for us (and maybe for you?).
+    speakers: douglascampos
+    ident: howtonot
 trainings:
   - title: "Rust for Beginners"
     speakers: steve
