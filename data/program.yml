@@ -108,6 +108,15 @@ talks:
       <p>At this brief talk, I'll not only share the pitfalls to avoid, but the insights I've gained while trying to make Rust work for us (and maybe for you?).
     speakers: douglascampos
     ident: howtonot
+  - title: "Embedding Rust in C/C++"
+    abstract: |
+      <p>We all know that using C/C++ code in Rust is not too complicated. <code>extern "C"</code>, <code>bindgen</code> and <code>build.rs</code> scripts make this pretty easy.
+      But let’s challenge ourselves: what about the other way around? There are huge C and C++ projects that could use some corrosion.
+
+      <p>In this talk I will not just show simple examples of how to use Rust modules inside larger C/C++
+      applications, the common pitfalls you will encounter, and to deal with them.
+    speakers: katharina
+    ident: ffi
 trainings:
   - title: "Rust for Beginners"
     speakers: steve
