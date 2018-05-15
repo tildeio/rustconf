@@ -24,7 +24,7 @@ end
 				<%
 					speakers = programdata.speakers.select {|spk| talk.speakers.include? spk.ident}
 					id = speakers[0].ident
-					if speakers.length > 1
+					if talk.ident
 						id = talk.ident
 					end
 				%>
