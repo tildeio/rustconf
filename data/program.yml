@@ -40,11 +40,39 @@ speakers:
     ident: nrc
     image: nrc.png
     github: "nick_r_cameron"
+  - name: Isis Lovecruft
+    ident: isis
+    image: isis.jpg
+    twitter: "isislovecruft"
+    bio: "TBD"
+  - name: Isis Lovecruft
+    ident: chelsea
+    image: chelsea.jpg
+    twitter: "chelseakomlo"
+    bio: "TBD"
+  - name: Ryan Plauche
+    ident: ryanplauche
+    image: ryanplauche.png
+    twitter: "plauplauplau"
+    bio: "TBD"
 talks:
   - title: "Opening Keynote"
     abstract: "Aaron, Ashley, and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
     speakers: aaron, ashley, niko
     ident: keynote
+  - title: "Integrating Rust into Tor: Successes and Challenges"
+    abstract: |
+      <p>In 2016, The Tor Project's network team decided to experiment with writing existing and new functionality in Rust. Since then, this experiment has turned into a team initiative, with multiple team members adding infrastructure and new functionality with the goal of integrating Rust components directly into the core Tor code base. By 2019, we will have several features tha will be only supported in Rust.
+      <p>With this effort has come many challenges and questions, some which have remained unresolved. In this talk, we propose walking through this timeline, and sharing what we have learned, what was good, and what was challenging about integrating Rust into a 10+ year old security-critical C codebase. We will also offer ideas about what could make this easier going forward, and what we are excited and hoping to see in future Rust versions. Overall, we at The Tor Project are big fans of Rust. We are looking forward to sharing what we have learned and accomplished over the last two years.
+    speakers: isis, chelsea
+    ident: tor
+  - title: "Space, The Rusty Frontier"
+    abstract: |
+      <p>Space. It is often thought of as the final frontier for humans. Why not also for Rust?
+      <p>In the fall of 2017 we began using Rust on an upcoming CubeSat mission. Writing safe, performant software is a high priority for us, one shared by the aerospace industry. Our software framework was originally written in C but we wanted to explore other options which could give us more confidence in our code and allow us to leverage newer technologies. For us Rust fits the bill with its emphasis on safety, growing community, and high level software patterns.
+      <p>This presentation will cover the finer points of why we settled on Rust, how we integrated Rust into our existing C environment, how Rust has affected our developer productivity, pictures of the (first?) spacecraft running Rust in low Earth orbit and thoughts on the future of Rust in Space.
+    speakers: ryanplauche
+    ident: spaace
 trainings:
   - title: "Rust for Beginners"
     speakers: steve

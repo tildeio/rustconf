@@ -13,7 +13,11 @@ end
 <div class="container">
 
 	<h1>Our Program</h1>
-
+		<% if year == "2018" %>
+		<br>
+		The program is being announced slowly. This year we have two tracks and lots of speakers! Watch this space or follow <a href="https://twitter.com/rustconf">@rustconf</a> on Twitter for updates as talks get announced!
+		<br><br><br>
+		<% end %>
 	<div id="program">
 		<table>
 			<% programdata.talks.each do |talk| %>
@@ -61,6 +65,10 @@ end
 				</tr>
 			<% end %>
 		</table>
+		<% if year == "2018" %>
+		<br><br>
+		<b>More talks coming soon!!</b>
+		<% end %>
 	</div>
 
 </div>
