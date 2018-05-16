@@ -85,6 +85,11 @@ speakers:
     image: shaquille.jpg
     twitter: ShaqHacks
     bio: "TBD"
+  - name: "Brandon W Maister"
+    ident: quodlibetor
+    image: quodlibetor.jpg
+    twitter: quodlibetor
+    bio: "TBD"
 talks:
   - title: "Opening Keynote"
     abstract: "Aaron, Ashley, and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
@@ -154,6 +159,16 @@ talks:
       <p> This talk describes my experience with Rust, walking through the many libraries that we tried, which ones we decided to go forward with, which ones we didn’t, and how we coordinated our internal team with upstream crate authors.
     speakers: shaquille
     ident: reddit
+  - title: "The Opposite of Spaghetti Code: Building for Understanding"
+    abstract: |
+      <p> Every moderately sized project is both a library and a consumer. Rust has an almost dizzying array of features
+      that can be used to add structure and hide information.
+      <p>In this talk we'll discuss using types, traits, modules and crates as the tools of encapsulation.
+      To show how they work together to effectively superseed similar information-hiding tools in procedural and OO
+      languages we'll grow a simple type into a collection of language objects. We'll discuss the thought processes that go into deciding to add a layer of
+      abstraction, and how to use each layer to maximum effect.
+    speakers: quodlibetor
+    ident: spaghetti
 trainings:
   - title: "Rust for Beginners"
     speakers: steve
