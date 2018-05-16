@@ -80,6 +80,11 @@ speakers:
     image: misdreavus.png
     twitter: QuietMisdreavus
     bio: "TBD"
+  - name: "Shaquille Johnson"
+    ident: shaquille
+    image: shaquille.jpg
+    twitter: ShaqHacks
+    bio: "TBD"
 talks:
   - title: "Opening Keynote"
     abstract: "Aaron, Ashley, and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
@@ -143,6 +148,12 @@ talks:
       But how many have looked at the tool behind <code>cargo doc</code>? In this talk, I'll divulge some hidden secrets of <code>rustdoc</code>, the tool used by <code>cargo doc</code> to generate documentation.
     speakers: misdreavus
     ident: doc
+  - title: "Reddit & Rust"
+    abstract: |
+      <p> Reddit recently rewrote its markdown parser from C into Rust. We did this because maintaining this security-critical component in memory-unsafe C was too difficult - at one point we had a feature in security review for a year, and that's not acceptable.
+      <p> This talk describes my experience with Rust, walking through the many libraries that we tried, which ones we decided to go forward with, which ones we didn’t, and how we coordinated our internal team with upstream crate authors.
+    speakers: shaquille
+    ident: reddit
 trainings:
   - title: "Rust for Beginners"
     speakers: steve
