@@ -197,7 +197,7 @@ talks:
     abstract: |
       <p>What if Handlebars was a macro?
       <p>Three years, 376 commits, and countless breaking changes later, I may have an answer to that.
-      <p> Maud is a macro for writing HTML web pages. It's like format!(), but for markup instead
+      <p> Maud is a macro for writing HTML web pages. It's like <code>format!()</code>, but for markup instead
       of text. This design lets it catch typos at compile-time, as well as run blazingly fast.
       <p> This talk will cover lessons I learned while working on Maud, including: tips on designing
       a macro's syntax, some common pitfalls with the procedural macro system, and dealing with Nightly Rust. There will also be a pony.
