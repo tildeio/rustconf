@@ -110,11 +110,20 @@ speakers:
     image: fluffyemily.jpg
     twitter: fluffyemily
     bio: "TBD"
+  - name: "Catherine West"
+    ident: kyren
+    image: catherine.png
+    twitter: kyrenite
+    bio: "TBD"
 talks:
   - title: "Opening Keynote"
     abstract: "Aaron, Ashley, and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
     speakers: aaron, ashley, niko
     ident: keynote
+  - title: "Closing Keynote"
+    abstract: "Coming soon!"
+    speakers: kyren
+    ident: closingkeynote
   - title: "Integrating Rust into Tor: Successes and Challenges"
     abstract: |
       <p>In 2016, The Tor Project's network team decided to experiment with writing existing and new functionality in Rust. Since then, this experiment has turned into a team initiative, with multiple team members adding infrastructure and new functionality with the goal of integrating Rust components directly into the core Tor code base. By 2019, we will have several features tha will be only supported in Rust.
