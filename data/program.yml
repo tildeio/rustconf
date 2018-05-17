@@ -90,6 +90,26 @@ speakers:
     image: quodlibetor.jpg
     twitter: quodlibetor
     bio: "TBD"
+  - name: "Chris Wong"
+    ident: lambdafairy
+    image: lambdafairy.jpg
+    twitter: LambdaFairy
+    bio: "TBD"
+  - name: "Sarah Meyer"
+    ident: sarahmeyer
+    image: sarahmeyer.jpg
+    twitter: meyerini
+    bio: "TBD"
+  - name: "Siddon Tang"
+    ident: siddontang
+    image: siddontang.jpg
+    github: siddontang
+    bio: "TBD"
+  - name: "Emily Toop"
+    ident: fluffyemily
+    image: fluffyemily.jpg
+    twitter: fluffyemily
+    bio: "TBD"
 talks:
   - title: "Opening Keynote"
     abstract: "Aaron, Ashley, and Niko will deliver an update on the state of all things Rust. You don't want to miss it!"
@@ -146,6 +166,10 @@ talks:
       fairly and consequently exploring strategies for optimizing performance.
     speakers: paulmason
     ident: benchmarking
+  - title: "Rust and the Web Platform: A Rookie’s Guide"
+    abstract: "Coming Soon!"
+    speakers: sarahmeyer
+    ident: webplatform
   - title: "The Dark Secrets Lurking Inside <code>cargo doc</code>"
     abstract: |
       <p> Every Rustacean reads the standard library docs (or some other library docs) sooner or later.
@@ -169,6 +193,29 @@ talks:
       abstraction, and how to use each layer to maximum effect.
     speakers: quodlibetor
     ident: spaghetti
+  - title: "My Little Procedural Macro"
+    abstract: |
+      <p>What if Handlebars was a macro?
+      <p>Three years, 376 commits, and countless breaking changes later, I may have an answer to that.
+      <p> Maud is a macro for writing HTML web pages. It's like format!(), but for markup instead
+      of text. This design lets it catch typos at compile-time, as well as run blazingly fast.
+      <p> This talk will cover lessons I learned while working on Maud, including: tips on designing
+      a macro's syntax, some common pitfalls with the procedural macro system, and dealing with Nightly Rust. There will also be a pony.
+    speakers: lambdafairy
+    ident: procmacro
+  - title: "Project Mentat: an evolving data store in Rust"
+    abstract: "Coming Soon!"
+    speakers: fluffyemily
+    ident: mentat
+  - title: "Using Raft in Rust"
+    abstract: |
+      <p> The Raft consensus algorithm has been widely adopted in many companies to build a
+      consistent distributed services that are highly available. This topic is about how we
+      implemented Raft in rust to support TiKV, an open-Source distributed transactional Key-Value store.
+      In this topic, I will first give a brief introduction about Raft, and then talk about our
+      Raft implementation in Rust, and in the end, I will show you how to use Raft in Rust to build a simple distributed Key-Value database. 
+    speakers: siddontang
+    ident: raft
 trainings:
   - title: "Rust for Beginners"
     speakers: steve
