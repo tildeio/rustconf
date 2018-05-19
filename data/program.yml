@@ -225,6 +225,31 @@ talks:
       Raft implementation in Rust, and in the end, I will show you how to use Raft in Rust to build a simple distributed Key-Value database. 
     speakers: siddontang
     ident: raft
+schedule:
+  - name: "Registration"
+    time: "8:30 - 9:45am"
+  - talk: keynote
+    time: "9:45 - 10:30am"
+  - talk: spaace, benchmarking
+    time: "10:45 - 11:15am"
+  - talk: somethingfornothing, howtonot
+    time: "11:30am - 12:00pm"
+  - name: "Lunch"
+    time: "12:00 - 1:30pm"
+  - talk: rustdoc, tor
+    time: "1:30 - 2:00pm"
+  - talk: raft, turtle
+    time: "2:15 - 2:45pm"
+  - talk: spaghetti, mentat
+    time: "3:00- 3:30pm"
+  - name: "Snacks"
+    time: "3:30 - 4:00pm"
+  - talk: ffi, webplatform
+    time: "4:00 - 4:30pm"
+  - talk: reddit, procmacro
+    time: "4:45 - 5:15pm"
+  - talk: closingkeynote
+    time: "5:30 - 6:00pm"
 trainings:
   - title: "Rust for Beginners"
     speakers: steve

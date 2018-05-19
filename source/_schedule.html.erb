@@ -8,6 +8,11 @@ if year == "2017"
   sponsordata = data.sponsors2017
   faqdata = data.faq2017
 end
+
+twotrack = false
+if programdata.schedule.any? {|event| event.talk && event.talk.kind_of?(Array)}
+  twotrack = true
+end
 %>
 
 <h1>Schedule</h1>
@@ -16,6 +21,9 @@ end
 <p>
   Trainings take place on Friday, August 18th, and the conference takes place on August 19th.<br> <a href="../training.html">Training schedule details can be found here</a>.
 </p>
+<% elsif year == "2018" %>
+  <p>RustConf 2018 is on August 16th and 17th. The <a href="training.html">trainings</a> will be on the 16th, and the <a href=program.html>talks</a> will be on the 17th. <a href="training.html">Training schedule details can be found here</a>
+
 <% end %>
 
 <div>
@@ -32,21 +40,21 @@ end
         <td><%= event.time.sub! "-", "&ndash;" %></td>
         <td>
           <% if event.talk %>
-            <% if event.multiple %>
+            <% 
+              talks = [event.talk]
+              if event.talk.kind_of?(Array)
+                talks = event.talk
+              end
+            %>
+            <% for t in talks %>
               <%
-                talk = programdata.talks.select {|talk| talk.ident == event.talk}[0]
+                talk = programdata.talks.select {|talk| talk.ident == t}[0]
                 speakers = programdata.speakers.select {|spk| talk.speakers.include? spk.ident}
               %>
               <p class="speaker"><a href="program.html#<%= talk.ident %>"><%= talk.title %></a></p>
               <p class="byline">
                 <% speakers.each_with_index do |spk, idx| %><% if idx != 0 && speakers.length > 2 %>,<% end %> <% if idx == speakers.length - 1 %>and <% end %><%= spk.name %><% end %>
               </p> 
-            <% else %>
-              <%
-                talk = programdata.talks.select {|talk| talk.speakers == event.talk}[0]
-                speaker = programdata.speakers.select {|spk| talk.speakers == spk.ident}[0]
-              %>
-              <p class="speaker"><a href="program.html#<%= speaker.ident %>"><%= talk.title %></a></p></p><p class="byline"><%= speaker.name %></p> 
             <% end %>
           <% else %>
             <span class="session"><%= event.name %></span>
