@@ -305,7 +305,7 @@ figure.spkFig {
   margin: 0 auto; }
   /* line 335, all.css.scss */
   #schedule td {
-    padding: 0.5rem 0; }
+    padding: 0.5rem 20px; }
   /* line 339, all.css.scss */
   #schedule p.byline {
     margin: 0;
