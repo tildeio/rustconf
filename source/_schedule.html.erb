@@ -10,7 +10,7 @@ if year == "2017"
 end
 
 twotrack = false
-if programdata.schedule.any? {|event| event.talk && event.talk.kind_of?(Array)}
+if programdata.schedule.any? {|event| event.talk && (event.talk.include? ",") }
   twotrack = true
 end
 %>
@@ -22,44 +22,56 @@ end
   Trainings take place on Friday, August 18th, and the conference takes place on August 19th.<br> <a href="../training.html">Training schedule details can be found here</a>.
 </p>
 <% elsif year == "2018" %>
-  <p>RustConf 2018 is on August 16th and 17th. The <a href="training.html">trainings</a> will be on the 16th, and the <a href=program.html>talks</a> will be on the 17th. <a href="training.html">Training schedule details can be found here</a>
-
+  <p>Trainings take place on Thursday, August 16th, and the conference takes place on Friday, August 17th.
+  <p> <a href="training.html">Training schedule details can be found here</a>
+  <p> This year there are two parallel tracks of talks. There is no thematic distinction between the tracks;
+      expect to occasionally switch rooms between talks to go to your preferred one.
+  <p> This schedule is tentative and may change; be sure to check back a couple days before the conference.
 <% end %>
 
 <div>
  <table id="schedule">
+    <co
     <thead>
-      <tr>
+      <tr style="border-bottom: 1px solid black;">
         <th width="160">TIME</th>
-        <th width="600">CONTENT</th>
+        <% if twotrack %>
+          <th width="850">Room A</th>
+          <th width="850">Room B</th>
+        <% else %>
+          <th width="600">CONTENT</th>
+        <% end %>
+        
       </tr>
     </thead>
     <tbody>
     <% programdata.schedule.each do |event| %>
       <tr class="special">
         <td><%= event.time.sub! "-", "&ndash;" %></td>
-        <td>
           <% if event.talk %>
             <% 
               talks = [event.talk]
-              if event.talk.kind_of?(Array)
-                talks = event.talk
+              if event.talk.include? ","
+                talks = event.talk.split(/\s*,\s*/)
               end
             %>
             <% for t in talks %>
-              <%
-                talk = programdata.talks.select {|talk| talk.ident == t}[0]
-                speakers = programdata.speakers.select {|spk| talk.speakers.include? spk.ident}
-              %>
-              <p class="speaker"><a href="program.html#<%= talk.ident %>"><%= talk.title %></a></p>
-              <p class="byline">
-                <% speakers.each_with_index do |spk, idx| %><% if idx != 0 && speakers.length > 2 %>,<% end %> <% if idx == speakers.length - 1 %>and <% end %><%= spk.name %><% end %>
-              </p> 
+              <td <% if twotrack && talks.length == 1 %> colspan=2 <% end %>>
+                <%
+                  talk = programdata.talks.select {|talk| talk.ident == t}[0]
+                  print t
+                  speakers = programdata.speakers.select {|spk| talk.speakers.include? spk.ident}
+                %>
+                <p class="speaker"><a href="program.html#<%= talk.ident %>"><%= talk.title %></a></p>
+                <p class="byline">
+                  <% speakers.each_with_index do |spk, idx| %><% if idx != 0 && speakers.length > 2 %>,<% end %> <% if idx == speakers.length - 1 && speakers.length > 1 %>and <% end %><%= spk.name %><% end %>
+                </p>
+              </td>
             <% end %>
           <% else %>
-            <span class="session"><%= event.name %></span>
+            <td <% if twotrack %> colspan=2 <% end %>><span class="session"><%= event.name %></span></td>
           <% end %>
-        </td>
+
       </tr>
 
     <% end %>

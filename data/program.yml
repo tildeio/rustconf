@@ -236,7 +236,7 @@ schedule:
     time: "11:30am - 12:00pm"
   - name: "Lunch"
     time: "12:00 - 1:30pm"
-  - talk: rustdoc, tor
+  - talk: doc, tor
     time: "1:30 - 2:00pm"
   - talk: raft, turtle
     time: "2:15 - 2:45pm"
