@@ -39,7 +39,8 @@ speakers:
   - name: Nicholas Cameron
     ident: nrc
     image: nrc.png
-    github: "nick_r_cameron"
+    github: "nrc"
+    twitter: "nick_r_cameron"
   - name: Isis Lovecruft
     ident: isis
     image: isis.jpg
