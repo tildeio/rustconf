@@ -358,6 +358,7 @@ trainings:
       There will be a morning introduction to Rust concepts and an afternoon hands-on project. This class assumes no prior knowledge of Rust, but familiarity with any other programming language, the command line, and a text editor is recommended.
   
       <p>Participants should bring their own laptops. Additional machine setup instructions will be sent ~1 week prior to the training.
+      <p> Participants should fill in <a href="https://docs.google.com/forms/d/e/1FAIpQLSesmO1BBSIoGyfUErjRfwtYhhRhFneGWkyeDSXg_-oAbzuh0A/viewform">this form</a> if interested.
 pc:
   - name: Arshia Mufti
     image: arshia.jpg
