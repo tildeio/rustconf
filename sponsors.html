@@ -67,8 +67,455 @@
       </nav>
   
 
-      Coming soon
+      
+<div class="container">
 
+	<h1>Our Program</h1>
+
+	<div id="program">
+		<table>
+				<tr>
+					<td>
+								<img src="images/speakers/aaron.jpg" class="spkPic_multiple" alt="Aaron" />
+								<img src="images/speakers/ashley.jpg" class="spkPic_multiple" alt="Ashley" />
+								<img src="images/speakers/niko.jpg" class="spkPic_multiple" alt="Niko" />
+					</td>
+					<td class="abstract" id="keynote">
+						<h4>
+							Opening Keynote
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/aaron_turon">Aaron Turon</a>
+								 , 
+									<a href="http://www.twitter.com/ag_dubs">Ashley Williams</a>
+								 , 
+									<a href="http://www.twitter.com/nikomatsakis">Niko Matsakis</a>
+						</h5>
+						<p>
+							Aaron, Ashley, and Niko will deliver an update on the state of all things Rust. You don't want to miss it!
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img src="images/speakers/catherine.png" class="spkPic2" alt="Catherine" />
+					</td>
+					<td class="abstract" id="closingkeynote">
+						<h4>
+							Closing Keynote
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/kyrenite">Catherine West</a>
+						</h5>
+						<p>
+							<p> When you’re just starting out in Rust, you start by building small programs. 
+As we all know though, medium and large projects can have very different, unique kinds of problems that smaller projects never encounter. 
+As our projects grow in size, we need to be increasingly concerned about code organization, separation of concerns,
+implementation hiding, and other techniques to manage growing complexity.
+
+<p> Most languages have tools and patterns to deal with this, and Rust is no exception.
+However, the patterns that we learned from other languages, especially in mainstream OO languages, are often unhelpful
+when applied to Rust, and this can lead to a roadblock when trying to transition to building moderate or large Rust programs.
+
+<p> This talk will cover a case study of a moderate sized game engine written in Rust and Lua,
+and show strategies for implementing things in Rust where common implementations in other mainstream languages are a poor fit.
+I’ll also discuss some examples of problems unique to Rust that ended up with very nice —but sometimes not obvious— solutions.
+
+<p> Along the way, I’d also like to discuss working with Rust in game development generally,
+and what it’s like getting Rust to run on mainstream game consoles.
+
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img src="images/speakers/isis.jpg" class="spkPic_multiple" alt="Isis" />
+								<img src="images/speakers/chelsea.jpg" class="spkPic_multiple" alt="Chelsea" />
+					</td>
+					<td class="abstract" id="tor">
+						<h4>
+							Integrating Rust into Tor: Successes and Challenges
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/isislovecruft">Isis Lovecruft</a>
+								 , 
+									<a href="http://www.twitter.com/chelseakomlo">Chelsea Komlo</a>
+						</h5>
+						<p>
+							<p>In 2016, The Tor Project's network team decided to experiment with writing existing and new functionality in Rust. Since then, this experiment has turned into a team initiative, with multiple team members adding infrastructure and new functionality with the goal of integrating Rust components directly into the core Tor code base. By 2019, we will have several features tha will be only supported in Rust.
+<p>With this effort has come many challenges and questions, some which have remained unresolved. In this talk, we propose walking through this timeline, and sharing what we have learned, what was good, and what was challenging about integrating Rust into a 10+ year old security-critical C codebase. We will also offer ideas about what could make this easier going forward, and what we are excited and hoping to see in future Rust versions. Overall, we at The Tor Project are big fans of Rust. We are looking forward to sharing what we have learned and accomplished over the last two years.
+
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img src="images/speakers/ryanplauche.png" class="spkPic2" alt="Ryanplauche" />
+					</td>
+					<td class="abstract" id="spaace">
+						<h4>
+							Space, The Rusty Frontier
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/plauplauplau">Ryan Plauche</a>
+						</h5>
+						<p>
+							<p>Space. It is often thought of as the final frontier for humans. Why not also for Rust?
+<p>In the fall of 2017 we began using Rust on an upcoming CubeSat mission. Writing safe, performant software is a high priority for us, one shared by the aerospace industry. Our software framework was originally written in C but we wanted to explore other options which could give us more confidence in our code and allow us to leverage newer technologies. For us Rust fits the bill with its emphasis on safety, growing community, and high level software patterns.
+<p>This presentation will cover the finer points of why we settled on Rust, how we integrated Rust into our existing C environment, how Rust has affected our developer productivity, pictures of the (first?) spacecraft running Rust in low Earth orbit and thoughts on the future of Rust in Space.
+
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img src="images/speakers/sunjay.jpg" class="spkPic2" alt="Sunjay" />
+					</td>
+					<td class="abstract" id="turtle">
+						<h4>
+							Writing Crates for Complete Beginners - A Tour of Turtle
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/Sunjay03">Sunjay Varma</a>
+						</h5>
+						<p>
+							<p>Turtle is a Rust graphics crate for creating animated drawings. It is designed to be used to teach programming to complete beginners using Rust. In this talk, you'll learn the inner workings of turtle. We'll show you how we managed to create a library that is both full of features and very easy to learn. We'll go deep into how turtle works and tell you the key aspects of creating a crate that is accessible for anyone of any skill level. You'll leave with new ideas for your own crates and a good understanding of what went into making turtle so beginner friendly.
+
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img src="images/speakers/jamesmunns.jpg" class="spkPic2" alt="Jamesmunns" />
+					</td>
+					<td class="abstract" id="somethingfornothing">
+						<h4>
+							Getting Something for Nothing
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/bitshiftmask">James Munns</a>
+						</h5>
+						<p>
+							<p>This talk explores how to use the Rust Type System and Borrow Checker to write safe abstractions of hardware, even when using direct control of memory mapped peripherals with <code>unsafe</code> blocks. Because these techniques move all (or most) of the checking to compile time, these techniques are perfect for systems where high performance or resource constraints are a requirement.
+<p> This talk will explain and explore how these techniques are used on Microcontroller systems as a critical part of the <code>embedded-hal</code> ecosystem.
+
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img src="images/speakers/douglascampos.jpg" class="spkPic2" alt="Douglascampos" />
+					</td>
+					<td class="abstract" id="howtonot">
+						<h4>
+							How to (not) introduce Rust at your workplace - a tale
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/qmx">Douglas Campos</a>
+						</h5>
+						<p>
+							<p>So I've tried to introduce Rust at my $DAYJOB, and failed miserably.
+
+<p>Failure can be a great catalyst for reflection, and indeed, there was a lot of valuable lessons to be learned!
+
+<p>At this brief talk, I'll not only share the pitfalls to avoid, but the insights I've gained while trying to make Rust work for us (and maybe for you?).
+
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img src="images/speakers/katharina.jpg" class="spkPic2" alt="Katharina" />
+					</td>
+					<td class="abstract" id="ffi">
+						<h4>
+							Embedding Rust in C/C++
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/spacekookie">Katharina</a>
+						</h5>
+						<p>
+							<p>We all know that using C/C++ code in Rust is not too complicated. <code>extern "C"</code>, <code>bindgen</code> and <code>build.rs</code> scripts make this pretty easy.
+But let’s challenge ourselves: what about the other way around? There are huge C and C++ projects that could use some corrosion.
+
+<p>In this talk I will not just show simple examples of how to use Rust modules inside larger C/C++
+applications, the common pitfalls you will encounter, and to deal with them.
+
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img src="images/speakers/paulmason.jpg" class="spkPic2" alt="Paulmason" />
+					</td>
+					<td class="abstract" id="benchmarking">
+						<h4>
+							Benchmarking and Optimization of Rust Libraries
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/paupino_masano">Paul Mason</a>
+						</h5>
+						<p>
+							<p> As we develop the Rust eco-system we have a goal that "Rust should provide easy access to high quality crates".
+This means libraries must be both ergonomic and perform well. Rust provides various frameworks to help benchmark libraries
+however achieving performance past a certain point requires knowledge of some deep language constructs. 
+<p> This talk explores a journey towards benchmarking various library functions consistently and
+fairly and consequently exploring strategies for optimizing performance.
+
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img src="images/speakers/sarahmeyer.jpg" class="spkPic2" alt="Sarahmeyer" />
+					</td>
+					<td class="abstract" id="webplatform">
+						<h4>
+							Rust and the Web Platform: A Rookie’s Guide
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/meyerini">Sarah Meyer</a>
+						</h5>
+						<p>
+							Coming Soon!
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img src="images/speakers/misdreavus.png" class="spkPic2" alt="Misdreavus" />
+					</td>
+					<td class="abstract" id="doc">
+						<h4>
+							The Dark Secrets Lurking Inside <code>cargo doc</code>
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/QuietMisdreavus">Quiet Misdreavus</a>
+						</h5>
+						<p>
+							<p> Every Rustacean reads the standard library docs (or some other library docs) sooner or later.
+Many Rustaceans have run <code>cargo doc</code> to generate some documentation for their own library or their dependencies.
+But how many have looked at the tool behind <code>cargo doc</code>? In this talk, I'll divulge some hidden secrets of <code>rustdoc</code>, the tool used by <code>cargo doc</code> to generate documentation.
+
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img src="images/speakers/shaquille.jpg" class="spkPic2" alt="Shaquille" />
+					</td>
+					<td class="abstract" id="reddit">
+						<h4>
+							Reddit & Rust
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/ShaqHacks">Shaquille Johnson</a>
+						</h5>
+						<p>
+							<p> Reddit recently rewrote its markdown parser from C into Rust. We did this because maintaining this security-critical component in memory-unsafe C was too difficult - at one point we had a feature in security review for a year, and that's not acceptable.
+<p> This talk describes my experience with Rust, walking through the many libraries that we tried, which ones we decided to go forward with, which ones we didn’t, and how we coordinated our internal team with upstream crate authors.
+
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img src="images/speakers/quodlibetor.jpg" class="spkPic2" alt="Quodlibetor" />
+					</td>
+					<td class="abstract" id="spaghetti">
+						<h4>
+							The Opposite of Spaghetti Code: Building for Understanding
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/quodlibetor">Brandon W Maister</a>
+						</h5>
+						<p>
+							<p> Every moderately sized project is both a library and a consumer. Rust has an almost dizzying array of features
+that can be used to add structure and hide information.
+<p>In this talk we'll discuss using types, traits, modules and crates as the tools of encapsulation.
+To show how they work together to effectively superseed similar information-hiding tools in procedural and OO
+languages we'll grow a simple type into a collection of language objects. We'll discuss the thought processes that go into deciding to add a layer of
+abstraction, and how to use each layer to maximum effect.
+
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img src="images/speakers/lambdafairy.jpg" class="spkPic2" alt="Lambdafairy" />
+					</td>
+					<td class="abstract" id="procmacro">
+						<h4>
+							My Little Procedural Macro
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/LambdaFairy">Chris Wong</a>
+						</h5>
+						<p>
+							<p>What if Handlebars was a macro?
+<p>Three years, 376 commits, and countless breaking changes later, I may have an answer to that.
+<p> Maud is a macro for writing HTML web pages. It's like <code>format!()</code>, but for markup instead
+of text. This design lets it catch typos at compile-time, as well as run blazingly fast.
+<p> This talk will cover lessons I learned while working on Maud, including: tips on designing
+a macro's syntax, some common pitfalls with the procedural macro system, and dealing with Nightly Rust. There will also be a pony.
+
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img src="images/speakers/fluffyemily.jpg" class="spkPic2" alt="Fluffyemily" />
+					</td>
+					<td class="abstract" id="mentat">
+						<h4>
+							Project Mentat: an evolving data store in Rust
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://www.twitter.com/fluffyemily">Emily Toop</a>
+						</h5>
+						<p>
+							Coming Soon!
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+				<tr>
+					<td>
+								<img src="images/speakers/siddontang.jpg" class="spkPic2" alt="Siddontang" />
+					</td>
+					<td class="abstract" id="raft">
+						<h4>
+							Using Raft in Rust
+						</h4>
+						<h5>
+							By
+								
+									<a href="http://github.com/siddontang">Siddon Tang</a>
+						</h5>
+						<p>
+							<p> The Raft consensus algorithm has been widely adopted in many companies to build a
+consistent distributed services that are highly available. This topic is about how we
+implemented Raft in rust to support TiKV, an open-Source distributed transactional Key-Value store.
+In this topic, I will first give a brief introduction about Raft, and then talk about our
+Raft implementation in Rust, and in the end, I will show you how to use Raft in Rust to build a simple distributed Key-Value database. 
+
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr />
+					</td>
+				</tr>
+		</table>
+
+	</div>
+
+</div>
 
     </main>
 
