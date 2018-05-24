@@ -1,24 +1,30 @@
 - name: Mozilla
+  logo: Logo-Mozilla.png
   type: gold
   website: http://www.mozilla.com
   about: "Mozilla is a non-profit with a mission: to ensure the Internet is a global public resource, open and accessible to all. An Internet that truly puts people first, where individuals can shape their own experience and are empowered, safe and independent."
 - name: Skylight
+  logo: Logo-Skylight.png
   type: gold
   website: http://www.skylight.io
   about: "Skylight﻿ is a smart profiler that lets you quickly diagnose and resolve performance issues with your Rails apps where it matters: in production. It's built by the fine folks at <a href=\"http://www.tilde.io/\">Tilde Inc</a>, who have spent the last few years building open source projects like Ember, Handlebars and Rails itself. Visit <a href=\"http://www.skylight.io/\">skylight.io</a> to start your free trial."
 - name: Buoyant
+  logo: Logo-Buoyant.png
   type: gold
   website: https://buoyant.io/
   about: "Buoyant gives enterprises the tools to operate their cloud native applications safely, reliably, and effectively. Buoyant is creator of Linkerd, the open source resilient service mesh for cloud-native applications. Linkerd brings scalable, production-tested reliability to cloud native applications in the form of a service mesh, a dedicated infrastructure layer for service communication that adds resilience, visibility and without requiring complex application integration. In January 2017, Linkerd was voted into the the Cloud Native Computing Foundation as its fifth project."
 - name: Habitat
+  logo: Logo-Habitat.png
   type: gold
   website: https://www.habitat.sh/
   about: "Modern application teams increase collaboration and accelerate time to market with Habitat. Habitat is a large, open source Rust project. Join our growing community and contribute the development of Habitat. Automate any application, anywhere with Habitat. Habitat is a project from Chef, the leader in Continuous Automation."
 - name: Facebook
+  logo: Logo-Facebook.png
   type: gold
   website: https://facebook.com/
   about: "coming soon"
 - name: OneSignal
+  logo: Logo-OneSignal.png
   type: silver
   website: https://onesignal.com/
   about: "Coming soon!"

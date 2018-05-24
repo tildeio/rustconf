@@ -28,7 +28,7 @@ end
     <% sponsordata.select {|sp| sp.type == "gold"}.each do |sponsor| %>
       <tr>
         <td>
-          <a href="<%= sponsor.website %>"><img src="/images/sponsors/Logo-<%= sponsor.name %>.png" alt="<%= sponsor.name %>"></a>
+          <a href="<%= sponsor.website %>"><img src="/images/sponsors/<%= sponsor.logo %>" alt="<%= sponsor.name %>"></a>
         </td>
         <td>
           <p><%= sponsor.about %></p>
@@ -46,7 +46,7 @@ end
     <% sponsordata.select {|sp| sp.type == "silver"}.each do |sponsor| %>
       <tr>
         <td>
-          <a href="<%= sponsor.website %>"><img src="/images/sponsors/Logo-<%= sponsor.name %>.png" alt="<%= sponsor.name %>"></a>
+          <a href="<%= sponsor.website %>"><img src="/images/sponsors/<%= sponsor.logo %>" alt="<%= sponsor.name %>"></a>
         </td>
         <td>
           <p><%= sponsor.about %></p>
