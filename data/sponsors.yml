@@ -38,3 +38,11 @@
   website: https://launchbadge.com/
   about: |
     Coming soon!
+- name: POA Network
+  logo: Logo-POA.jpg
+  type: gold
+  website: https://launchbadge.com/
+  about: |
+    POA Network is an open, public, permissioned network based on Ethereum
+    protocol with Proof of Authority consensus by independent validators.
+    Public notaries with active commission license validate blocks and secure the network.
