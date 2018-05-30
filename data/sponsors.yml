@@ -46,6 +46,7 @@
   type: gold
   website: https://poa.network/
   about: |
-    POA Network is an open, public, permissioned network based on Ethereum
-    protocol with Proof of Authority consensus by independent validators.
-    Public notaries with active commission license validate blocks and secure the network.
+    POA Network is an open Ethereum sidechain with Proof of Authority consensus, reached
+    by independent validators. POA Network is made up of a team of developers using Rust for
+    implementing interoperability protocols, new consensus and governance algorithms, a Blockchain client and more.
+
