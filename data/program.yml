@@ -228,8 +228,18 @@ talks:
       a macro's syntax, some common pitfalls with the procedural macro system, and dealing with Nightly Rust. There will also be a pony.
     speakers: lambdafairy
     ident: procmacro
-  - title: "Project Mentat: an evolving data store in Rust"
-    abstract: "Coming Soon!"
+  - title: "Project Mentat: a store for evolving data in Rust"
+    abstract: |
+      <p>Mozilla has a data storage problem. There is no unified strategy for storing new user data and moving
+      it between devices, which has led to a proliferation of stores and strategies and a fragile mechanism
+      for syncing that only handles a subset of data collected. Project Mentat was born to
+      help resolve these issues - a structured data store that is designed to be replicated
+      and synchronized and written in Rust to ensure security, safety and maximum portability between platforms. 
+
+      <p>This talk is about why we decided to "build" rather than "buy", how Mentat is designed to address
+      the problems and requirements associated with data storage and syncing in an environment with 
+      trong client-side encryption, - as well as the challenges encountered and lessons learned while using Rust to create portable,
+      performant, persistent, syncing, structured data storage.
     speakers: fluffyemily
     ident: mentat
   - title: "Using Raft in Rust"
