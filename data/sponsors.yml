@@ -49,4 +49,13 @@
     POA Network is an open Ethereum sidechain with Proof of Authority consensus, reached
     by independent validators. POA Network is made up of a team of developers using Rust for
     implementing interoperability protocols, new consensus and governance algorithms, a Blockchain client and more.
+- name: Intraverse
+  logo: Logo-Intraverse.svg
+  type: gold
+  website: http://intraversetech.com
+  about: |
+     Intraverse helps industry partners become part of the peer-to-peer economy.
+     From designing coin economies to implementing corporate blockchains, we've chosen
+     Rust to be part of our ultimate toolbox. Based in Melbourne, Australia, we have the
+     team, resources, networks, and the coffee to blockchain your industry
 
