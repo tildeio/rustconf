@@ -1,7 +1,7 @@
 - name: Mozilla
   logo: Logo-Mozilla.png
   type: gold
-  website: http://www.mozilla.com
+  website: http://www.mozilla.org
   about: |
     Mozilla is a non-profit with a mission: to ensure the Internet is a global public resource, open and accessible to all.
     An Internet that truly puts people first, where individuals can shape their own experience and are empowered, safe and independent.
@@ -58,4 +58,3 @@
      From designing coin economies to implementing corporate blockchains, we've chosen
      Rust to be part of our ultimate toolbox. Based in Melbourne, Australia, we have the
      team, resources, networks, and the coffee to blockchain your industry
-
