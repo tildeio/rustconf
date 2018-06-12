@@ -58,3 +58,17 @@
      From designing coin economies to implementing corporate blockchains, we've chosen
      Rust to be part of our ultimate toolbox. Based in Melbourne, Australia, we have the
      team, resources, networks, and the coffee to blockchain your industry
+- name: Baidu
+  logo: Logo-Baidu.png
+  type: gold
+  website: http://usa.baidu.com/
+  about: |
+    Baidu X-Lab is the research lab developing the core security capabilities across
+    Baidu’s products and services. The team focus on the areas of threat intelligence,
+    NextGen mobile security, modern enterprise security defense, and more.
+    The X-Lab has made outstanding achievements, which have been recognized globally by
+    Internet software vendors, service providers, as well as international security communities.
+    The X-Lab has released several open source Rust projects:
+    <a href="https://github.com/baidu/rust-sgx-sdk">Rust SGX SDK</a>,
+    <a href="http://mesalock-linux.org">MesaLock</a>,
+    <a href="https://github.com/mesalock-linux/mesalink">MesaLink</a>.
