@@ -56,6 +56,24 @@ end
   </table>
 <% end %>
 
+<% if sponsordata.select {|sp| sp.type == "bronze"}.count > 0 %>
+  <div id="footer-ribbon" class="aside ribbon">
+    Bronze
+  </div>
+
+  <table class="sponsor-page">
+    <% sponsordata.select {|sp| sp.type == "bronze"}.each do |sponsor| %>
+      <tr>
+        <td>
+          <a href="<%= sponsor.website %>"><img src="/images/sponsors/<%= sponsor.logo %>" alt="<%= sponsor.name %>"></a>
+        </td>
+        <td>
+          <p><%= sponsor.about %></p>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
 <% if year == "2017" %>
 <h4>Seeking exposure to top Rust Talent? <a href="/images/sponsors/17_RustConf_Prospectus.pdf">Sponsor RustConf</a>!</h4>
 <% else %>

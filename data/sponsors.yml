@@ -73,7 +73,7 @@
     <a href="http://mesalock-linux.org">MesaLock</a>,
     <a href="https://github.com/mesalock-linux/mesalink">MesaLink</a>.
 - name: DigitalOcean
-  logo: Logo-Baidu.png
+  logo: Logo-DigitalOcean.png
   type: bronze
   website: https://try.digitalocean.com/cloud-hosting/?_dkitrig=Rust&utm_medium=events&utm_source=rustconf&utm_campaign=rustconf2018
   about: |

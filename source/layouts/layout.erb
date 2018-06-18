@@ -115,20 +115,35 @@ end
     </ul>
 
     <% if sponsors.select {|sp| sp.type == "silver"}.count > 0 %>
-    <div id="footer-ribbon" class="aside ribbon">
-      Silver
-    </div>
+      <div id="footer-ribbon" class="aside ribbon">
+        Silver
+      </div>
 
-    <ul class="supporting">
-      <% sponsors.select {|sp| sp.type == "silver"}.each_with_index do |sponsor, idx| %>
-        <% if idx % 2 == 0 && idx != 0 %>
-          <br />
+      <ul class="supporting">
+        <% sponsors.select {|sp| sp.type == "silver"}.each_with_index do |sponsor, idx| %>
+          <% if idx % 2 == 0 && idx != 0 %>
+            <br />
+          <% end %>
+          <li><a href="<%= sponsor.website %>"><img src="<%= path %>/images/sponsors/<%= sponsor.logo %>" alt="<%= sponsor.name %>"></a></li>
+
         <% end %>
-        <li><a href="<%= sponsor.website %>"><img src="<%= path %>/images/sponsors/<%= sponsor.logo %>" alt="<%= sponsor.name %>"></a></li>
+      </ul>
+    <% end %>
 
-      <% end %>
-    </ul>
+    <% if sponsors.select {|sp| sp.type == "bronze"}.count > 0 %>
+      <div id="footer-ribbon" class="aside ribbon">
+        Bronze
+      </div>
 
+      <ul class="supporting">
+        <% sponsors.select {|sp| sp.type == "bronze"}.each_with_index do |sponsor, idx| %>
+          <% if idx % 2 == 0 && idx != 0 %>
+            <br />
+          <% end %>
+          <li><a href="<%= sponsor.website %>"><img src="<%= path %>/images/sponsors/<%= sponsor.logo %>" alt="<%= sponsor.name %>"></a></li>
+
+        <% end %>
+      </ul>
     <% end %>
     <h4>Seeking exposure to top Rust Talent? <a href="<%= prospectus %>">Sponsor RustConf</a>!</h4>
 
