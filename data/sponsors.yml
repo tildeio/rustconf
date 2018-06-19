@@ -79,3 +79,12 @@
   about: |
     Run the cool things you're already building on the easiest
     to use developer infrastructure. Experience simplicity at scale.
+- name: TicketMaster
+  logo: Logo-TicketMaster.png
+  type: bronze
+  website: https://www.ticketmaster.com/
+  about: |
+    Ticketmaster is the global market leader in live event ticketing that drives 500 million
+    ticket transactions per year. Through exclusive partnerships with thousands of venues, artists, sports
+    leagues, and arts and theater tours, Ticketmaster delivers unparalleled access to the most iconic live
+    events to millions of fans worldwide.
