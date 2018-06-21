@@ -88,3 +88,12 @@
     ticket transactions per year. Through exclusive partnerships with thousands of venues, artists, sports
     leagues, and arts and theater tours, Ticketmaster delivers unparalleled access to the most iconic live
     events to millions of fans worldwide.
+- name: PingCAP
+  logo: Logo-PingCAP.svg
+  type: bronze
+  website: https://pingcap.com/en/
+  about: |
+    PingCAP is a distributed database company and the team behind TiDB, a popular open-source NewSQL
+    hybrid database that provides a one-stop solution for both transactional and analytical workloads.
+    Its distributed transactional key-value storage layer, TiKV, is built in Rust and deployed in production
+    in more than 200 companies, spanning industries from online marketplace and gaming, to fintech and bikesharing.
