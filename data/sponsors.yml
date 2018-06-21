@@ -97,3 +97,13 @@
     hybrid database that provides a one-stop solution for both transactional and analytical workloads.
     Its distributed transactional key-value storage layer, TiKV, is built in Rust and deployed in production
     in more than 200 companies, spanning industries from online marketplace and gaming, to fintech and bikesharing.
+- name: GitHub
+  logo: Logo-GitHub2.png
+  type: gold
+  website: https://github.com/?utm_source=rustconf&utm_medium=prtnr&utm_campaign=rust-conf-18
+  about: |
+    GitHub is the developer company. We make it easier for developers to be developers: to work together,
+    to solve challenging problems, and to create the world’s most important technologies. We foster a collaborative
+    community that can come together—as individuals and in teams—to create the future of software and make a difference in the world.
+
+
