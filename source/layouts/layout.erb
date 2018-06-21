@@ -106,7 +106,7 @@ end
 
     <ul class="premier">
       <% sponsors.select {|sp| sp.type == "gold"}.each_with_index do |sponsor, idx| %>
-        <% if idx % 2 == 0 && idx != 0 %>
+        <% if idx % 4 == 0 && idx != 0 %>
           <br />
         <% end %>
         <li><a href="<%= sponsor.website %>"><img src="<%= path %>/images/sponsors/<%= sponsor.logo %>" alt="<%= sponsor.name %>"></a></li>
@@ -121,7 +121,7 @@ end
 
       <ul class="supporting">
         <% sponsors.select {|sp| sp.type == "silver"}.each_with_index do |sponsor, idx| %>
-          <% if idx % 2 == 0 && idx != 0 %>
+          <% if idx % 4 == 0 && idx != 0 %>
             <br />
           <% end %>
           <li><a href="<%= sponsor.website %>"><img src="<%= path %>/images/sponsors/<%= sponsor.logo %>" alt="<%= sponsor.name %>"></a></li>
@@ -137,7 +137,7 @@ end
 
       <ul class="supporting">
         <% sponsors.select {|sp| sp.type == "bronze"}.each_with_index do |sponsor, idx| %>
-          <% if idx % 2 == 0 && idx != 0 %>
+          <% if idx % 4 == 0 && idx != 0 %>
             <br />
           <% end %>
           <li><a href="<%= sponsor.website %>"><img src="<%= path %>/images/sponsors/<%= sponsor.logo %>" alt="<%= sponsor.name %>"></a></li>
