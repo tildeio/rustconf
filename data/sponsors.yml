@@ -109,5 +109,10 @@
   logo: Logo-Parity.svg
   type: gold
   website: https://www.parity.io/
-  about: Coming Soon!
+  about: |
+    Parity Technologies builds technologies for the emerging decentralised web 3.0—mostly in
+    Rust! Best known for Parity, the most advanced Ethereum client, they continue to advance core
+    blockchain infrastructure with Polkadot—an ambitious protocol that addresses blockchain governance,
+    interoperability, and scalability issues. Through their enterprise initiatives, they are solving
+    the problems unaddressed by conventional server-client architecture.
 
