@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="450px" height="450px" viewBox="0 0 450 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="350px" height="160px" viewBox="0 0 350 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
     <title>Var3_Black_Transp</title>
     <desc>Created with Sketch.</desc>
@@ -10,7 +10,7 @@
         <polygon id="path-7" points="0 19.6721311 66.3934426 19.6721311 66.3934426 0 0 0"></polygon>
     </defs>
     <g id="Var3_Black_Transp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Variation-3" transform="translate(50.000000, 143.000000)">
+        <g id="Variation-3">
             <g id="Logotype" transform="translate(150.000000, 87.000000)">
                 <g id="Group-3" transform="translate(0.000000, 17.000000)">
                     <mask id="mask-2" fill="white">
@@ -96,6 +96,5 @@
                 </g>
             </g>
         </g>
-        <rect id="Rectangle" x="0" y="0" width="450" height="450"></rect>
     </g>
 </svg>
