@@ -210,12 +210,14 @@ talks:
       But how many have looked at the tool behind <code>cargo doc</code>? In this talk, I'll divulge some hidden secrets of <code>rustdoc</code>, the tool used by <code>cargo doc</code> to generate documentation.
     speakers: misdreavus
     ident: doc
-  - title: "Reddit & Rust"
+  - title: "Learning Rust by Writing a Scalable Markdown parser"
     abstract: |
-      <p> Reddit recently rewrote its markdown parser from C into Rust. We did this because maintaining this security-critical component in memory-unsafe C was too difficult - at one point we had a feature in security review for a year, and that's not acceptable.
-      <p> This talk describes my experience with Rust, walking through the many libraries that we tried, which ones we decided to go forward with, which ones we didn’t, and how we coordinated our internal team with upstream crate authors.
+      <p> I was recently put on a project that required learning Rust and rewriting a large scale parser that could handle
+      a large number of request at scale. This was my first major project in Rust and I hope to talk about learning the
+      language while also the process and assumptions that made learning Rust both a challenge and a great experience as an
+      engineer. I did this by working with and expanding an existing parser and making it production ready.
     speakers: shaquille
-    ident: reddit
+    ident: markdown
   - title: "The Opposite of Spaghetti Code: Building for Understanding"
     abstract: |
       <p> Every moderately sized project is both a library and a consumer. Rust has an almost dizzying array of features
@@ -280,7 +282,7 @@ schedule:
     time: "3:30 - 4:00pm"
   - talk: ffi, webplatform
     time: "4:00 - 4:30pm"
-  - talk: reddit, procmacro
+  - talk: markdown, procmacro
     time: "4:45 - 5:15pm"
   - talk: closingkeynote
     time: "5:30 - 6:00pm"

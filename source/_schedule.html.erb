@@ -59,7 +59,6 @@ end
               <td <% if twotrack && talks.length == 1 %> colspan=2 <% end %>>
                 <%
                   talk = programdata.talks.select {|talk| talk.ident == t}[0]
-                  print t
                   speakers = programdata.speakers.select {|spk| talk.speakers.include? spk.ident}
                 %>
                 <p class="speaker"><a href="program.html#<%= talk.ident %>"><%= talk.title %></a></p>
