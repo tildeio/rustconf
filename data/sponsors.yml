@@ -134,3 +134,11 @@
     Zcash is the first open, permissionless cryptocurrency that can shield transaction details using zero-knowledge cryptography.
     Zcash is built by an engineering team specialized in security with an enthusiasm for Rust. The upcoming
     network upgrade, Sapling, is implemented in Rust and introduces significant efficiency improvements for Zcash's shielded addresses.
+- name: Qumulo
+  logo: Logo-Qumulo.png
+  type: gold
+  website: https://qumulo.com/
+  about: |
+    Qumulo is a Seattle based data storage startup. We are building solutions that will permanently change
+    the enterprise storage marketplace, improving quality and increasing service standards. We are dedicated to
+    building not only to a fast, reliable product, but providing customers with a seamless user experience and unprecedented visibility on their data.
