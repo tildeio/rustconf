@@ -142,3 +142,8 @@
     Qumulo is a Seattle based data storage startup. We are building solutions that will permanently change
     the enterprise storage marketplace, improving quality and increasing service standards. We are dedicated to
     building not only to a fast, reliable product, but providing customers with a seamless user experience and unprecedented visibility on their data.
+- name: OneSignal
+  logo: Logo-OneSignal.png
+  type: gold
+  website: https://onesignal.com
+  about: Coming Soon!
