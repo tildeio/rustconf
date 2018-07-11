@@ -146,4 +146,8 @@
   logo: Logo-OneSignal.png
   type: gold
   website: https://onesignal.com
-  about: Coming Soon!
+  about: |
+    OneSignal provides a simple interface to push notifications and email, letting content creators
+    focus on quality user engagement instead of complex implementation. Our goal is to democratize
+    communication tools for everyone from individual blogs to top tier apps.
+
