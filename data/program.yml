@@ -81,10 +81,10 @@ speakers:
     image: misdreavus.png
     twitter: QuietMisdreavus
     bio: "TBD"
-  - name: "Shaquille Johnson"
-    ident: shaquille
-    image: shaquille.jpg
-    twitter: ShaqHacks
+  - name: "Per Larsen"
+    ident: per
+    image: per.jpg
+    github: realdataking
     bio: "TBD"
   - name: "Brandon W Maister"
     ident: quodlibetor
@@ -210,14 +210,19 @@ talks:
       But how many have looked at the tool behind <code>cargo doc</code>? In this talk, I'll divulge some hidden secrets of <code>rustdoc</code>, the tool used by <code>cargo doc</code> to generate documentation.
     speakers: misdreavus
     ident: doc
-  - title: "Learning Rust by Writing a Scalable Markdown parser"
+  - title: "C2Rust: Migrating Legacy Code to Rust"
     abstract: |
-      <p> I was recently put on a project that required learning Rust and rewriting a large scale parser that could handle
-      a large number of request at scale. This was my first major project in Rust and I hope to talk about learning the
-      language while also the process and assumptions that made learning Rust both a challenge and a great experience as an
-      engineer. I did this by working with and expanding an existing parser and making it production ready.
-    speakers: shaquille
-    ident: markdown
+      <p> Although Rust is safer and more modern than C/C++, it is still difficult to justify the cost of migrating existing, mature systems code.
+      <p> This talk will present a trifecta of tools to address the costs and risks of such migration efforts.
+          The first tool is a transpiler which generates structurally equivalent-yet-unsafe Rust code from the
+          input C code. The second is a dynamic analysis tool which runs the original C code alongside the new Rust
+          code to check whether they are performing the same computations. The third is a refactoring tool which helps programmers idiomize the output of our transpiler.
+      <p> Our aim is to automate many of the steps that are entirely manual when migrating from C to Rust today.
+          However, we do not expect that the migration process will be fully automatic. Therefore, we focus on detecting
+          unexpected discrepancies as the programmer gradually rewrites the transpiled code to make better use of Rust idioms. Our tools are open source and available to anyone.
+
+    speakers: per
+    ident: c2rust
   - title: "The Opposite of Spaghetti Code: Building for Understanding"
     abstract: |
       <p> Every moderately sized project is both a library and a consumer. Rust has an almost dizzying array of features
@@ -282,7 +287,7 @@ schedule:
     time: "3:30 - 4:00pm"
   - talk: ffi, webplatform
     time: "4:00 - 4:30pm"
-  - talk: markdown, procmacro
+  - talk: c2rust, procmacro
     time: "4:45 - 5:15pm"
   - talk: closingkeynote
     time: "5:30 - 6:00pm"
