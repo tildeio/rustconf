@@ -150,4 +150,12 @@
     OneSignal provides a simple interface to push notifications and email, letting content creators
     focus on quality user engagement instead of complex implementation. Our goal is to democratize
     communication tools for everyone from individual blogs to top tier apps.
-
+- name: Sigma Computing
+  type: silver
+  logo: Logo-Sigma.png
+  website: https://sigmacomputing.com/
+  about: |
+    Sigma is the visual interface for your cloud data warehouse. With Sigma,
+    nothing stands between you and your data. Our next-generation interface enables users of all backgrounds to
+    explore, analyze, and visualize data without the help of a data specialist. Simple to use, easy to manage,
+    and free to view. It’s time to break down the barriers to creating actionable analytics.
