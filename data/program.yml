@@ -291,6 +291,9 @@ schedule:
     time: "4:45 - 5:15pm"
   - talk: closingkeynote
     time: "5:30 - 6:00pm"
+  - name: Happy Hour
+    time: "6:00pm - 7:00pm"
+    byline: "Sponsored by POA and Skylight"
 trainings:
   - title: "Rust for Beginners"
     speakers: steve

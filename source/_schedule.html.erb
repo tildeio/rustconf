@@ -62,13 +62,16 @@ end
                   speakers = programdata.speakers.select {|spk| talk.speakers.include? spk.ident}
                 %>
                 <p class="speaker"><a href="program.html#<%= talk.ident %>"><%= talk.title %></a></p>
-                <p class="byline">
+                <p class="byline">by 
                   <% speakers.each_with_index do |spk, idx| %><% if idx != 0 && speakers.length > 2 %>,<% end %> <% if idx == speakers.length - 1 && speakers.length > 1 %>and <% end %><%= spk.name %><% end %>
                 </p>
               </td>
             <% end %>
           <% else %>
-            <td <% if twotrack %> colspan=2 <% end %>><span class="session"><%= event.name %></span></td>
+            <td <% if twotrack %> colspan=2 <% end %>><span class="session"><%= event.name %>
+              
+              <% if event.byline %> <p class="byline"><%= event.byline %> <% end %>
+            </span></td>
           <% end %>
 
       </tr>

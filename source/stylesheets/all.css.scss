@@ -342,9 +342,6 @@ figure.spkFig {
     font-style: italic;
     font-size: 0.9rem;
     color: grey;
-    &:before {
-      content: "by ";
-    }
   }
 
   p.speaker {
