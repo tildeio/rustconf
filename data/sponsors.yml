@@ -49,15 +49,6 @@
     POA Network is an open Ethereum sidechain with Proof of Authority consensus, reached
     by independent validators. POA Network is made up of a team of developers using Rust for
     implementing interoperability protocols, new consensus and governance algorithms, a Blockchain client and more.
-- name: Intraverse
-  logo: Logo-Intraverse.png
-  type: gold
-  website: http://intraversetech.com
-  about: |
-     Intraverse helps industry partners become part of the peer-to-peer economy.
-     From designing coin economies to implementing corporate blockchains, we've chosen
-     Rust to be part of our ultimate toolbox. Based in Melbourne, Australia, we have the
-     team, resources, networks, and the coffee to blockchain your industry
 - name: Baidu
   logo: Logo-Baidu.png
   type: gold
@@ -142,13 +133,6 @@
     Qumulo is a Seattle based data storage startup. We are building solutions that will permanently change
     the enterprise storage marketplace, improving quality and increasing service standards. We are dedicated to
     building not only to a fast, reliable product, but providing customers with a seamless user experience and unprecedented visibility on their data.
-- name: OneSignal
-  logo: Logo-OneSignal.png
-  type: gold
-  website: https://onesignal.com
-  about: |
-    OneSignal provides a simple interface to push notifications and email, letting content creators
-    focus on quality user engagement instead of complex implementation. Our goal is to democratize
     communication tools for everyone from individual blogs to top tier apps.
 - name: Sigma Computing
   type: silver
@@ -164,3 +148,19 @@
   logo: Logo-Google.png
   website: https://google.com/
   about: Coming Soon!
+- name: OneSignal
+  logo: Logo-OneSignal.png
+  type: gold
+  website: https://onesignal.com
+  about: |
+    OneSignal provides a simple interface to push notifications and email, letting content creators
+    focus on quality user engagement instead of complex implementation. Our goal is to democratize
+- name: Intraverse
+  logo: Logo-Intraverse.png
+  type: gold
+  website: http://intraversetech.com
+  about: |
+     Intraverse helps industry partners become part of the peer-to-peer economy.
+     From designing coin economies to implementing corporate blockchains, we've chosen
+     Rust to be part of our ultimate toolbox. Based in Melbourne, Australia, we have the
+     team, resources, networks, and the coffee to blockchain your industry
