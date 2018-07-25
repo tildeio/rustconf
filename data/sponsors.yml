@@ -148,6 +148,11 @@
   logo: Logo-Google.png
   website: https://google.com/
   about: Coming Soon!
+- name: Solana
+  type: gold
+  logo: Logo-Solana2.png
+  about: Coming soon!
+  website: https://solana.com/
 - name: OneSignal
   logo: Logo-OneSignal.png
   type: gold
