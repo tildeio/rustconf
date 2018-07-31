@@ -153,6 +153,11 @@
   logo: Logo-Solana2.png
   about: Coming soon!
   website: https://solana.com/
+- name: Facebook
+  type: gold
+  logo: Logo-Facebook2.png
+  about: Coming soon!
+  website: https://facebook.com/
 - name: OneSignal
   logo: Logo-OneSignal.png
   type: gold
