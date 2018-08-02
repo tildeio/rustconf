@@ -147,7 +147,10 @@
   type: gold
   logo: Logo-Google.png
   website: https://google.com/
-  about: Coming Soon!
+  about: |
+    Google Developers aims to build powerful platforms and products that enable innovation, working in
+    close partnership with the developer and entrepreneur communities. Whether you’re in the process of
+    developing your app, looking to engage with users, or monetize your product - Google Developers has the tools to help you along the way.
 - name: Solana
   type: gold
   logo: Logo-Solana2.png
