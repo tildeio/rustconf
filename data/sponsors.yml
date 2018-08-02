@@ -151,7 +151,9 @@
 - name: Solana
   type: gold
   logo: Logo-Solana2.png
-  about: Coming soon!
+  about: |
+    <a href="https://solana.com/">Solana</a> is a high performance blockchain which
+    can achieve up to 710k transactions/second on a 1gb network without data partitioning.
   website: https://solana.com/
 - name: Facebook
   type: gold
