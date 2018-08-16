@@ -178,3 +178,14 @@
      From designing coin economies to implementing corporate blockchains, we've chosen
      Rust to be part of our ultimate toolbox. Based in Melbourne, Australia, we have the
      team, resources, networks, and the coffee to blockchain your industry
+- name: Ferrous Systems
+  logo: Logo-Ferrous.svg
+  type: bronze
+  website: https://ferrous-systems.com
+  about: |
+    <a href="https://ferrous-systems.com">Ferrous Systems</a> is a new Rust agency formed by <a href="https://github.com/xylakant">Felix Gilcher</a>,
+    <a href="https://github.com/skade">Florian Gilcher</a>, and <a href="https://github.com/jamesmunns">James Munns</a>, and recently joined by
+    <a href="https://github.com/spacekookie">Katharina</a>. Altogether, Ferrous Systems is one of the largest clusters
+    of Rust knowledge available for hire. With a focus on embedded,
+    networking, and systems programming, we aim to bring the benefits of
+    Rust to the professional software development world.
